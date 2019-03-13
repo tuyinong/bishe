@@ -1,0 +1,23 @@
+[ 2019-02-18T17:53:34+08:00 ] 127.0.0.1 /TYN/tyn/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010200s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0719s ]
+SQL: select g.*,u.u_nickname from tyn_goods as g join tyn_users as u on g.from_id = u.id order by g.g_time desc limit 15 [ RunTime:0.0868s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] session_start(): A session had already been started - ignoring D:\xampp\htdocs\TYN\tyn\Application\Runtime\Cache\Home\0d6509e863112dc5821b22ecb897e16e.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.030647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.030677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.061690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.061739s ]
+

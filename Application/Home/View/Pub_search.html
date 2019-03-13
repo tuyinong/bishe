@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <include file="Pub:style" />
+</head>
+<body>
+    <php>session_start();</php>
+    <div class="container">
+        <div class="input-group" style="padding:20px 10px 10px" value="">
+            <input id="searchtext" type="text" class="form-control">
+            <div class="input-group-btn">
+                <button class="btn btn-default" onclick="search()">搜索</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var val = "<#:session('val')#>";
+    console.log(val);
+    $("#searchtext").val(val);
+    // 搜索按键
+    function search() {
+        var val = $("#searchtext").val();
+        console.log(val)
+        location.href = "__URL__/goodslist?val=" + val;
+    }
+</script>
+</html>

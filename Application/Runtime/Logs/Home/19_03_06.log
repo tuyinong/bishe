@@ -1,0 +1,894 @@
+[ 2019-03-06T10:11:39+08:00 ] 127.0.0.1 /TYN/tyn/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000231s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003276s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0746s ]
+SQL: select g.*,u.u_nickname from tyn_goods as g join tyn_users as u on g.from_id = u.id order by g.g_time desc limit 15 [ RunTime:0.0410s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000757s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001802s ]
+NOTIC: [8] session_start(): A session had already been started - ignoring D:\xampp\htdocs\TYN\tyn\Application\Runtime\Cache\Home\0d6509e863112dc5821b22ecb897e16e.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001844s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002727s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003145s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004273s ]
+
+[ 2019-03-06T10:11:44+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000215s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002387s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0049s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000731s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001780s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002426s ]
+
+[ 2019-03-06T10:11:49+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000279s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002005s ]
+NOTIC: [8] Undefined index: uid D:\xampp\htdocs\TYN\tyn\Application\Home\Controller\GoodsController.class.php 第 39 行.
+
+[ 2019-03-06T10:13:23+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000234s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002383s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0050s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000600s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001551s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002415s ]
+
+[ 2019-03-06T10:13:23+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000223s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002373s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0056s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000583s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001504s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002309s ]
+
+[ 2019-03-06T10:13:24+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000255s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002291s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0069s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000576s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001447s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024645s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002257s ]
+
+[ 2019-03-06T10:13:24+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000223s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002387s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0067s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000579s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001490s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002393s ]
+
+[ 2019-03-06T10:13:25+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000211s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001923s ]
+NOTIC: [8] Undefined index: uid D:\xampp\htdocs\TYN\tyn\Application\Home\Controller\GoodsController.class.php 第 39 行.
+
+[ 2019-03-06T10:14:42+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000223s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004243s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0050s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000581s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001484s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001799s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002717s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003531s ]
+
+[ 2019-03-06T10:14:43+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000212s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002890s ]
+NOTIC: [8] Undefined index: uid D:\xampp\htdocs\TYN\tyn\Application\Home\Controller\GoodsController.class.php 第 39 行.
+
+[ 2019-03-06T10:14:45+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000215s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002246s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000566s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001474s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001780s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002647s ]
+
+[ 2019-03-06T10:25:22+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000346s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004318s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0044s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000580s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001499s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002771s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003484s ]
+
+[ 2019-03-06T10:25:22+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000238s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004508s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0069s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000725s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001777s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032553s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001888s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002819s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005031s ]
+
+[ 2019-03-06T10:25:24+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000216s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002863s ]
+NOTIC: [8] Undefined index: uid D:\xampp\htdocs\TYN\tyn\Application\Home\Controller\GoodsController.class.php 第 39 行.
+
+[ 2019-03-06T10:25:30+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000241s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002388s ]
+NOTIC: [8] Undefined index: uid D:\xampp\htdocs\TYN\tyn\Application\Home\Controller\GoodsController.class.php 第 39 行.
+
+[ 2019-03-06T10:25:58+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000221s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001892s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002446s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0062s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000624s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001563s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002190s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003223s ]
+
+[ 2019-03-06T10:25:59+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000226s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002972s ]
+NOTIC: [8] Undefined index: uid D:\xampp\htdocs\TYN\tyn\Application\Home\Controller\GoodsController.class.php 第 39 行.
+
+[ 2019-03-06T10:26:15+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000219s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002313s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0051s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000639s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002052s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001851s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002765s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002107s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003056s ]
+
+[ 2019-03-06T10:26:16+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000274s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001989s ]
+NOTIC: [8] Undefined index: uid D:\xampp\htdocs\TYN\tyn\Application\Home\Controller\GoodsController.class.php 第 39 行.
+
+[ 2019-03-06T10:26:20+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000211s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002154s ]
+NOTIC: [8] Undefined index: uid D:\xampp\htdocs\TYN\tyn\Application\Home\Controller\GoodsController.class.php 第 39 行.
+
+[ 2019-03-06T10:35:18+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000272s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003012s ]
+NOTIC: [8] Undefined index: uid D:\xampp\htdocs\TYN\tyn\Application\Home\Controller\GoodsController.class.php 第 39 行.
+
+[ 2019-03-06T10:35:25+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000262s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002656s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0051s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000658s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001750s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002131s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003193s ]
+
+[ 2019-03-06T10:35:26+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000354s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004603s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0055s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000584s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001542s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001858s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002783s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003139s ]
+
+[ 2019-03-06T10:35:26+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000219s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003590s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0048s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000660s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001769s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001870s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002127s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003128s ]
+
+[ 2019-03-06T10:35:26+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000359s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003396s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0049s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000545s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001426s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001870s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002765s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002881s ]
+
+[ 2019-03-06T10:35:26+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000304s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004329s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0057s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000608s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001541s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002247s ]
+
+[ 2019-03-06T10:35:29+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000238s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003502s ]
+NOTIC: [8] Undefined index: uid D:\xampp\htdocs\TYN\tyn\Application\Home\Controller\GoodsController.class.php 第 39 行.
+
+[ 2019-03-06T10:35:31+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000282s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002811s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000549s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001448s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001755s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002633s ]
+
+[ 2019-03-06T10:37:01+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000225s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002691s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0053s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000559s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001445s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003164s ]
+
+[ 2019-03-06T10:37:01+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000249s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003049s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0048s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000579s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001482s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028447s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002451s ]
+
+[ 2019-03-06T10:37:02+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000243s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002232s ]
+NOTIC: [8] Undefined index: uid D:\xampp\htdocs\TYN\tyn\Application\Home\Controller\GoodsController.class.php 第 39 行.
+
+[ 2019-03-06T10:56:27+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000212s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003633s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0057s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000585s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001509s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001875s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002885s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002961s ]
+
+[ 2019-03-06T10:56:27+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000235s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012388s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0065s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000619s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001799s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002847s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001992s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003120s ]
+
+[ 2019-03-06T10:56:27+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000350s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003752s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0049s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000596s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001549s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002961s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003062s ]
+
+[ 2019-03-06T10:56:28+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000234s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002453s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0057s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000726s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002428s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003336s ]
+
+[ 2019-03-06T10:56:28+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000227s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004076s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0051s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000795s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002654s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002494s ]
+
+[ 2019-03-06T10:56:29+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000231s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002097s ]
+NOTIC: [8] Undefined index: uid D:\xampp\htdocs\TYN\tyn\Application\Home\Controller\GoodsController.class.php 第 39 行.
+
+[ 2019-03-06T10:58:26+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000238s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002421s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0049s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000622s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001598s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002247s ]
+
+[ 2019-03-06T10:58:27+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000240s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003398s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0073s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000576s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001523s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003263s ]
+
+[ 2019-03-06T10:58:27+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000332s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003845s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0096s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000594s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001524s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002720s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003638s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002176s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003091s ]
+
+[ 2019-03-06T10:58:28+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000235s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001989s ]
+NOTIC: [8] Undefined index: uid D:\xampp\htdocs\TYN\tyn\Application\Home\Controller\GoodsController.class.php 第 39 行.
+
+[ 2019-03-06T10:58:29+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000322s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002667s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000815s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026310s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002095s ]
+
+[ 2019-03-06T10:58:37+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000207s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001908s ]
+NOTIC: [8] Undefined index: uid D:\xampp\htdocs\TYN\tyn\Application\Home\Controller\GoodsController.class.php 第 39 行.
+
+[ 2019-03-06T11:00:13+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000212s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002109s ]
+NOTIC: [8] Undefined index: uid D:\xampp\htdocs\TYN\tyn\Application\Home\Controller\GoodsController.class.php 第 39 行.
+
+[ 2019-03-06T11:00:57+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000230s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003249s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0048s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002587s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001925s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002903s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003363s ]
+
+[ 2019-03-06T11:00:58+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000274s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003052s ]
+NOTIC: [8] Undefined index: uid D:\xampp\htdocs\TYN\tyn\Application\Home\Controller\GoodsController.class.php 第 39 行.
+
+[ 2019-03-06T11:01:08+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/words.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000231s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002084s ]
+NOTIC: [8] Undefined index: uid D:\xampp\htdocs\TYN\tyn\Application\Home\Controller\GoodsController.class.php 第 26 行.
+
+[ 2019-03-06T11:05:09+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000239s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003198s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0062s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000591s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001573s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001860s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002724s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002125s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003059s ]
+
+[ 2019-03-06T11:05:09+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000375s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005327s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0071s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000730s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003714s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003369s ]
+
+[ 2019-03-06T11:16:24+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Home/Goods/details?gid=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000226s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003276s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0049s ]
+SQL: SELECT g.*,u.u_nickname,u.u_uptime,u.u_credit FROM tyn_goods g INNER JOIN tyn_users as u on g.from_id=u.id  LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000573s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001505s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002846s ]
+

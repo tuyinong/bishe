@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>管理系统入口</title>
+    <include file="Pub:style"/>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .head{
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            min-width: 1000px;
+        }
+        .base{
+            width: 1000px;
+            position:relative;
+            margin: 0 auto;
+        }
+        .base-box{
+            width:360px;
+            position:absolute;
+            right:0;
+            top: 185px;
+        }
+        .base-box h3{
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .base-box form{
+            border: 1px solid;
+            margin-bottom: 10px;
+            background-color: white;
+            border-radius: 5px;
+            padding: 15px 0;
+        }
+        .base-box input{
+            width: 87%;
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        .base-box input[type='button']{
+            width:87%;
+            height:38px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="head" class="head"></div>
+    <div class="base">
+        <div class="base-box">
+            <h3>
+                登录
+                <small>Login</small>
+            </h3>
+            <form id="log_form" action="">
+                <input type="text" id="account" name="account" value="" placeholder="账号">
+                <input type="password" id="pwd" name="pwd" value="" placeholder="密码">
+                <input type="button" id="subbtn" value="登&nbsp;&nbsp;&nbsp;录" >
+            </form>
+            <span>Technical support from tyn</span>
+        </div>
+    </div>
+</body>
+<script>
+    // 登录事件
+    $("#subbtn").click(function(){
+        if($("#account").val()==""){
+            layer.msg('账号不能为空');
+        }else{
+            if ($("#pwd").val()=="") {
+                layer.msg('密码不能为空');
+            }else{
+                var formdata = $("#log_form").serializeArray();
+                $.ajax({
+                    url:"<#:U('Login/index')#>",
+                    async:true,
+                    type:"POST",
+                    data:"data="+JSON.stringify(formdata),
+                    dataType: "json",
+                    success:function(res){
+                        console.log(res);
+                        if(res==1){
+                            location.href="__MODULE__/Index/index";
+                        }else{
+                            layer.msg('账号或密码错误');
+                        }
+                    },
+                    error:function(res){
+                        console.log(res);
+                    }
+                });
+            }
+        }
+    })
+    // 按钮绑定回车事件
+    $("body").keydown(function () {
+        if (event.keyCode == 13) {
+            $("#subbtn").click();
+        }
+    })
+</script>
+</html>

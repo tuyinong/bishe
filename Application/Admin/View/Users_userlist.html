@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户列表</title>
+    <include file="Pub:style" />
+</head>
+
+<body>
+    <include file="Pub:nav" />
+    <div class="body">
+        <div class="box">
+            <div class="rowbox">
+                <div class="title">
+                    您目前所在的位置 > 用户管理 > 用户列表
+                </div>
+            </div>
+            <div class="rowbox">
+               <div class="col-xs-12">
+                    <form action="" class="form-inline">
+                        <!-- 搜索条件 -->
+                        <label for="account">用户账号:</label>
+                        <input type="text" name="account" id="account" placeholder="输入要搜索的用户账号" value="<#$map.account#>" class="form-control">
+                        <label for="">用户状态:</label>
+                        <select name="status" id="status" class="select-input form-control">
+                            <option value="" >全部</option>
+                            <option value="1" <eq name="map.state" value="1">selected</eq>>正常</option>
+                            <option value="0" <eq name="map.state" value="0">selected</eq>>冻结中</option>
+                        </select>  
+                        <a class="mybtn btn btn-primary" id="searchbtn">搜&nbsp;&nbsp;索</a>       
+                    </form>
+               </div>
+            </div>
+            <div class="rowbox">
+                <div class="tablebox">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>用户账号</th>
+                                <th>用户上次登录时间</th>
+                                <th>所在省</th>
+                                <th>所在市</th>
+                                <th>账户状态</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <volist name="userlist" id="vo">
+                               <tr>
+                                    <td><#$vo.u_account#></td>
+                                    <td><#$vo.u_uptime#></td>
+                                    <td><#$vo.u_provice#></td>
+                                    <td><#$vo.u_city#></td>
+                                    <!-- <td><#$vo.u_state#></td> -->
+                                    <td>
+                                        <eq name="vo.u_state" value="1">账户正常使用</eq>
+                                        <eq name="vo.u_state" value="0"><span style="color:red">账户冻结中 ...</s></eq>
+                                    </td>
+                                    <td>
+                                        <button id="userinfobtn" class="btn btn-primary" onclick="send('<#$vo.id#>')">发送通知</button>
+                                        
+                                        <button id="accfreebtn" class="btn btn-primary" onclick="dongjie('<#$vo.id#>')" <eq name="vo.u_state" value="0">disabled</eq>>账号冻结</button>
+                                    </td>
+                               </tr>
+                            </volist>
+                        </tbody>
+                    </table>
+                    <div class="page">
+                        <#$page#>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    //发送通知
+    function send(uid){
+        location.href = "__MODULE__/Notices/sendnotice?uid="+uid;
+    }
+    //账号冻结
+    function dongjie(uid){
+        layer.confirm('确认冻结该用户', {icon: 3, title: '提示'},function(index){
+            location.href = "__URL__/dongjie?id="+uid;
+            layer.close(index);
+        })
+    }
+</script>
+<script>
+    // 搜索
+    $("#searchbtn").click(function(){
+        var account = $("#account").val();
+        var status = $(":selected").val();
+        console.log(status);
+        location.href="__URL__/userlist?account="+account+"&status="+status;
+    })
+</script>
+</html>

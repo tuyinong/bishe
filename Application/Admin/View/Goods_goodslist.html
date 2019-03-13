@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>上架商品列表</title>
+    <include file="Pub:style"/>
+</head>
+<body>
+    <include file="Pub:nav"/>
+    <div class="body">
+        <div class="box">
+            <div class="rowbox">
+                <div class="title">
+                    您目前所在的位置 > 商品管理 > 已上架的商品列表
+                </div>
+            </div>
+            <div class="rowbox">
+                <div class="col-xs-12">
+                    <form action="" class="form-inline">
+                        <!-- 搜索条件 -->
+                        <label for="name">商品名称:</label>
+                        <input type="text" name="name" id="name" placeholder="输入要搜索的商品名称" value="<#$map.g_name#>" class="form-control">
+                        <label for="account">商品所有者:</label>
+                        <input type="text" name="account" id="account" placeholder="输入要搜索的用户账号" value="<#$map.u_account#>" class="form-control">
+                        <a class="mybtn btn btn-primary" id="searchbtn">搜&nbsp;&nbsp;索</a>
+                    </form>
+                </div>
+            </div>
+            <div class="rowbox">
+                <div class="tablebox">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>商品名称</th>
+                                <th>所有者账号</th>
+                                <th>商品价格</th>
+                                <th>上架时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <volist name="goodslist" id="vo">
+                                <tr>
+                                    <td><#$vo.g_name#></td>
+                                    <td><#$vo.u_account#></td>
+                                    <td><#$vo.g_price#></td>
+                                    <td><#$vo.g_time#></td>
+                                    <td>
+                                        <button class="btn btn-primary">查看信息</button>
+                                        <button class="btn btn-danger" onclick="goodsno('<#$vo.id#>')">审核异常</button>
+                                    </td>
+                                </tr>
+                            </volist>
+                        </tbody>
+                    </table>
+                    <div class="page">
+                        <#$page#>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // 搜索信息
+    $("#searchbtn").click(function () {
+        var name = $("#name").val();
+        var account = $("#account").val();
+
+        location.href = "__URL__/index?name=" + name + "&account=" + account;
+    })
+</script>
+<script>
+    // 审核不通过
+    function goodsno(gid) {
+        data = { "gid": gid, "type": 2 };
+        // console.log(JSON.stringify(data));
+        $.ajax({
+            url: "<#:U('Goods/goodspass')#>",
+            async: true,
+            type: 'POST',
+            data: "data=" + JSON.stringify(data),
+            dataType: 'text',
+            success: function (res) {
+                if (res == 1) {
+                    window.location.reload();
+                } else {
+                    layer.msg('操作已成功，请勿重复操作');
+                }
+                console.log(res)
+            }, error: function (res) {
+                console.log('cuowu');
+            }
+        })
+    }
+</script>
+</html>

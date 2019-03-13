@@ -1,0 +1,20 @@
+[ 2018-12-25T09:14:25+08:00 ] 127.0.0.1 /TYN/tyn/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025152s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.064866s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.064899s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021422s ]
+

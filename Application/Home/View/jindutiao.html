@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="loading">
+        <img src="" alt="">
+        <b></b>
+    </div>
+</body>
+<script>
+    $(function(){
+        var oImg = $("img");
+        var num = 0;
+        oImg.each(function (i) {
+            var cImg = new Image();
+            cImg.onload = null;
+            cImg.onload = function () {
+                num++;
+                $('.loading b').html(parseInt(num / $('img').length * 100) + '%');
+                if (num >= $("img").length) {
+                    $('.loading').fadeOut();
+                }
+            }
+            cImg.src = oImg[i].src;
+        });
+    });
+</script>
+</html>

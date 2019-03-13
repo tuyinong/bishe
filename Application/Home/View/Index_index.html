@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <include file="Pub:Style" />
+    <style>
+        .changelist {
+            height: 75px;
+            border: 1px solid #dcdcdc;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .goodslist {
+            margin-top: 10px;
+            height: 270px;
+            border: 1px solid #dcdcdc;
+            border-radius: 10px;
+        }
+        .goodslist .img{
+            width: 100%;
+            height: 180px;
+            border-bottom: 1px solid;
+        }
+        .goodslist .info{
+            width: 100%;
+            height: 69px;
+            padding: 0 4px;
+        }
+        .goodslist .info_top{
+            width: 100%;
+            height: 35px;
+            line-height: 18px;
+            font-weight: 700;
+            overflow: hidden;
+            /* 超出的文字用省略号 */
+            text-overflow: ellipsis;
+            /* 作为单行伸缩盒子模型显示 */
+            display: -webkit-box;
+            /* 盒子的子元素排列方式 */
+            -webkit-box-orient: vertical;
+            /* 显示行 */
+            -webkit-line-clamp: 2;
+        }
+        .goodslist .info_mid::before{
+            content: "￥";
+            font-size: 12px;
+        }
+        .goodslist .info_mid{
+            width:100%;
+            height: 18px;
+            color: red;
+            border-bottom: 1px solid #dfdfdf;
+        }
+        .goodslist .info_bottom{
+            width: 100%;
+            height: 29px;
+            font-size: 12px;
+            font-weight: 700;
+            margin: 5px 0;
+        }
+        .goodslist .info_bottom>img{
+            width: 24px;
+            height: 24px;
+            margin: 0 5px;
+        }
+        .con_footer{
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <include file="Pub:head"/>
+    <include file="Pub:search" />
+    <div class="container">
+        <div class="jumbotron" style="margin-bottom:0">
+            <div id="myCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide="1"></li>
+                    <li data-target="#myCarousel" data-slide="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="__PUBLIC__/img/zuoye1.png" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="__PUBLIC__/img/zuoye1.png" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="__PUBLIC__/img/zuoye1.png" alt="First slide">
+                    </div>
+                </div>
+                <a href="#myCarousel" class="carousel-control left" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                </a>
+                <a href="#myCarousel" class="carousel-control right" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-left:0;margin-right:0;">
+            <div class="col-xs-3">
+                <div class="changelist">同城商品</div>
+            </div>
+            <div class="col-xs-3">
+                <div class="changelist">我的积分</div>
+            </div>
+            <div class="col-xs-3">
+                <div class="changelist">热卖商品</div>
+            </div>
+            <div class="col-xs-3">
+                <div class="changelist">商品分类</div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-bottom:75px;">
+        <volist name="goodslist" id="vo">
+            <div class="col-xs-6">
+                <div class="goodslist" onclick="todetails(<#$vo.id#>)">
+                    <!-- <input type="hidden" name="gid" value="<#$vo.id#>" id="gid"> -->
+                    <div class="img"></div>
+                    <div class="info">
+                        <div class="info_top">
+                            <#$vo.g_name#>
+                        </div>
+                        <div class="info_mid">
+                            <#$vo.g_price#>
+                        </div>
+                        <div class="info_bottom">
+                            <img src="__PUBLIC__/img/zuoye1.png" alt=""> <#$vo.u_nickname#>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </volist>
+        <div class="con_footer col-xs-12">
+            到底了
+        </div>
+    </div>
+    <include file="Pub:footer" />
+</body>
+<script>
+    // 点击商品跳转到详情页
+    function todetails(gid){
+        // console.log(gid);
+        document.location.href="__MODULE__/Goods/details?gid="+gid;
+    }
+</script>
+</html>

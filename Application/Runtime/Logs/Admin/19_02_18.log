@@ -1,0 +1,276 @@
+[ 2019-02-18T17:53:42+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+SQL: SHOW COLUMNS FROM `tyn_admins` [ RunTime:0.0308s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001757s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001798s ]
+
+[ 2019-02-18T17:53:45+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026393s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000466s ]
+
+[ 2019-02-18T17:53:54+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001297s ]
+SQL: SHOW COLUMNS FROM `tyn_admins` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `tyn_admins` WHERE `a_account` = 'xiaokeai' AND `a_pwd` = '123456' LIMIT 1   [ RunTime:0.0121s ]
+
+[ 2019-02-18T17:53:55+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+SQL: SHOW COLUMNS FROM `tyn_admins` [ RunTime:0.0212s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] session_start(): A session had already been started - ignoring D:\xampp\htdocs\TYN\tyn\Application\Runtime\Cache\Admin\6fedbbe541e195344bf1450076482852.php 第 366 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001784s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001825s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003799s ]
+
+[ 2019-02-18T17:53:57+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Admin/Users/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `tyn_users` [ RunTime:0.0055s ]
+NOTIC: [8] Undefined index: status D:\xampp\htdocs\TYN\tyn\Application\Admin\Controller\UsersController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `tyn_users` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_users` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0285s ]
+SQL: SELECT * FROM `tyn_users` WHERE ( 1=1 ) ORDER BY u_time desc LIMIT 0,12   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] session_start(): A session had already been started - ignoring D:\xampp\htdocs\TYN\tyn\Application\Runtime\Cache\Admin\4c992d20c87047d0ff476120c959c99a.php 第 342 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035918s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001762s ]
+
+[ 2019-02-18T17:53:59+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Admin/Users/erruserlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `tyn_users` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `tyn_users` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_users` WHERE ( 1=1 and u_state=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tyn_users` WHERE ( 1=1 and u_state=0 ) ORDER BY u_time desc LIMIT 0,12   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] session_start(): A session had already been started - ignoring D:\xampp\htdocs\TYN\tyn\Application\Runtime\Cache\Admin\ff67ca2480703e47a205070a4f7f0353.php 第 342 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008814s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2019-02-18T17:54:05+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Admin/Goods/goodslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tyn_goods g left join tyn_users u on g.from_id=u.id  WHERE ( g.g_state=1 ) ORDER BY g.g_time LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0039s ]
+SQL: SELECT g.*,u.u_account,u.u_nickname FROM tyn_goods g left join tyn_users u on g.from_id=u.id  WHERE ( g.g_state=1 ) ORDER BY g.g_time LIMIT 0,12   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] session_start(): A session had already been started - ignoring D:\xampp\htdocs\TYN\tyn\Application\Runtime\Cache\Admin\00876a895a048eec5c7c0bdb0e5467b3.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003841s ]
+
+[ 2019-02-18T17:54:07+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Admin/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tyn_goods g left join tyn_users u on g.from_id=u.id  WHERE ( g.g_state=0 ) ORDER BY g.g_time LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0044s ]
+SQL: SELECT g.*,u.u_account,u.u_nickname FROM tyn_goods g left join tyn_users u on g.from_id=u.id  WHERE ( g.g_state=0 ) ORDER BY g.g_time LIMIT 0,12   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] session_start(): A session had already been started - ignoring D:\xampp\htdocs\TYN\tyn\Application\Runtime\Cache\Admin\646b5e0c196e98fb200608969e8376f0.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2019-02-18T17:54:08+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Admin/Goods/errgoodslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tyn_goods g left join tyn_users u on g.from_id=u.id  WHERE ( g.g_state=2 ) ORDER BY g.g_time LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0035s ]
+SQL: SELECT g.*,u.u_account,u.u_nickname FROM tyn_goods g left join tyn_users u on g.from_id=u.id  WHERE ( g.g_state=2 ) ORDER BY g.g_time LIMIT 0,12   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] session_start(): A session had already been started - ignoring D:\xampp\htdocs\TYN\tyn\Application\Runtime\Cache\Admin\df798ce116af6d2b8efb089176339431.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000662s ]
+
+[ 2019-02-18T17:54:10+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Admin/Notices/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0272s ]
+SQL: select n.n_time,n.n_title,n.n_content,n.n_type,n.n_sendtime,u.u_account from tyn_notices as n left join tyn_users as u on n.n_userid=u.id order by n.n_time desc [ RunTime:0.0007s ]
+NOTIC: [8] A non well formed numeric value encountered D:\xampp\htdocs\TYN\tyn\Application\Admin\Controller\NoticesController.class.php 第 15 行.
+NOTIC: [8] A non well formed numeric value encountered D:\xampp\htdocs\TYN\tyn\Application\Admin\Controller\NoticesController.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] session_start(): A session had already been started - ignoring D:\xampp\htdocs\TYN\tyn\Application\Runtime\Cache\Admin\1f894a95f0afd9fb7b32d7df1bd3a00c.php 第 341 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\TYN\tyn\Application\Runtime\Cache\Admin\1f894a95f0afd9fb7b32d7df1bd3a00c.php 第 435 行.
+NOTIC: [8] Undefined variable: Array D:\xampp\htdocs\TYN\tyn\Application\Runtime\Cache\Admin\1f894a95f0afd9fb7b32d7df1bd3a00c.php 第 435 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\TYN\tyn\Application\Runtime\Cache\Admin\1f894a95f0afd9fb7b32d7df1bd3a00c.php 第 443 行.
+NOTIC: [8] Undefined variable: Array D:\xampp\htdocs\TYN\tyn\Application\Runtime\Cache\Admin\1f894a95f0afd9fb7b32d7df1bd3a00c.php 第 443 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2019-02-18T17:54:13+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `tyn_admins` [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] session_start(): A session had already been started - ignoring D:\xampp\htdocs\TYN\tyn\Application\Runtime\Cache\Admin\6fedbbe541e195344bf1450076482852.php 第 366 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008161s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2019-02-18T17:54:17+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Admin/Users/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `tyn_users` [ RunTime:0.0064s ]
+NOTIC: [8] Undefined index: status D:\xampp\htdocs\TYN\tyn\Application\Admin\Controller\UsersController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `tyn_users` [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_users` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tyn_users` WHERE ( 1=1 ) ORDER BY u_time desc LIMIT 0,12   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] session_start(): A session had already been started - ignoring D:\xampp\htdocs\TYN\tyn\Application\Runtime\Cache\Admin\4c992d20c87047d0ff476120c959c99a.php 第 342 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+

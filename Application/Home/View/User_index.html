@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+    <include file="Pub:style" />
+    <style>
+        body{
+            background-color: #eeeeee;
+        }
+        .big{
+            width: 100%;
+            height: 250px;
+            position: relative;
+            background-color: #ffec13;
+            border-bottom-left-radius: 4%;
+            border-bottom-right-radius: 4%;
+        }
+        .big .touxiang{
+            width: 100px;
+            height: 100px;
+            border: 1px solid white;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .touxiang img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+        <div class="touxiang">
+            <img src="__PUBLIC__/img/toxiang.png" alt="">
+        </div>
+    </div>
+    <div class="container" style="position:relative;margin-top:-90px;">
+        <div class="panel">
+            <div class="panel-heading">
+                卖在XX
+            </div>
+            <div class="panel-body">
+                <a class="col-xs-4" href="__ROOT__/fabu">
+                    我的发布
+                </a>
+                <a class="col-xs-4">
+                    我的卖出
+                </a>
+                <a class="col-xs-4">
+                    收到评价
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="panel">
+            <div class="panel-heading">
+                买在XX
+            </div>
+            <div class="panel-body">
+                <div class="col-xs-4">
+                    我买到的
+                </div>
+                <div class="col-xs-4">
+                    我收藏的
+                </div>
+                <div class="col-xs-4">
+                    我评价的
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="panel">
+            <div class="panel-heading">
+                其他工具
+            </div>
+            <div class="panel-body">
+                <div class="col-xs-3">
+                    个人信息
+                </div>
+                <div class="col-xs-3">
+                    我的积分
+                </div>
+                <div class="col-xs-3">
+                    安全中心
+                </div>
+                <div class="col-xs-3">
+                    设置
+                </div>
+            </div>
+        </div>
+    </div>
+    <include file="Pub:footer" />
+</body>
+</html>

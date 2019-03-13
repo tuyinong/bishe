@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户列表</title>
+    <include file="Pub:style" />
+</head>
+
+<body>
+    <include file="Pub:nav" />
+    <div class="body">
+        <div class="box">
+            <div class="rowbox">
+                <div class="title">
+                    您目前所在的位置 > 用户管理 > 异常用户列表
+                </div>
+            </div>
+            <div class="rowbox">
+               <div class="col-xs-12">
+                    <form action="" class="form-inline">
+                        <!-- 搜索条件 -->
+                        <label for="account">用户账号:</label>
+                        <input type="text" name="account" id="account" placeholder="输入要搜索的用户账号" value="<#$map.account#>" class="form-control">
+                         
+                        <button class="mybtn btn btn-primary">搜&nbsp;&nbsp;索</button>       
+                    </form>
+               </div>
+            </div>
+            <div class="rowbox">
+                <div class="tablebox">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>用户账号</th>
+                                <th>用户上次登录时间</th>
+                                <th>所在省</th>
+                                <th>所在市</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <volist name="userlist" id="vo">
+                               <tr>
+                                    <td><#$vo.u_account#></td>
+                                    <td><#$vo.u_uptime#></td>
+                                    <td><#$vo.u_provice#></td>
+                                    <td><#$vo.u_city#></td>
+                                    <td>
+                                        <button id="userinfobtn" class="btn btn-primary" onclick="send('<#$vo.id#>')">发送通知</button>
+                                        <button id="accfreebtn" class="btn btn-primary" onclick="jiedong('<#$vo.id#>')">账号冻结中</button>
+                                    </td>
+                               </tr>
+                            </volist>
+                        </tbody>
+                    </table>
+                    <div class="page">
+                        <#$page#>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    //发送通知
+    function send(uid) {
+        location.href = "__MODULE__/Notices/sendnotice?uid=" + uid;
+    }
+    //账号解冻
+    function jiedong(uid) {
+        layer.confirm('是否解冻该用户', { icon: 4, title: '提示' }, function (index) {
+            location.href = "__URL__/jiedong?id=" + uid;
+            layer.close(index);
+        })
+    }
+</script>
+</html>

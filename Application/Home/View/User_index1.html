@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+    <include file="Pub:style" />
+    <style>
+        .big{
+            border: 1px solid black;
+            width: 100%;
+            height: 250px;
+            position: relative;
+        }
+        .tou{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -50px;
+            margin-top: -50px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .tou img{
+            border: 50%;
+            width: 100%;
+        }
+        .list{
+            width:100%;
+            height:50px;
+            border-bottom: 1px solid #dcdcdc;
+        }
+        .list span{
+            line-height: 50px;
+            margin: 0 10px;
+        }
+        .list .span1{
+            float: left;
+        }
+        .list .span2{
+            float: right;
+        }
+        .list div{
+            width: 20px;
+            height: 20px;
+            background-color: #dcdcdc;
+            border-radius:50%;
+            float: right;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+        <div id="touxiang" class="tou">
+            <img src="__PUBLIC__/img/toxiang.png" alt="">
+        </div>
+    </div>
+    <div style="width:100%; height:5px;background-color:#dcdcdc;"></div>
+    <div class="list">
+        <span class="span1">我发布的</span>
+        <span class="span2">&gt;</span>
+        <div></div>
+    </div>
+    <div class="list">
+        <span class="span1">我卖出的</span>
+        <span class="span2">&gt;</span>
+        <div></div>
+    </div>
+    <div class="list">
+        <span class="span1">我买到的</span>
+        <span class="span2">&gt;</span>
+        <div></div>
+    </div>
+    <div class="list">
+        <span class="span1">我收藏的</span>
+        <span class="span2">&gt;</span>
+        <div></div>
+    </div>
+    <div class="list">
+        <span class="span1">我的收货地址</span>
+        <span class="span2">&gt;</span>
+        <div></div>
+    </div>
+    <div class="list">
+        <span class="span1">我的积分</span>
+        <span class="span2">&gt;</span>
+        <div></div>
+    </div>
+    <div class="list">
+        <span class="span1">关于二手商品交易平台</span>
+        <span class="span2">&gt;</span>
+    </div>
+    <include file="Pub:footer"/>
+</body>
+<script>
+    $("#touxiang").click(function(){
+        location.href="__URL__/personal";
+    })
+</script>
+</html>

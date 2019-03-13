@@ -1,0 +1,35 @@
+[ 2019-03-05T09:18:04+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000532s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004012s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003658s ]
+SQL: SHOW COLUMNS FROM `tyn_admins` [ RunTime:0.0321s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000534s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001384s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003150s ]
+
+[ 2019-03-05T09:18:07+08:00 ] 127.0.0.1 /TYN/tyn/index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000208s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002089s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000751s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001972s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002069s ]
+

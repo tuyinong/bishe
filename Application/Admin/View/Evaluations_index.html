@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>评价列表</title>
+    <include file="Pub:style"/>
+</head>
+<body>
+    <include file="Pub:nav"/>
+    <div class="body">
+        <div class="box">
+            <div class="rowbox">
+                <div class="title">
+                    您目前所在的位置 > 评价管理 > 评价列表
+                </div>
+            </div>
+            <div class="rowbox">
+                <div class="tablebox">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>评价时间</th>
+                                <th>商品ID</th>
+                                <th>评价等级</th>
+                                <th>评价内容</th>
+                                <th>评价用户</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <volist name="evaluationlist" id="vo">
+                                <tr>
+                                    <td><#$vo.e_time#></td>
+                                    <td><#$vo.e_goodsid#></td>
+                                    <td><#$vo.e_level#></td>
+                                    <td><#$vo.e_info#></td>
+                                    <td><#$vo.u_nickname#></td>
+                                    <td>
+                                        <button class="btn btn-primary" id="">查看交易详情</button>
+                                    </td>
+                                </tr>
+                            </volist>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

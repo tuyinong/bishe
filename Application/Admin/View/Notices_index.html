@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>消息列表</title>
+    <include file="Pub:style"/>
+</head>
+<body>
+    <include file="Pub:nav"/>
+    <div class="body">
+        <div class="box">
+            <div class="rowbox">
+                <div class="title">
+                    您目前所在的位置 > 公告管理 > 消息列表
+                </div>
+            </div>
+            <div class="rowbox">
+                <div class="tablebox">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>消息状态</th>
+                                <th>发布日期</th>
+                                <th>消息主题</th>
+                                <th>消息内容</th>
+                                <th>消息类型或消息对象</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <volist name="noticelist" id="vo">
+                                <tr>
+                                    <td>
+                                        <eq name="$vo.n_state" value="1">
+                                            已发送
+                                            <else/> <p style="color:red">消息未发送</p>
+                                        </eq>
+                                    </td>
+                                    <td><#$vo.n_sendtime#></td>
+                                    <td><#$vo.n_title#></td>
+                                    <td><#$vo.n_content#></td>
+                                    <td><#$vo.object#></td>
+                                    <td>
+                                        <eq name="$vo.n_state" value="1">
+                                            <button class="btn btn-primary">消息详情</button>
+                                            <else/><button class="btn btn-primary">重新编辑</button>
+                                            <button class="btn btn-danger">取消发送</button>
+                                        </eq>
+                                    </td>
+                                </tr>
+                            </volist>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
