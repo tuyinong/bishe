@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>登录页</title>
     <!-- css样式 -->
-<link rel="stylesheet" type="text/css" href="http://127.0.0.1/TYN/tyn/Application/Public/css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="/TYN/tyn/Application/Public/css/infolist.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
 <!-- js操作 -->
-<script src="http://127.0.0.1/TYN/tyn/Application/Public/js/jquery.js"></script>
-<script src="http://127.0.0.1/TYN/tyn/Application/Public/js/bootstrap.js"></script>
-<script src="/TYN/tyn/Application/Public/layer/layer.js"></script>
+<script src="/Application/Public/js/jquery.js"></script>
+<script src="/Application/Public/js/bootstrap.js"></script>
+<script src="/Application/Public/layer/layer.js"></script>
 
     <style>
         body{
@@ -126,7 +126,7 @@
                     if (res == 1) {
                         console.log('登录成功');
                         
-                        location.href="/TYN/tyn/index.php/Home/Index/index";
+                        location.href="/index.php/Home/Index/index";
                     }
                     if (res == 2) {
                         console.log('登录失败');

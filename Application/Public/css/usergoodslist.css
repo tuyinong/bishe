@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.usergoodsbox-top {
+    height: 110px;
+}
+
+.usergoodsbox-top>.img {
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    overflow: hidden;
+    background-color: red;
+}
+
+.img img {
+    height: 100%;
+}
+
+.usergoodsbox-top .text {
+    margin-left: 110px;
+    line-height: 25px;
+    padding-top: 1px; 
+}
+
+.usergoodsbox-top>.text>h3 {
+    margin-top:10px;
+    word-break: keep-all;/* 不换行 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;/*...*/
+}
+
+.usergoodsbox-footer {
+    border-top: 1px solid #d0d0d0;
+    height: 40px;
+}
+
+.usergoodsbox-footer button {
+    float: right;
+    height: 30px;
+    margin: 5px;
+    padding: 0 10px;
+    background-color: white;
+    border: 1px solid #d0d0d0;
+}

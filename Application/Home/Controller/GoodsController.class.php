@@ -64,4 +64,22 @@ class GoodsController extends Controller{
     public function buy(){
         $this->display();
     }
+    // 用户界面 我的发布
+    public function usergoodslist(){
+        // $uid = $_SESSION['uid'];
+        $uid = 1;
+        $goods = M('goods');
+        $res = $goods->where("from_id=".$uid)->select();
+        foreach ($res as $key => $val) {
+            if($val['g_state']==0){
+                $res[$key]['g_state']="审核过程中";
+            }else if($val['g_state']==1){
+                $res[$key]['g_state']="发布中";
+            }else if($val['g_state']==2){
+                $res[$key]['g_state']="审核失败";
+            }
+        }
+        $this->assign('list',$res);
+        $this->display();
+    }
 }

@@ -97,8 +97,8 @@
                     console.log(res)
                     if (res == 1) {
                         console.log('登录成功');
-                        
-                        location.href="__MODULE__/Index/index";
+                        // location.href="__MODULE__/Index/index";
+                        history.go(-1);
                     }
                     if (res == 2) {
                         console.log('登录失败');

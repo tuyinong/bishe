@@ -15,14 +15,14 @@
                 $where['u_pwd']=$pwd=$data[1]['value'];
                 $user=M('users');
                 $res=$user->where($where)->find();
-                // dump($where);
-                // dump($res);
+                $id = intval($res['id']);
+                $name = $res['u_nickname'];
                 if($res){
                     $time = date('Y-m-d H:i:s',time());
-                    $res = $user->where("id = ".intval($res['id']))->save(array("u_uptime"=>$time));                   
+                    $res = $user->where("id = ".intval($res['id']))->save(array("u_uptime"=>$time));                  
                    if($res){
-                        $_SESSION['uid']=intval($res['id']);
-                        $_SESSION['uname']=$res['u_nickname'];
+                        $_SESSION['uid']=$id;
+                        $_SESSION['uname']=$name;
                         $logflag=1;
                         $this->ajaxReturn($logflag);
                    }

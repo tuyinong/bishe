@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我买到的商品</title>
+    <include file="Pub:style" />
+</head>
+<body>
+    <volist name="list" id="vo">
+        <div class="row" style="margin:5px;">
+            <div class="col-xs-12" style="box-shadow: darkgrey 1px 2px 5px 0px;">
+                <div>
+                    <div class="usergoodsbox-top">
+                        <div class="img"></div>
+                        <div class="text">
+                            <h3><#$vo.g_name#></h3>
+                            <p>￥&nbsp;<#$vo.r_price#></p>
+                            <p><#$vo.r_state#></p>
+                        </div>
+                    </div>
+                    <div class="usergoodsbox-footer">
+                        <button>...</button>
+                        <button onclick="lookeva('<#$vo.id#>')">查看评价</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </volist>
+</body>
+</html>

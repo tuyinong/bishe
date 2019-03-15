@@ -8,11 +8,11 @@
     <!-- css样式 -->
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/usergoodslist.css">
 <!-- js操作 -->
 <script src="/Application/Public/js/jquery.js"></script>
 <script src="/Application/Public/js/bootstrap.js"></script>
 <script src="/Application/Public/layer/layer.js"></script>
-
     <style>
         body{
             background-color: #eeeeee;
@@ -52,10 +52,10 @@
                 卖在XX
             </div>
             <div class="panel-body">
-                <a class="col-xs-4" href="<#U('User/fabu')#>">
+                <a class="col-xs-4" href="/index.php/Home/Goods/usergoodslist">
                     我的发布
                 </a>
-                <a class="col-xs-4">
+                <a class="col-xs-4" href="/index.php/Home/Record/index">
                     我的卖出
                 </a>
                 <a class="col-xs-4">
@@ -70,9 +70,9 @@
                 买在XX
             </div>
             <div class="panel-body">
-                <div class="col-xs-4">
+                <a class="col-xs-4" href="/index.php/Home/Record/buy">
                     我买到的
-                </div>
+                </a>
                 <div class="col-xs-4">
                     我收藏的
                 </div>
@@ -113,11 +113,11 @@
     <!-- css样式 -->
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/usergoodslist.css">
 <!-- js操作 -->
 <script src="/Application/Public/js/jquery.js"></script>
 <script src="/Application/Public/js/bootstrap.js"></script>
 <script src="/Application/Public/layer/layer.js"></script>
-
     <style>
         .footer{
             position: fixed;

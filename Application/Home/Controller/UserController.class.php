@@ -4,20 +4,14 @@
 
  class UserController extends Controller{
     public function index(){
-        $this->display();
+        if($_SESSION['uid']){
+            $this->display();
+        }else{
+            $this->error('用户尚未登录',U('Login/index'));
+        }
+        
     }
     public function personal(){
-        $this->display();
-    }
-
-    // 我的发布
-    public function fabu(){
-        // $uid = $_SESSION['uid'];
-        $uid = 1;
-        $goods = M('goods');
-        $res = $gooods->where("from_id=".$uid)->select();
-        dump($res);
-        $this->assign('list',$res);
         $this->display();
     }
  } 
