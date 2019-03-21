@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>发送通知信息</title>
     <!-- css样式 -->
-<link rel="stylesheet" type="text/css" href="http://127.0.0.1/TYN/tyn/Application/Public/css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="/TYN/tyn/Application/Public/css/infolist.css">
-<link rel="stylesheet" type="text/css" href="/TYN/tyn/Application/Public/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap-datetimepicker.min.css">
 <!-- js操作 -->
-<script src="http://127.0.0.1/TYN/tyn/Application/Public/js/jquery.js"></script>
-<script src="http://127.0.0.1/TYN/tyn/Application/Public/js/bootstrap.js"></script>
-<script src="/TYN/tyn/Application/Public/layer/layer.js"></script>
-<script src="/TYN/tyn/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
-<script src="/TYN/tyn/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<script src="/Application/Public/js/jquery.js"></script>
+<script src="/Application/Public/js/bootstrap.js"></script>
+<script src="/Application/Public/layer/layer.js"></script>
+<script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<!-- 表格 -->
 <style>
     .body{
         width: 100%;
@@ -27,7 +28,7 @@
     }
     @font-face {
         font-family: myttf;
-        src: url("/TYN/tyn/Application/Public/fonts/Kim's GirlType.ttf");
+        src: url("/Application/Public/fonts/Kim's GirlType.ttf");
     }
     .rowbox {
         height: 100%;
@@ -62,9 +63,56 @@
         text-align: center;
     }
     .tablebox tr>td {
-        vertical-align: middle;
         font-size: 20px;
         text-align: center;
+    }
+</style>
+
+<!-- 分页 -->
+<style>
+    .page{
+        height: 30px;
+    }
+    .page>div{
+        float: right;
+    }
+    .page span {
+        font-size: 18px;
+        padding: 5px 10px;
+        cursor: pointer;
+        border: 1px solid #dfdfdf;
+        border-radius: 3px;
+    }
+    .page span:hover {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    .page span::after {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+    .page a {
+        font-size: 18px;
+        padding: 5px 10px;
+        text-decoration: none;
+
+    }
+    .page a:hover,
+    .page a:active,
+    .page a:visited {
+        font-size: 18px;
+        padding: 5px 10px;
+        margin: 0;
+        line-height: 100%;
+        text-decoration: none;
+        color: #acacaf;
+    }
+    .page a::after {
+        font-size: 18px;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #acacaf;
     }
 </style>
     <style>
@@ -83,15 +131,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>导航栏控件</title>
     <!-- css样式 -->
-<link rel="stylesheet" type="text/css" href="http://127.0.0.1/TYN/tyn/Application/Public/css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="/TYN/tyn/Application/Public/css/infolist.css">
-<link rel="stylesheet" type="text/css" href="/TYN/tyn/Application/Public/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap-datetimepicker.min.css">
 <!-- js操作 -->
-<script src="http://127.0.0.1/TYN/tyn/Application/Public/js/jquery.js"></script>
-<script src="http://127.0.0.1/TYN/tyn/Application/Public/js/bootstrap.js"></script>
-<script src="/TYN/tyn/Application/Public/layer/layer.js"></script>
-<script src="/TYN/tyn/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
-<script src="/TYN/tyn/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<script src="/Application/Public/js/jquery.js"></script>
+<script src="/Application/Public/js/bootstrap.js"></script>
+<script src="/Application/Public/layer/layer.js"></script>
+<script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<!-- 表格 -->
 <style>
     .body{
         width: 100%;
@@ -104,7 +153,7 @@
     }
     @font-face {
         font-family: myttf;
-        src: url("/TYN/tyn/Application/Public/fonts/Kim's GirlType.ttf");
+        src: url("/Application/Public/fonts/Kim's GirlType.ttf");
     }
     .rowbox {
         height: 100%;
@@ -139,9 +188,56 @@
         text-align: center;
     }
     .tablebox tr>td {
-        vertical-align: middle;
         font-size: 20px;
         text-align: center;
+    }
+</style>
+
+<!-- 分页 -->
+<style>
+    .page{
+        height: 30px;
+    }
+    .page>div{
+        float: right;
+    }
+    .page span {
+        font-size: 18px;
+        padding: 5px 10px;
+        cursor: pointer;
+        border: 1px solid #dfdfdf;
+        border-radius: 3px;
+    }
+    .page span:hover {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    .page span::after {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+    .page a {
+        font-size: 18px;
+        padding: 5px 10px;
+        text-decoration: none;
+
+    }
+    .page a:hover,
+    .page a:active,
+    .page a:visited {
+        font-size: 18px;
+        padding: 5px 10px;
+        margin: 0;
+        line-height: 100%;
+        text-decoration: none;
+        color: #acacaf;
+    }
+    .page a::after {
+        font-size: 18px;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #acacaf;
     }
 </style>
     <style>
@@ -184,7 +280,7 @@
             left:15px;
             margin-top: -35px;
             border: 1px solid;
-            /* background-image: url("/TYN/tyn/Application/Public/img/toxiang.png"); */
+            /* background-image: url("/Application/Public/img/toxiang.png"); */
             overflow: hidden;
         }
         .txbox img{
@@ -216,10 +312,14 @@
             border-top: 1px solid #16181d;
             cursor: pointer;
         }
-        .listbox a,a:active,a:visited{
+        .listbox a,
+        .listbox a:active,
+        .listbox a:visited{
             margin-left: 15px;
             line-height: 36px;
             text-decoration: none;
+        }
+        a{
             color: #acacaf;
         }
         a:hover{
@@ -246,12 +346,12 @@
 <body>
     <?php session_start(); ?>
     <div class="top">
-        <a href="<?php echo U('Login/logout');?>"><img id="logout" src="/TYN/tyn/Application/Public/img/logout.png" alt="" data-toggle="tooltip" title="退出"></a>
+        <a href="<?php echo U('Login/logout');?>"><img id="logout" src="/Application/Public/img/logout.png" alt="" data-toggle="tooltip" title="退出"></a>
     </div>
     <div class="left">
         <div class="tx-info">
             <div class="txbox">
-                <img src="/TYN/tyn/Application/Public/img/toxiang.png" alt="">
+                <img src="/Application/Public/img/toxiang.png" alt="">
             </div>
             <div class="namebox">
                 <span>管理员：<?php echo ($_SESSION['ainfo']['a_nickname']); ?></span>
@@ -273,7 +373,7 @@
                     <ul>
                         <li><a href="<?php echo U('Goods/index');?>">商品审核</a></li>
                         <li><a href="<?php echo U('Goods/goodslist');?>">上架商品</a></li>
-                        <li><a href="">查询商品</a></li>
+                        <li><a href="<?php echo U('Goods/querygoods');?>">查询商品</a></li>
                         <li><a href="<?php echo U('Goods/errgoodslist');?>">异常商品</a></li>
                     </ul>
                 </li>
@@ -291,7 +391,16 @@
                         <li><a href="">查询评价信息</a></li>
                     </ul>
                 </li>
-                <li><a href="" style="padding:0;">管理员列表</a></li>
+                <li>
+                    <a>管理员信息</a>
+                    <ul>
+                        <li><a href="<?php echo U('Admins/index');?>" style="padding:0;">管理员列表</a></li>
+                        <li><a href="<?php echo U('Admins/add');?>" style="padding:0;">添加管理员</a></li>
+                        <li><a href="<?php echo U('Admins/info');?>" style="padding:0;">管理员信息</a></li>
+                        <!-- <li><a href="">管理员信息</a></li> -->
+                    </ul>
+                </li>
+                <!-- <li><a href="" style="padding:0;">管理员列表</a></li> -->
             </ul>
         </div>
     </div>
@@ -306,7 +415,7 @@
     $("li").removeClass("on");
     var url = window.location.pathname;
     for (var i = 0; i < $("li a").length; i++) {
-        if ($("li a").eq(i).attr('href') == url) {
+        if (($("li a").eq(i).attr('href') == url)||($("li a").eq(i).attr('href') == url+".html")) {
             var index = i;
             $("li a").eq(index).parent().addClass("on");
             $("li a").eq(index).parent().show();

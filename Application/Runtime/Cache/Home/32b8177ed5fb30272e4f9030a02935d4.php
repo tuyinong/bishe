@@ -22,7 +22,7 @@
                         <div class="img"></div>
                         <div class="text">
                             <h3><?php echo ($vo["g_name"]); ?></h3>
-                            <p>￥&nbsp;<?php echo ($vo["g_price"]); ?></p>
+                            <p>￥&nbsp;<?php echo ($vo["r_price"]); ?></p>
                             <p><?php echo ($vo["r_state"]); ?></p>
                         </div>
                     </div>
@@ -34,4 +34,9 @@
             </div>
         </div><?php endforeach; endif; else: echo "" ;endif; ?>
 </body>
+<script>
+    function lookeva(rid) {
+        
+    }
+</script>
 </html>

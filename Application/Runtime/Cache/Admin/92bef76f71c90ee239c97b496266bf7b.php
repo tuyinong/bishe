@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>审核商品列表</title>
+    <title>管理员信息</title>
     <!-- css样式 -->
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
@@ -115,6 +115,12 @@
         color: #acacaf;
     }
 </style>
+    <style>
+        .fbox label{
+            font-size: 18px;
+            padding: 5px 10px;
+        }
+    </style>
 </head>
 <body>
     <!DOCTYPE html>
@@ -385,7 +391,16 @@
                         <li><a href="">查询评价信息</a></li>
                     </ul>
                 </li>
-                <li><a href="" style="padding:0;">管理员列表</a></li>
+                <li>
+                    <a>管理员信息</a>
+                    <ul>
+                        <li><a href="<?php echo U('Admins/index');?>" style="padding:0;">管理员列表</a></li>
+                        <li><a href="<?php echo U('Admins/add');?>" style="padding:0;">添加管理员</a></li>
+                        <li><a href="<?php echo U('Admins/info');?>" style="padding:0;">管理员信息</a></li>
+                        <!-- <li><a href="">管理员信息</a></li> -->
+                    </ul>
+                </li>
+                <!-- <li><a href="" style="padding:0;">管理员列表</a></li> -->
             </ul>
         </div>
     </div>
@@ -413,106 +428,88 @@
         <div class="box">
             <div class="rowbox">
                 <div class="title">
-                    您目前所在的位置 > 商品管理 > 待审核商品列表
+                    您目前所在的位置 > 管理员信息 > 管理员信息
                 </div>
             </div>
             <div class="rowbox">
-                <div class="col-xs-12">
-                    <form action="" class="form-inline">
-                        <!-- 搜索条件 -->
-                        <label for="name">商品名称:</label>
-                        <input type="text" name="name" id="name" placeholder="输入要搜索的商品名称" value="<?php echo ($map["g_name"]); ?>" class="form-control">
-                        <label for="account">商品所有者:</label>
-                        <input type="text" name="account" id="account" placeholder="输入要搜索的用户账号" value="<?php echo ($map["u_account"]); ?>" class="form-control">
-                        <a class="mybtn btn btn-primary" id="searchbtn">搜&nbsp;&nbsp;索</a>
+                <div class="fbox">
+                    <form id="adinfo" action="" class="form">
+                        <!-- 管理员ID -->
+                        <div class="form-group row">
+                                <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="account">管理员ID:</label>
+                                <div class="col-xs-8 col-sm-6">
+                                    <input disabled class="form-control" type="text" name="id" id="id" placeholder="请保存输入管理员ID" value="<?php echo ($info["id"]); ?>">
+                                </div>
+                            </div>
+                        <!-- 管理员账号 -->
+                        <div class="form-group row">
+                            <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="account">管理员账号:</label>
+                            <div class="col-xs-8 col-sm-6">
+                                <input disabled class="form-control" type="text" name="a_account" id="account" placeholder="请保存输入管理员账号" value="<?php echo ($info["a_account"]); ?>">
+                            </div>
+                        </div>
+                        <!-- 管理员密码 -->
+                        <div class="form-group row">
+                            <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="pwd">管理员密码:</label>
+                            <div class="col-xs-8 col-sm-6">
+                                <input class="form-control" type="password" name="a_pwd" id="pwd" placeholder="请保存管理员密码" value="<?php echo ($info["a_pwd"]); ?>">
+                            </div>
+                        </div>
+                        <!-- 管理员昵称 -->
+                        <div class="form-group row">
+                            <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="nickname">管理员昵称:</label>
+                            <div class="col-xs-8 col-sm-6">
+                                <input class="form-control" type="text" name="a_nickname" id="nickname" placeholder="请保存管理员昵称" value="<?php echo ($info["a_nickname"]); ?>">
+                            </div>
+                        </div>
+                        <!-- 管理员联系方式 -->
+                        <div class="form-group row">
+                            <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="phone">联系方式:</label>
+                            <div class="col-xs-8 col-sm-6">
+                                <input class="form-control" type="text" name="a_phone" id="phone" placeholder="请保存联系方式" value="<?php echo ($info["a_phone"]); ?>">
+                            </div>
+                        </div>
+                        <!-- 管理员创建时间 -->
+                        <div class="form-group row">
+                                <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="time">创建时间:</label>
+                                <div class="col-xs-8 col-sm-6">
+                                    <input disabled class="form-control" type="text" name="a_time" id="time" placeholder="请保存创建时间" value="<?php echo ($info["a_time"]); ?>">
+                                </div>
+                            </div>
+                        <!-- 按钮 -->
+                        <div class="form-group col-xs-offset-4 col-xs-4">
+                            <button type="button" class="btn btn-primary" onclick="baocun()">确认保存</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="btn btn-info">返&nbsp;&nbsp;&nbsp;回</button>
+                        </div>  
                     </form>
-                </div>
-            </div>
-            <div class="rowbox">
-                <div class="tablebox">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>商品名称</th>
-                                <th>所有者账号</th>
-                                <th>商品价格</th>
-                                <th>上传时间</th>
-                                <th>操作</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php if(is_array($goodslist)): $i = 0; $__LIST__ = $goodslist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                                    <td><?php echo ($vo["g_name"]); ?></td>
-                                    <td><?php echo ($vo["u_account"]); ?></td>
-                                    <td><?php echo ($vo["g_price"]); ?></td>
-                                    <td><?php echo ($vo["g_time"]); ?></td>
-                                    <td>
-                                        <button class="btn btn-primary" onclick="goodsyes('<?php echo ($vo["id"]); ?>')">审核通过</button>
-                                        <button class="btn btn-danger" onclick="goodsno('<?php echo ($vo["id"]); ?>')">审核不通过</button>
-                                    </td>
-                                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                        </tbody>
-                    </table>
-                    <div class="page">
-                        <?php echo ($page); ?>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-<script>
-    // 搜索信息
-    $("#searchbtn").click(function(){
-        var name = $("#name").val();
-        var account = $("#account").val();
 
-        location.href = "/index.php/Admin/Goods/index?name="+name+"&account="+account;
-    })
-</script>
-<script>
-    // 审核通过
-    function goodsyes(gid){
-        // location.href = "/index.php/Admin/Goods/goodspass?gid="+gid;
-        data = {"gid":gid,"type":1};
+<script type="text/javascript">
+    function baocun(){
+        var form_data = $("#adinfo").serializeArray();
+        console.log(form_data)
         $.ajax({
-            url:"<?php echo U('Goods/goodspass');?>",
+            url:"<?php echo U('Admins/info');?>",
             async:true,
-            type:'POST',
-            data: "data="+JSON.stringify(data),
-            dataType:'text',
+            type:'post',
+            data:{data:JSON.stringify(form_data)},
+            dataType:'json',
             success:function(res){
-                if(res == 1){
-                    window.location.reload();
-                }else{
-                    layer.msg('操作已成功，请勿重复操作');
+                console.log(res.code)
+                if(res.code==100){
+                    document.location.reload();
+                }else if(res.code==200){
+                    layer.msg('修改信息失败');
                 }
             },error:function(res){
-                console.log('cuowu');
-            }
-        })
-    }
-    // 审核不通过
-    function goodsno(gid) {
-        data = {"gid":gid,"type":2};
-        // console.log(JSON.stringify(data));
-        $.ajax({
-            url: "<?php echo U('Goods/goodspass');?>",
-            async: true,
-            type: 'POST',
-            data: "data="+JSON.stringify(data),
-            dataType: 'text',
-            success: function (res) {
-                if (res == 1) {
-                    window.location.reload();
-                } else {
-                    layer.msg('操作已成功，请勿重复操作');
-                }
                 console.log(res)
-            }, error: function (res) {
-                console.log('cuowu');
             }
         })
     }
+
 </script>
 </html>

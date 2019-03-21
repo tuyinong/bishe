@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>管理系统入口</title>
     <!-- css样式 -->
-<link rel="stylesheet" type="text/css" href="http://127.0.0.1/TYN/tyn/Application/Public/css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="/TYN/tyn/Application/Public/css/infolist.css">
-<link rel="stylesheet" type="text/css" href="/TYN/tyn/Application/Public/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap-datetimepicker.min.css">
 <!-- js操作 -->
-<script src="http://127.0.0.1/TYN/tyn/Application/Public/js/jquery.js"></script>
-<script src="http://127.0.0.1/TYN/tyn/Application/Public/js/bootstrap.js"></script>
-<script src="/TYN/tyn/Application/Public/layer/layer.js"></script>
-<script src="/TYN/tyn/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
-<script src="/TYN/tyn/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<script src="/Application/Public/js/jquery.js"></script>
+<script src="/Application/Public/js/bootstrap.js"></script>
+<script src="/Application/Public/layer/layer.js"></script>
+<script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
 <!-- 表格 -->
 <style>
     .body{
@@ -28,7 +28,7 @@
     }
     @font-face {
         font-family: myttf;
-        src: url("/TYN/tyn/Application/Public/fonts/Kim's GirlType.ttf");
+        src: url("/Application/Public/fonts/Kim's GirlType.ttf");
     }
     .rowbox {
         height: 100%;
@@ -197,7 +197,7 @@
                     success:function(res){
                         console.log(res);
                         if(res==1){
-                            location.href="/TYN/tyn/index.php/Admin/Index/index";
+                            location.href="/index.php/Admin/Index/index";
                         }else{
                             layer.msg('账号或密码错误');
                         }

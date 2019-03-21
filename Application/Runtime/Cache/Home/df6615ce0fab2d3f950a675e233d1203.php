@@ -8,11 +8,11 @@
     <!-- css样式 -->
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/usergoodslist.css">
 <!-- js操作 -->
 <script src="/Application/Public/js/jquery.js"></script>
 <script src="/Application/Public/js/bootstrap.js"></script>
 <script src="/Application/Public/layer/layer.js"></script>
-
     <style>
         body{
             margin: 0;

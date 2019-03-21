@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>添加管理员</title>
+    <include file="Pub:style" />
+    <style>
+        .fbox label{
+            font-size: 18px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <include file="Pub:nav"/>
+    <div class="body">
+        <div class="box">
+            <div class="rowbox">
+                <div class="title">
+                    您目前所在的位置 > 管理员信息 > 添加管理员
+                </div>
+            </div>
+            <div class="rowbox">
+                <div class="fbox">
+                    <form action="" class="form" method="post">
+                        
+                        <!-- 管理员账号 -->
+                        <div class="form-group row">
+                            <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="account">管理员账号:</label>
+                            <div class="col-xs-8 col-sm-6">
+                                <input class="form-control" type="text" name="a_account" id="account" placeholder="请输入管理员账号" value="<#$info.a_account#>">
+                            </div>
+                        </div>
+                        <!-- 管理员密码 -->
+                        <div class="form-group row">
+                            <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="pwd">管理员密码:</label>
+                            <div class="col-xs-8 col-sm-6">
+                                <input class="form-control" type="password" name="a_pwd" id="pwd" placeholder="请输入管理员密码" value="123456">
+                            </div>
+                        </div>
+                        <!-- 按钮 -->
+                        <div class="form-group col-xs-offset-4 col-xs-4">
+                            <button type="submit" class="btn btn-primary">确&nbsp;&nbsp;&nbsp;定</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="btn btn-info">返&nbsp;&nbsp;&nbsp;回</button>
+                        </div>  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    function baocun(){
+        var form_data = $("#adinfo").serializeArray();
+        console.log(form_data)
+        $.ajax({
+            url:"<#:U('Admins/info')#>",
+            async:true,
+            type:'post',
+            data:{data:JSON.stringify(form_data)},
+            dataType:'json',
+            success:function(res){
+                console.log(res.code)
+                if(res.code==100){
+                    document.location.reload();
+                }else if(res.code==200){
+                    layer.msg('修改信息失败');
+                }
+            },error:function(res){
+                console.log(res)
+            }
+        })
+    }
+
+</script>
+</html>

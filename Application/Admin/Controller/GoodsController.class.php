@@ -88,5 +88,31 @@ class GoodsController extends Controller{
             }
         }
     }
-    
+    // 商品查询，条件：商品名称，买家，卖家，交易状态。
+    public function querygoods(){
+        $info=[];
+        $info['name'] = $name = $_POST['name'];//商品名称
+        $where['g_name']=array('like','%%'.$name.'%%');
+        $info['user'] = $user = $_POST['user'];//卖家信息
+        $where['u_nickname']=array('like','%%'.$user.'%%');
+        $info['state'] = $state = $_POST['state'];//商品状态
+        $res1 = $res2 = [];
+        if($state == 1){
+            $goods = M('Goods');
+            $res1=$goods->alias('g')
+                        ->join('tyn_users u on g.from_id = u.id')
+                        ->where($where)
+                        ->select();
+        }elseif ($state == 2) {
+            $record = M('records');
+            $res2=$record->alias('r')
+                        ->join('tyn_goods g on r.r_gid = g.id')
+                        ->join('tyn_users u on g.from_id = u.id')
+                        ->where($where)
+                        ->select();
+        }
+        $this->assign('info',$info);
+        $this->assign('list',array_merge($res1,$res2));
+        $this->display();
+    }
 }

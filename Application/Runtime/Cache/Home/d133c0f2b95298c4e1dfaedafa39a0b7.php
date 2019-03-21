@@ -52,15 +52,15 @@
                 卖在XX
             </div>
             <div class="panel-body">
-                <a class="col-xs-4" href="/index.php/Home/Goods/usergoodslist">
+                <div class="col-xs-4" onclick="javascript:window.location.href='/index.php/Home/Goods/usergoodslist'">
                     我的发布
-                </a>
-                <a class="col-xs-4" href="/index.php/Home/Record/index">
+                </div>
+                <div class="col-xs-4" onclick="javascript:window.location.href='/index.php/Home/Record/index'">
                     我的卖出
-                </a>
-                <a class="col-xs-4">
+                </div>
+                <div class="col-xs-4">
                     收到评价
-                </a>
+                </div>
             </div>
         </div>
     </div>
@@ -70,10 +70,10 @@
                 买在XX
             </div>
             <div class="panel-body">
-                <a class="col-xs-4" href="/index.php/Home/Record/buy">
+                <div class="col-xs-4" onclick="javascript:window.location.href='/index.php/Home/Record/buy'">
                     我买到的
-                </a>
-                <div class="col-xs-4">
+                </div>
+                <div class="col-xs-4" onclick="javascript:window.location.href='/index.php/Home/Goods/usergoodslist'">
                     我收藏的
                 </div>
                 <div class="col-xs-4">
@@ -88,16 +88,16 @@
                 其他工具
             </div>
             <div class="panel-body">
-                <div class="col-xs-3">
+                <div class="col-xs-4">
                     个人信息
                 </div>
-                <div class="col-xs-3">
+                <div class="col-xs-4">
                     我的积分
                 </div>
-                <div class="col-xs-3">
+                <div class="col-xs-4">
                     安全中心
                 </div>
-                <div class="col-xs-3">
+                <div class="col-xs-4">
                     设置
                 </div>
             </div>

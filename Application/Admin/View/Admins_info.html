@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>管理员信息</title>
+    <include file="Pub:style" />
+    <style>
+        .fbox label{
+            font-size: 18px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <include file="Pub:nav"/>
+    <div class="body">
+        <div class="box">
+            <div class="rowbox">
+                <div class="title">
+                    您目前所在的位置 > 管理员信息 > 管理员信息
+                </div>
+            </div>
+            <div class="rowbox">
+                <div class="fbox">
+                    <form id="adinfo" action="" class="form">
+                        <!-- 管理员ID -->
+                        <div class="form-group row">
+                                <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="account">管理员ID:</label>
+                                <div class="col-xs-8 col-sm-6">
+                                    <input disabled class="form-control" type="text" name="id" id="id" placeholder="请保存输入管理员ID" value="<#$info.id#>">
+                                </div>
+                            </div>
+                        <!-- 管理员账号 -->
+                        <div class="form-group row">
+                            <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="account">管理员账号:</label>
+                            <div class="col-xs-8 col-sm-6">
+                                <input disabled class="form-control" type="text" name="a_account" id="account" placeholder="请保存输入管理员账号" value="<#$info.a_account#>">
+                            </div>
+                        </div>
+                        <!-- 管理员密码 -->
+                        <div class="form-group row">
+                            <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="pwd">管理员密码:</label>
+                            <div class="col-xs-8 col-sm-6">
+                                <input class="form-control" type="password" name="a_pwd" id="pwd" placeholder="请保存管理员密码" value="<#$info.a_pwd#>">
+                            </div>
+                        </div>
+                        <!-- 管理员昵称 -->
+                        <div class="form-group row">
+                            <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="nickname">管理员昵称:</label>
+                            <div class="col-xs-8 col-sm-6">
+                                <input class="form-control" type="text" name="a_nickname" id="nickname" placeholder="请保存管理员昵称" value="<#$info.a_nickname#>">
+                            </div>
+                        </div>
+                        <!-- 管理员联系方式 -->
+                        <div class="form-group row">
+                            <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="phone">联系方式:</label>
+                            <div class="col-xs-8 col-sm-6">
+                                <input class="form-control" type="text" name="a_phone" id="phone" placeholder="请保存联系方式" value="<#$info.a_phone#>">
+                            </div>
+                        </div>
+                        <!-- 管理员创建时间 -->
+                        <div class="form-group row">
+                                <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="time">创建时间:</label>
+                                <div class="col-xs-8 col-sm-6">
+                                    <input disabled class="form-control" type="text" name="a_time" id="time" placeholder="请保存创建时间" value="<#$info.a_time#>">
+                                </div>
+                            </div>
+                        <!-- 按钮 -->
+                        <div class="form-group col-xs-offset-4 col-xs-4">
+                            <button type="button" class="btn btn-primary" onclick="baocun()">确认保存</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="btn btn-info">返&nbsp;&nbsp;&nbsp;回</button>
+                        </div>  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    function baocun(){
+        var form_data = $("#adinfo").serializeArray();
+        console.log(form_data)
+        $.ajax({
+            url:"<#:U('Admins/info')#>",
+            async:true,
+            type:'post',
+            data:{data:JSON.stringify(form_data)},
+            dataType:'json',
+            success:function(res){
+                console.log(res.code)
+                if(res.code==100){
+                    document.location.reload();
+                }else if(res.code==200){
+                    layer.msg('修改信息失败');
+                }
+            },error:function(res){
+                console.log(res)
+            }
+        })
+    }
+
+</script>
+</html>

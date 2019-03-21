@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>审核商品列表</title>
+    <title>管理员列表</title>
     <!-- css样式 -->
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
@@ -413,106 +413,39 @@
         <div class="box">
             <div class="rowbox">
                 <div class="title">
-                    您目前所在的位置 > 商品管理 > 待审核商品列表
+                    您目前所在的位置 > 管理员信息 > 管理员列表
                 </div>
             </div>
             <div class="rowbox">
-                <div class="col-xs-12">
-                    <form action="" class="form-inline">
-                        <!-- 搜索条件 -->
-                        <label for="name">商品名称:</label>
-                        <input type="text" name="name" id="name" placeholder="输入要搜索的商品名称" value="<?php echo ($map["g_name"]); ?>" class="form-control">
-                        <label for="account">商品所有者:</label>
-                        <input type="text" name="account" id="account" placeholder="输入要搜索的用户账号" value="<?php echo ($map["u_account"]); ?>" class="form-control">
-                        <a class="mybtn btn btn-primary" id="searchbtn">搜&nbsp;&nbsp;索</a>
-                    </form>
-                </div>
-            </div>
-            <div class="rowbox">
-                <div class="tablebox">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>商品名称</th>
-                                <th>所有者账号</th>
-                                <th>商品价格</th>
-                                <th>上传时间</th>
-                                <th>操作</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php if(is_array($goodslist)): $i = 0; $__LIST__ = $goodslist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                                    <td><?php echo ($vo["g_name"]); ?></td>
-                                    <td><?php echo ($vo["u_account"]); ?></td>
-                                    <td><?php echo ($vo["g_price"]); ?></td>
-                                    <td><?php echo ($vo["g_time"]); ?></td>
-                                    <td>
-                                        <button class="btn btn-primary" onclick="goodsyes('<?php echo ($vo["id"]); ?>')">审核通过</button>
-                                        <button class="btn btn-danger" onclick="goodsno('<?php echo ($vo["id"]); ?>')">审核不通过</button>
-                                    </td>
-                                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                        </tbody>
-                    </table>
-                    <div class="page">
-                        <?php echo ($page); ?>
-                    </div>
-                </div>
+                    <div class="tablebox">
+                            <table class="table table-bordered">
+                                <!-- <thead>
+                                    <tr>
+                                        <th>商品名称</th>
+                                        <th>所有者账号</th>
+                                        <th>商品价格</th>
+                                        <th>下架时间</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php if(is_array($goodslist)): $i = 0; $__LIST__ = $goodslist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                                            <td><?php echo ($vo["g_name"]); ?></td>
+                                            <td><?php echo ($vo["u_account"]); ?></td>
+                                            <td><?php echo ($vo["g_price"]); ?></td>
+                                            <td><?php echo ($vo["g_time"]); ?></td>
+                                            <td>
+                                                <button class="btn btn-primary">联系卖家</button>
+                                            </td>
+                                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                                </tbody> -->
+                            </table>
+                            <div class="page">
+                                <?php echo ($page); ?>
+                            </div>
+                        </div>
             </div>
         </div>
     </div>
 </body>
-<script>
-    // 搜索信息
-    $("#searchbtn").click(function(){
-        var name = $("#name").val();
-        var account = $("#account").val();
-
-        location.href = "/index.php/Admin/Goods/index?name="+name+"&account="+account;
-    })
-</script>
-<script>
-    // 审核通过
-    function goodsyes(gid){
-        // location.href = "/index.php/Admin/Goods/goodspass?gid="+gid;
-        data = {"gid":gid,"type":1};
-        $.ajax({
-            url:"<?php echo U('Goods/goodspass');?>",
-            async:true,
-            type:'POST',
-            data: "data="+JSON.stringify(data),
-            dataType:'text',
-            success:function(res){
-                if(res == 1){
-                    window.location.reload();
-                }else{
-                    layer.msg('操作已成功，请勿重复操作');
-                }
-            },error:function(res){
-                console.log('cuowu');
-            }
-        })
-    }
-    // 审核不通过
-    function goodsno(gid) {
-        data = {"gid":gid,"type":2};
-        // console.log(JSON.stringify(data));
-        $.ajax({
-            url: "<?php echo U('Goods/goodspass');?>",
-            async: true,
-            type: 'POST',
-            data: "data="+JSON.stringify(data),
-            dataType: 'text',
-            success: function (res) {
-                if (res == 1) {
-                    window.location.reload();
-                } else {
-                    layer.msg('操作已成功，请勿重复操作');
-                }
-                console.log(res)
-            }, error: function (res) {
-                console.log('cuowu');
-            }
-        })
-    }
-</script>
 </html>

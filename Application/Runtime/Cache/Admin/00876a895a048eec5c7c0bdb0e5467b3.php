@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>上架商品列表</title>
     <!-- css样式 -->
-<link rel="stylesheet" type="text/css" href="http://127.0.0.1/TYN/tyn/Application/Public/css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="/TYN/tyn/Application/Public/css/infolist.css">
-<link rel="stylesheet" type="text/css" href="/TYN/tyn/Application/Public/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap-datetimepicker.min.css">
 <!-- js操作 -->
-<script src="http://127.0.0.1/TYN/tyn/Application/Public/js/jquery.js"></script>
-<script src="http://127.0.0.1/TYN/tyn/Application/Public/js/bootstrap.js"></script>
-<script src="/TYN/tyn/Application/Public/layer/layer.js"></script>
-<script src="/TYN/tyn/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
-<script src="/TYN/tyn/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<script src="/Application/Public/js/jquery.js"></script>
+<script src="/Application/Public/js/bootstrap.js"></script>
+<script src="/Application/Public/layer/layer.js"></script>
+<script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
 <!-- 表格 -->
 <style>
     .body{
@@ -28,7 +28,7 @@
     }
     @font-face {
         font-family: myttf;
-        src: url("/TYN/tyn/Application/Public/fonts/Kim's GirlType.ttf");
+        src: url("/Application/Public/fonts/Kim's GirlType.ttf");
     }
     .rowbox {
         height: 100%;
@@ -125,15 +125,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>导航栏控件</title>
     <!-- css样式 -->
-<link rel="stylesheet" type="text/css" href="http://127.0.0.1/TYN/tyn/Application/Public/css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="/TYN/tyn/Application/Public/css/infolist.css">
-<link rel="stylesheet" type="text/css" href="/TYN/tyn/Application/Public/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap-datetimepicker.min.css">
 <!-- js操作 -->
-<script src="http://127.0.0.1/TYN/tyn/Application/Public/js/jquery.js"></script>
-<script src="http://127.0.0.1/TYN/tyn/Application/Public/js/bootstrap.js"></script>
-<script src="/TYN/tyn/Application/Public/layer/layer.js"></script>
-<script src="/TYN/tyn/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
-<script src="/TYN/tyn/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<script src="/Application/Public/js/jquery.js"></script>
+<script src="/Application/Public/js/bootstrap.js"></script>
+<script src="/Application/Public/layer/layer.js"></script>
+<script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
 <!-- 表格 -->
 <style>
     .body{
@@ -147,7 +147,7 @@
     }
     @font-face {
         font-family: myttf;
-        src: url("/TYN/tyn/Application/Public/fonts/Kim's GirlType.ttf");
+        src: url("/Application/Public/fonts/Kim's GirlType.ttf");
     }
     .rowbox {
         height: 100%;
@@ -274,7 +274,7 @@
             left:15px;
             margin-top: -35px;
             border: 1px solid;
-            /* background-image: url("/TYN/tyn/Application/Public/img/toxiang.png"); */
+            /* background-image: url("/Application/Public/img/toxiang.png"); */
             overflow: hidden;
         }
         .txbox img{
@@ -340,12 +340,12 @@
 <body>
     <?php session_start(); ?>
     <div class="top">
-        <a href="<?php echo U('Login/logout');?>"><img id="logout" src="/TYN/tyn/Application/Public/img/logout.png" alt="" data-toggle="tooltip" title="退出"></a>
+        <a href="<?php echo U('Login/logout');?>"><img id="logout" src="/Application/Public/img/logout.png" alt="" data-toggle="tooltip" title="退出"></a>
     </div>
     <div class="left">
         <div class="tx-info">
             <div class="txbox">
-                <img src="/TYN/tyn/Application/Public/img/toxiang.png" alt="">
+                <img src="/Application/Public/img/toxiang.png" alt="">
             </div>
             <div class="namebox">
                 <span>管理员：<?php echo ($_SESSION['ainfo']['a_nickname']); ?></span>
@@ -367,7 +367,7 @@
                     <ul>
                         <li><a href="<?php echo U('Goods/index');?>">商品审核</a></li>
                         <li><a href="<?php echo U('Goods/goodslist');?>">上架商品</a></li>
-                        <li><a href="">查询商品</a></li>
+                        <li><a href="<?php echo U('Goods/querygoods');?>">查询商品</a></li>
                         <li><a href="<?php echo U('Goods/errgoodslist');?>">异常商品</a></li>
                     </ul>
                 </li>
@@ -467,7 +467,7 @@
         var name = $("#name").val();
         var account = $("#account").val();
 
-        location.href = "/TYN/tyn/index.php/Admin/Goods/index?name=" + name + "&account=" + account;
+        location.href = "/index.php/Admin/Goods/index?name=" + name + "&account=" + account;
     })
 </script>
 <script>
