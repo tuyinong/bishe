@@ -17,12 +17,14 @@
                 $res=$user->where($where)->find();
                 $id = intval($res['id']);
                 $name = $res['u_nickname'];
+                $city = $res['u_city'];
                 if($res){
                     $time = date('Y-m-d H:i:s',time());
                     $res = $user->where("id = ".intval($res['id']))->save(array("u_uptime"=>$time));                  
                    if($res){
                         $_SESSION['uid']=$id;
                         $_SESSION['uname']=$name;
+                        $_SESSION['ucity']=$city;
                         $logflag=1;
                         $this->ajaxReturn($logflag);
                    }

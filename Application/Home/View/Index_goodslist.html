@@ -9,6 +9,38 @@
 </head>
 <body>
     <include file="Pub:search"/>
-    
+    <div class="container" style="margin-bottom:75px;">
+        <volist name="list" id="vo">
+            <div class="col-xs-6">
+                <div class="goodslist" onclick="todetails(<#$vo.id#>)">
+                    <!-- <input type="hidden" name="gid" value="<#$vo.id#>" id="gid"> -->
+                    <div class="goodsimg">
+                        <img src="__PUBLIC__/img/shili1.jpg" style="width:100%">
+                    </div>
+                    <div class="info">
+                        <div class="info_top">
+                            <#$vo.g_name#>
+                        </div>
+                        <div class="info_mid">
+                            <#$vo.g_price#>
+                        </div>
+                        <div class="info_bottom">
+                            <img src="__PUBLIC__/img/zuoye1.png" alt=""> <#$vo.u_nickname#>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </volist>
+        <div class="con_footer col-xs-12">
+            到底了
+        </div>
+    </div>
 </body>
+<script>
+    // 点击商品跳转到详情页
+    function todetails(gid){
+        // console.log(gid);
+        document.location.href="__MODULE__/Goods/details?gid="+gid;
+    }
+</script>
 </html>

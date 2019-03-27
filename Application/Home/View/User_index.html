@@ -17,6 +17,7 @@
             background-color: #ffec13;
             border-bottom-left-radius: 4%;
             border-bottom-right-radius: 4%;
+            font-family: cursive;
         }
         .big .touxiang{
             width: 100px;
@@ -28,6 +29,13 @@
             border-radius: 10px;
             overflow: hidden;
         }
+        .big .name{
+            position: absolute;
+            left: 125px;
+            top: 30px;
+            font-size: 20px;
+            font-weight: 600;
+        }
         .touxiang img{
             width: 100%;
         }
@@ -38,59 +46,66 @@
         <div class="touxiang">
             <img src="__PUBLIC__/img/toxiang.png" alt="">
         </div>
+        <div class="name"><#$Think.session.uname#></div>
     </div>
     <div class="container" style="position:relative;margin-top:-90px;">
         <div class="panel">
-            <div class="panel-heading">
-                卖在XX
-            </div>
+            <!-- <div class="panel-heading">
+                卖在二爪
+            </div> -->
             <div class="panel-body">
                 <div class="col-xs-4" onclick="javascript:window.location.href='__MODULE__/Goods/usergoodslist'">
-                    我的发布
+                    <div><img src="__PUBLIC__/img/ufabu.png" alt=""></div>
+                    <span>我的发布</span>
                 </div>
                 <div class="col-xs-4" onclick="javascript:window.location.href='__MODULE__/Record/index'">
+                    <div><img src="__PUBLIC__/img/umaichu.png" alt=""></div>
                     我的卖出
                 </div>
-                <div class="col-xs-4">
-                    收到评价
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="panel">
-            <div class="panel-heading">
-                买在XX
-            </div>
-            <div class="panel-body">
                 <div class="col-xs-4" onclick="javascript:window.location.href='__MODULE__/Record/buy'">
+                    <div><img src="__PUBLIC__/img/umaidao.png" alt=""></div>
                     我买到的
                 </div>
-                <div class="col-xs-4" onclick="javascript:window.location.href='__MODULE__/Goods/usergoodslist'">
-                    我收藏的
-                </div>
-                <div class="col-xs-4">
-                    我评价的
-                </div>
+                <!-- <div class="col-xs-4">
+                    收到评价
+                </div> -->
             </div>
         </div>
     </div>
     <div class="container">
         <div class="panel">
-            <div class="panel-heading">
-                其他工具
-            </div>
+            <!-- <div class="panel-heading">
+                买在二爪
+            </div> -->
             <div class="panel-body">
-                <div class="col-xs-4">
-                    个人信息
+                
+                <div class="col-xs-4" onclick="javascript:window.location.href='__MODULE__/Goods/usergoodslist'">
+                    <div><img src="__PUBLIC__/img/ushoucang.png" alt=""></div>
+                    我收藏的
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-4" onclick="javascript:window.location.href='__MODULE__/User/personal'">
+                    <div><img src="__PUBLIC__/img/uziliao.png" alt=""></div>
+                    个人资料
+                </div>
+                <div class="col-xs-4" onclick="javascript:window.location.href='__MODULE__/User/score'">
+                    <div><img src="__PUBLIC__/img/ujifen.png" alt=""></div>
                     我的积分
                 </div>
-                <div class="col-xs-4">
-                    安全中心
-                </div>
-                <div class="col-xs-4">
+                <!-- <div class="col-xs-4">
+                    我评价的
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-bottom:70px;">
+        <div class="panel">
+            <!-- <div class="panel-heading">
+                其他工具
+            </div> -->
+            <div class="panel-body">
+                
+                <div class="col-xs-4" onclick="javascript:window.location.href='__MODULE__/User/setup'">
+                    <div><img src="__PUBLIC__/img/ushezhi.png" alt=""></div>
                     设置
                 </div>
             </div>

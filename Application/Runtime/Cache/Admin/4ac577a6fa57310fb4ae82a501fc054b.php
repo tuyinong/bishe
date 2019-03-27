@@ -15,6 +15,7 @@
 <script src="/Application/Public/layer/layer.js"></script>
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<script src="/Application/Public/js/echarts.min.js"></script>
 <!-- 表格 -->
 <style>
     .body{
@@ -140,6 +141,7 @@
 <script src="/Application/Public/layer/layer.js"></script>
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<script src="/Application/Public/js/echarts.min.js"></script>
 <!-- 表格 -->
 <style>
     .body{

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>留言详情</title>
+    <include file="Pub:style" />
+    <style>
+        .zhui{
+            padding: 5px;
+            border-bottom: 1px solid #d0d0d0;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <eq name="flag" value="1">
+        <div class="jumbotron" style="margin-bottom:0">
+            <div class="media">
+                <div class="media-left">
+                    <img src="__PUBLIC__/img/zuoye1.png" class="media-object" style="width:60px">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading"><#$info.u_nickname#></h4>
+                    <p><#$info.e_info#></p>
+                    <p style="font-size:13px"><#$info.e_time#></p>
+                </div>
+            </div>
+        </div>
+        <div class="zhui">留言</div>
+        <volist name="list" id="vo">
+            <div class="media">
+                <div class="media-left">
+                    <img src="__PUBLIC__/img/zuoye1.png" class="media-object" style="width:60px">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading"><#$vo.u_nickname#></h4>
+                    <p><#$vo.w_info#></p>
+                    <p style="font-size:13px"><#$vo.w_time#></p>
+                </div>
+            </div>
+        </volist>
+    <else/>
+        <div style="text-align:center;margin-top:20px">
+            暂无留言
+        </div>
+    </eq>
+    
+    <div class="addrfooter" style="background-color:#ff9900;color:black" onclick="javascript:document.location.href='__MODULE__/Words/add?gid=<#$Think.get.gid#>'">
+        追加留言
+    </div>
+</body>
+</html>

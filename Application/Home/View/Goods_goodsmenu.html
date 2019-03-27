@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品分类</title>
+    <include file="Pub:style" />
+    <style>
+        .fenleidiv{
+            background-image: url(/Application/Public/img/xtwzk.jpg);
+            background-size: 100%;
+            text-align: center;
+            padding: 55px;
+            font-family: cursive;
+            font-size: 18px;
+            border-radius: 50%;
+            margin: 5px 0;
+        }
+        .fenleidiv span{
+            position: absolute;
+            top: 45px;
+            left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <volist name="list" id="vo">
+            <div class="col-xs-4">
+                <div class="fenleidiv" onclick="javascript:window.location.href='__MODULE__/Index/goodslist?family=100&ggggg=<#$vo.id#>'">
+                    <span><#$vo.type#></span>
+                </div>
+            </div>
+        </volist>
+    </div>
+</body>
+</html>

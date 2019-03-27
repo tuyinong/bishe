@@ -8,30 +8,34 @@
     <include file="Pub:style" />
 </head>
 <body>
-    <volist name="list" id="vo">
-        <div class="row" style="margin:5px;">
-            <div class="col-xs-12" style="box-shadow: darkgrey 1px 2px 5px 0px;">
-                <div>
-                    <div class="usergoodsbox-top">
-                        <div class="img"></div>
-                        <div class="text">
-                            <h3><#$vo.g_name#></h3>
-                            <p>￥&nbsp;<#$vo.r_price#></p>
-                            <p><#$vo.r_state#></p>
+    <if condition="empty($list) eq 1">
+       <div style="text-align:center;margin-top:20px">您还没有买到商品！</div>
+    <else/>
+        <volist name="list" id="vo">
+            <div class="row" style="margin:5px;">
+                <div class="col-xs-12" style="box-shadow: darkgrey 1px 2px 5px 0px;">
+                    <div>
+                        <div class="usergoodsbox-top">
+                            <div class="img"></div>
+                            <div class="text">
+                                <h3><#$vo.g_name#></h3>
+                                <p>￥&nbsp;<#$vo.r_price#></p>
+                                <p><#$vo.r_state#></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="usergoodsbox-footer">
-                        <button>...</button>
-                        <button onclick="lookeva('<#$vo.id#>')">查看评价</button>
+                        <div class="usergoodsbox-footer">
+                            <button>...</button>
+                            <button onclick="lookeva('<#$vo.id#>')">查看评价</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </volist>
+        </volist>
+    </if>
 </body>
 <script>
     function lookeva(rid) {
-        
+        document.location.href="__MODULE__/Evaluation/index?rid="+rid;
     }
 </script>
 </html>

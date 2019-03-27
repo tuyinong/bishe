@@ -13,6 +13,8 @@
 <script src="/Application/Public/js/jquery.js"></script>
 <script src="/Application/Public/js/bootstrap.js"></script>
 <script src="/Application/Public/layer/layer.js"></script>
+<script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
 </head>
 <body>
     <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="row" style="margin:5px;">
@@ -37,7 +39,7 @@
 <script>
     // 查看评价
     function lookwords(gid){
-        location.href=""
+        document.location.href="/index.php/Home/Words/index?gid="+gid;
     }
 </script>
 </html>

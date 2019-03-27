@@ -7,12 +7,15 @@
     <title>登录页</title>
     <!-- css样式 -->
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/goodslist.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/usergoodslist.css">
 <!-- js操作 -->
 <script src="/Application/Public/js/jquery.js"></script>
 <script src="/Application/Public/js/bootstrap.js"></script>
 <script src="/Application/Public/layer/layer.js"></script>
+<script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
     <style>
         body{
             width: 100%;
@@ -78,7 +81,8 @@
 </head>
 <body>
     <div id="logo" class="logo">
-        logo
+        <img src="/Application/Public/img/logo2.png" alt="logo" style="height:145%;">
+        <!-- logo -->
     </div>
 </body>
 </html>
@@ -125,8 +129,8 @@
                     console.log(res)
                     if (res == 1) {
                         console.log('登录成功');
-                        // location.href="/index.php/Home/Index/index";
-                        history.go(-1);
+                        location.href="/index.php/Home/User/index";
+                        // history.go(-1);
                     }
                     if (res == 2) {
                         console.log('登录失败');

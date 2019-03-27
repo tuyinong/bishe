@@ -82,4 +82,38 @@ class GoodsController extends Controller{
         $this->assign('list',$res);
         $this->display();
     }
+    public function fabu(){
+        $uid = $_SESSION['uid'];
+        if(empty($uid)){
+            $this->error('用户尚未登录',U('Login/index'));
+        };
+        if(IS_GET){
+            $gc = M('goodsclass');
+            $res = $gc->select();
+            $this->assign('list',$res);
+            $this->display();
+        }
+        if(IS_AJAX){
+            $data = $_POST['data'];
+            $info['g_name'] = $name = $data[0]['value'];
+            $info['g_price'] = $price = $data[1]['value'];
+            $info['g_type'] = $type = $data[3]['value'];
+            $info['g_time'] = $time = date('Y-m-d H:i:s');
+            $info['from_id'] = $uid;
+            $g = M('goods');
+            $res = $g->add($info);
+            if($res){   
+                $this->ajaxReturn(array('code'=>100,'gid'=>$res));
+            }else{
+                $this->ajaxReturn(array('code'=>200));
+            }
+        }
+    }
+    // 商品分类菜单页面
+    public function goodsmenu(){
+        $gc = M('goodsclass');
+        $res = $gc->select();
+        $this->assign('list',$res);
+        $this->display();
+    }
 }

@@ -7,12 +7,15 @@
     <title>个人中心</title>
     <!-- css样式 -->
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/goodslist.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/usergoodslist.css">
 <!-- js操作 -->
 <script src="/Application/Public/js/jquery.js"></script>
 <script src="/Application/Public/js/bootstrap.js"></script>
 <script src="/Application/Public/layer/layer.js"></script>
+<script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
     <style>
         body{
             background-color: #eeeeee;
@@ -24,6 +27,7 @@
             background-color: #ffec13;
             border-bottom-left-radius: 4%;
             border-bottom-right-radius: 4%;
+            font-family: cursive;
         }
         .big .touxiang{
             width: 100px;
@@ -35,6 +39,13 @@
             border-radius: 10px;
             overflow: hidden;
         }
+        .big .name{
+            position: absolute;
+            left: 125px;
+            top: 30px;
+            font-size: 20px;
+            font-weight: 600;
+        }
         .touxiang img{
             width: 100%;
         }
@@ -45,59 +56,66 @@
         <div class="touxiang">
             <img src="/Application/Public/img/toxiang.png" alt="">
         </div>
+        <div class="name"><?php echo (session('uname')); ?></div>
     </div>
     <div class="container" style="position:relative;margin-top:-90px;">
         <div class="panel">
-            <div class="panel-heading">
-                卖在XX
-            </div>
+            <!-- <div class="panel-heading">
+                卖在二爪
+            </div> -->
             <div class="panel-body">
                 <div class="col-xs-4" onclick="javascript:window.location.href='/index.php/Home/Goods/usergoodslist'">
-                    我的发布
+                    <div><img src="/Application/Public/img/ufabu.png" alt=""></div>
+                    <span>我的发布</span>
                 </div>
                 <div class="col-xs-4" onclick="javascript:window.location.href='/index.php/Home/Record/index'">
+                    <div><img src="/Application/Public/img/umaichu.png" alt=""></div>
                     我的卖出
                 </div>
-                <div class="col-xs-4">
-                    收到评价
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="panel">
-            <div class="panel-heading">
-                买在XX
-            </div>
-            <div class="panel-body">
                 <div class="col-xs-4" onclick="javascript:window.location.href='/index.php/Home/Record/buy'">
+                    <div><img src="/Application/Public/img/umaidao.png" alt=""></div>
                     我买到的
                 </div>
-                <div class="col-xs-4" onclick="javascript:window.location.href='/index.php/Home/Goods/usergoodslist'">
-                    我收藏的
-                </div>
-                <div class="col-xs-4">
-                    我评价的
-                </div>
+                <!-- <div class="col-xs-4">
+                    收到评价
+                </div> -->
             </div>
         </div>
     </div>
     <div class="container">
         <div class="panel">
-            <div class="panel-heading">
-                其他工具
-            </div>
+            <!-- <div class="panel-heading">
+                买在二爪
+            </div> -->
             <div class="panel-body">
-                <div class="col-xs-4">
-                    个人信息
+                
+                <div class="col-xs-4" onclick="javascript:window.location.href='/index.php/Home/Goods/usergoodslist'">
+                    <div><img src="/Application/Public/img/ushoucang.png" alt=""></div>
+                    我收藏的
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-4" onclick="javascript:window.location.href='/index.php/Home/User/personal'">
+                    <div><img src="/Application/Public/img/uziliao.png" alt=""></div>
+                    个人资料
+                </div>
+                <div class="col-xs-4" onclick="javascript:window.location.href='/index.php/Home/User/score'">
+                    <div><img src="/Application/Public/img/ujifen.png" alt=""></div>
                     我的积分
                 </div>
-                <div class="col-xs-4">
-                    安全中心
-                </div>
-                <div class="col-xs-4">
+                <!-- <div class="col-xs-4">
+                    我评价的
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-bottom:70px;">
+        <div class="panel">
+            <!-- <div class="panel-heading">
+                其他工具
+            </div> -->
+            <div class="panel-body">
+                
+                <div class="col-xs-4" onclick="javascript:window.location.href='/index.php/Home/User/setup'">
+                    <div><img src="/Application/Public/img/ushezhi.png" alt=""></div>
                     设置
                 </div>
             </div>
@@ -112,12 +130,15 @@
     <title>Document</title>
     <!-- css样式 -->
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/goodslist.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/usergoodslist.css">
 <!-- js操作 -->
 <script src="/Application/Public/js/jquery.js"></script>
 <script src="/Application/Public/js/bootstrap.js"></script>
 <script src="/Application/Public/layer/layer.js"></script>
+<script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
     <style>
         .footer{
             position: fixed;
@@ -177,7 +198,7 @@
                 <img src="/Application/Public/img/tubiao1.png" alt="">
                 <li>首页</li>
             </a>
-            <a href="<?php echo U('Index/issuance');?>">
+            <a href="<?php echo U('Goods/fabu');?>">
                 <img src="/Application/Public/img/tubiao2.png" alt="">
                 <li>发布</li>
             </a>

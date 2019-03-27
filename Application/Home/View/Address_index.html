@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>收货地址</title>
+    <include file="Pub:style" />
+</head>
+<body>
+    <volist name="list" id="vo">
+        <div class="row" style="margin:5px;" onclick="javascript:document.location.href='__MODULE__/Address/update?aid=<#$vo.id#>'">
+            <div class="col-xs-12" style="box-shadow: darkgrey 1px 2px 5px 0px;">
+                <div>
+                    <div class="text">
+                        <h3>收货人:<#$vo.a_name#>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small><#$vo.a_phone#></small></h3>
+                        <p>收货地址:<#$vo.a_province#><#$vo.a_city#><#$vo.a_area#><#$vo.a_street#><#$vo.a_addr#></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </volist>
+    <div class="addrfooter" onclick="javascript:document.location.href='__MODULE__/Address/add'">
+        新增收货地址
+    </div>
+</body>
+</html>

@@ -6,7 +6,7 @@ class RecordController extends Controller{
     
     // 用户卖出商品列表
     public function index(){
-        $uid = 1;
+        $uid = $_SESSION['uid'];
         $r = M('records');
         $res = $r->alias('r')
                     ->join('tyn_goods g on g.id=r.r_gid')
@@ -26,7 +26,7 @@ class RecordController extends Controller{
 
     // 用户买到的商品列表
     public function buy(){
-        $uid = 2;
+        $uid = $_SESSION['uid'];
         $r = M('records');
         $res = $r->alias('r')
                 ->join('tyn_goods g on g.id=r.r_gid')

@@ -15,6 +15,7 @@
 <script src="/Application/Public/layer/layer.js"></script>
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<script src="/Application/Public/js/echarts.min.js"></script>
 <!-- 表格 -->
 <style>
     .body{
@@ -159,6 +160,7 @@
 <script src="/Application/Public/layer/layer.js"></script>
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<script src="/Application/Public/js/echarts.min.js"></script>
 <!-- 表格 -->
 <style>
     .body{
@@ -451,22 +453,100 @@
                 </div>
             </div>
             <div class="chartbox">
-                <div class="col-xs-6" style="height:400px;border:1px solid;">
-
+                <div id="tu1" class="col-xs-6" style="height:400px;">
                 </div>
-                <div class="col-xs-6" style="height:400px;border:1px solid;">
+                <div id="tu2" class="col-xs-6" style="height:400px;">
                 
                 </div>
             </div>
             <div class="chartbox">
-                <div class="col-xs-6" style="height:400px;border:1px solid;">
-            
+                <div class="col-xs-6">
+                    <div style="box-shadow: darkgrey 1px 2px 5px 0px;padding:20px;background-color: #f0f0f0;">
+                        <h4>用户总数: <?php echo ($userall); ?> 人</h4>
+                        <h4>近期活跃用户数(30天内上线): <?php echo ($userhy); ?> 人</h4>
+                    </div>
                 </div>
-                <div class="col-xs-6" style="height:400px;border:1px solid;">
-            
+                <div class="col-xs-6">
+                    <div style="box-shadow: darkgrey 1px 2px 5px 0px;padding:20px;background-color: #f0f0f0;">
+                        <h4>商品总数: <?php echo ($goodsall); ?> 件</h4>
+                        <h4>商品成交数: <?php echo ($goodsok); ?> 件</h4>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script>
+    var users = <?php echo json_encode($users);?>;
+    console.log(users);
+    var goods = <?php echo json_encode($goods);?>;
+    console.log(goods);
+
+
+    // 基于准备好的dom，初始化echarts实例
+    var myChart1 = echarts.init(document.getElementById('tu1'));
+    // 指定图表的配置项和数据
+    var option1 = {
+        title: {
+            text: '新增用户量',
+            x:'center',
+            top:20
+        },
+        tooltip: {},
+        legend: {
+            data:['用户数'],
+            x: 'left',
+            top:20
+        },
+        xAxis: {
+            data: users.time
+        },
+        yAxis: {},
+        series: [{
+            name: '用户数',
+            type: 'line',
+            data: users.count
+        }]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart1.setOption(option1);
+
+    // 基于准备好的dom，初始化echarts实例
+    var myChart2 = echarts.init(document.getElementById('tu2'));
+    // 指定图表的配置项和数据
+    var option2 = {
+        title: {
+            text: '新增商品',
+            x:'center',
+            top:20
+        },
+        tooltip: {},
+        legend: {
+            data:['商品数'],
+            x: 'left',
+            top:20
+        },
+        xAxis: {
+            data: goods.time
+        },
+        yAxis: {},
+        series: [{
+            name: '商品数',
+            type: 'line',
+            data: goods.count
+        }]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart2.setOption(option2);
+
+    window.onresize = function(){
+
+        myChart1.resize();
+        myChart2.resize();
+        // myChart3.resize();
+        // myChart4.resize();
+        // myChart5.resize();
+
+    }
+</script>
 </html>

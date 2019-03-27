@@ -8,76 +8,20 @@
     <title>首页</title>
     <!-- css样式 -->
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/goodslist.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/usergoodslist.css">
 <!-- js操作 -->
 <script src="/Application/Public/js/jquery.js"></script>
 <script src="/Application/Public/js/bootstrap.js"></script>
 <script src="/Application/Public/layer/layer.js"></script>
+<script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
     <style>
         .changelist {
             height: 75px;
-            border: 1px solid #dcdcdc;
+            /* border: 1px solid #dcdcdc; */
             border-radius: 10px;
-            text-align: center;
-        }
-
-        .goodslist {
-            margin-top: 10px;
-            height: 270px;
-            border: 1px solid #dcdcdc;
-            border-radius: 10px;
-        }
-        .goodslist .img{
-            width: 100%;
-            height: 180px;
-            border-bottom: 1px solid;
-        }
-        .goodslist .info{
-            width: 100%;
-            height: 69px;
-            padding: 0 4px;
-        }
-        .goodslist .info_top{
-            width: 100%;
-            height: 35px;
-            line-height: 18px;
-            font-weight: 700;
-            overflow: hidden;
-            /* 超出的文字用省略号 */
-            text-overflow: ellipsis;
-            /* 作为单行伸缩盒子模型显示 */
-            display: -webkit-box;
-            /* 盒子的子元素排列方式 */
-            -webkit-box-orient: vertical;
-            /* 显示行 */
-            -webkit-line-clamp: 2;
-        }
-        .goodslist .info_mid::before{
-            content: "￥";
-            font-size: 12px;
-        }
-        .goodslist .info_mid{
-            width:100%;
-            height: 18px;
-            color: red;
-            border-bottom: 1px solid #dfdfdf;
-        }
-        .goodslist .info_bottom{
-            width: 100%;
-            height: 29px;
-            font-size: 12px;
-            font-weight: 700;
-            margin: 5px 0;
-        }
-        .goodslist .info_bottom>img{
-            width: 24px;
-            height: 24px;
-            margin: 0 5px;
-        }
-        .con_footer{
-            height: 50px;
-            line-height: 50px;
             text-align: center;
         }
     </style>
@@ -101,7 +45,8 @@
 </head>
 <body>
     <div id="logo" class="logo">
-        logo
+        <img src="/Application/Public/img/logo2.png" alt="logo" style="height:145%;">
+        <!-- logo -->
     </div>
 </body>
 </html>
@@ -114,12 +59,15 @@
     <title></title>
     <!-- css样式 -->
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/goodslist.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/usergoodslist.css">
 <!-- js操作 -->
 <script src="/Application/Public/js/jquery.js"></script>
 <script src="/Application/Public/js/bootstrap.js"></script>
 <script src="/Application/Public/layer/layer.js"></script>
+<script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
 </head>
 <body>
     <?php session_start(); ?>
@@ -140,7 +88,7 @@
     function search() {
         var val = $("#searchtext").val();
         console.log(val)
-        location.href = "/index.php/Home/Index/goodslist?val=" + val;
+        location.href = "/index.php/Home/Index/goodslist?family=200&val=" + val;
     }
 </script>
 </html>
@@ -175,16 +123,28 @@
     <div class="container">
         <div class="row" style="margin-left:0;margin-right:0;">
             <div class="col-xs-3">
-                <div class="changelist">同城商品</div>
+                <div class="changelist" onclick="javascript:window.location.href='/index.php/Home/Index/goodslist?family=58'">
+                    <img src="/Application/Public/img/bendi.png" alt="First slide" style="width:98%;">
+                    <span>同城商品</span>
+                </div>
             </div>
             <div class="col-xs-3">
-                <div class="changelist">我的积分</div>
+                <div class="changelist" onclick="javascript:window.location.href='/index.php/Home/User/score'">
+                    <img src="/Application/Public/img/jifen.png" alt="First slide" style="width:98%;">
+                    我的积分
+                </div>
             </div>
             <div class="col-xs-3">
-                <div class="changelist">热卖商品</div>
+                <div class="changelist" onclick="javascript:window.location.href='/index.php/Home/Index/goodslist?family=555'">
+                    <img src="/Application/Public/img/remai.png" alt="First slide" style="width:98%;">
+                    热卖商品
+                </div>
             </div>
             <div class="col-xs-3">
-                <div class="changelist">商品分类</div>
+                <div class="changelist" onclick="javascript:window.location.href='/index.php/Home/Goods/goodsmenu'">
+                    <img src="/Application/Public/img/fenlei.png" alt="First slide" style="width:98%;">
+                    商品分类
+                </div>
             </div>
         </div>
     </div>
@@ -192,7 +152,9 @@
         <?php if(is_array($goodslist)): $i = 0; $__LIST__ = $goodslist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-xs-6">
                 <div class="goodslist" onclick="todetails(<?php echo ($vo["id"]); ?>)">
                     <!-- <input type="hidden" name="gid" value="<?php echo ($vo["id"]); ?>" id="gid"> -->
-                    <div class="img"></div>
+                    <div class="goodsimg">
+                        <img src="/Application/Public/img/shili1.jpg" style="width:100%">
+                    </div>
                     <div class="info">
                         <div class="info_top">
                             <?php echo ($vo["g_name"]); ?>
@@ -219,12 +181,15 @@
     <title>Document</title>
     <!-- css样式 -->
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/goodslist.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/usergoodslist.css">
 <!-- js操作 -->
 <script src="/Application/Public/js/jquery.js"></script>
 <script src="/Application/Public/js/bootstrap.js"></script>
 <script src="/Application/Public/layer/layer.js"></script>
+<script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
     <style>
         .footer{
             position: fixed;
@@ -284,7 +249,7 @@
                 <img src="/Application/Public/img/tubiao1.png" alt="">
                 <li>首页</li>
             </a>
-            <a href="<?php echo U('Index/issuance');?>">
+            <a href="<?php echo U('Goods/fabu');?>">
                 <img src="/Application/Public/img/tubiao2.png" alt="">
                 <li>发布</li>
             </a>

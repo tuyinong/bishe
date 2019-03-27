@@ -21,3 +21,17 @@
     float: right;
     margin: 15px;
 }
+.list input{
+    line-height: normal;
+    outline: none;
+    width: 300px;
+}
+.addrfooter{
+    text-align: center;
+    line-height: 50px;
+    background-color: red;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

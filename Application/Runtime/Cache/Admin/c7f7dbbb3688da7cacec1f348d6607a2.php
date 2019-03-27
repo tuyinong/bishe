@@ -15,6 +15,7 @@
 <script src="/Application/Public/layer/layer.js"></script>
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<script src="/Application/Public/js/echarts.min.js"></script>
 <!-- 表格 -->
 <style>
     .body{
@@ -134,6 +135,7 @@
 <script src="/Application/Public/layer/layer.js"></script>
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<script src="/Application/Public/js/echarts.min.js"></script>
 <!-- 表格 -->
 <style>
     .body{
@@ -385,7 +387,16 @@
                         <li><a href="">查询评价信息</a></li>
                     </ul>
                 </li>
-                <li><a href="" style="padding:0;">管理员列表</a></li>
+                <li>
+                    <a>管理员信息</a>
+                    <ul>
+                        <li><a href="<?php echo U('Admins/index');?>" style="padding:0;">管理员列表</a></li>
+                        <li><a href="<?php echo U('Admins/add');?>" style="padding:0;">添加管理员</a></li>
+                        <li><a href="<?php echo U('Admins/info');?>" style="padding:0;">管理员信息</a></li>
+                        <!-- <li><a href="">管理员信息</a></li> -->
+                    </ul>
+                </li>
+                <!-- <li><a href="" style="padding:0;">管理员列表</a></li> -->
             </ul>
         </div>
     </div>
