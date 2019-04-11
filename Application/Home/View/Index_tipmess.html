@@ -1,0 +1,11 @@
+<script>
+    var flag = <#$Think.session.newmess#>;
+    // console.log(<#$Think.session.newmess#>)
+    if(flag==1){
+        $("#xiaoxiid").css('color','red');
+        $("#xiaoxiid").html("有新消息");
+    }
+    setInterval(function(){
+        $("#xiaoxiid").load(location.href+" #xiaoxiid");
+    },3000);
+</script>

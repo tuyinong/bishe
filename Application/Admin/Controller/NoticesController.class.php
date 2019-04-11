@@ -33,4 +33,38 @@ class NoticesController extends Controller{
     public function sendnotice(){
         $this->display();
     }
+    public function add(){
+        $data = $_POST['data'];
+        $data = json_decode($data,true);
+        $info['n_title'] = $title = $data[0]['value'];
+        $info['n_type'] = $object = intval($data[1]['value']);
+        if($object==0){
+            $info['n_content'] = $content = $data[2]['value'];
+            $info['n_sendtime'] = $time = $data[3]['value'];
+            $info['n_time'] =date('Y-m-d H:i:s',time());
+        }else{
+            $info['n_userid'] = $userid = intval($data[2]['value']);
+            $info['n_content'] = $content = $data[3]['value'];
+            $info['n_sendtime'] = $time = $data[4]['value'];
+            $info['n_time'] = date('Y-m-d H:i:s',time());
+        }
+        $n = M('notices');
+        $res = $n->add($info);
+        if($res){
+            $this->ajaxReturn(array('code'=>100));
+        }else{
+            $this->ajaxReturn(array('code'=>200));
+        }
+    }
+    // 
+    public function sendjs(){
+        $now = time();
+        $n = M('notices');
+        $res = $n->where("UNIX_TIMESTAMP(n_sendtime)<$now")->select();
+        foreach($res as $key=>$val){
+            $nid = $val['id'];
+            $res1 = $n->where("id=$nid")->setInc('n_state');
+        }
+        $this->ajaxReturn(array('code'=>100));
+    }
 }

@@ -16,6 +16,7 @@
 <script src="/Application/Public/layer/layer.js"></script>
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<!-- <script src="/Application/Public/js/jquery.mobile-1.4.5.js"></script> -->
     <style>
         .logout{
             background-color: red;

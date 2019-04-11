@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>评价查询</title>
+</head>
+<body>
+    <include file="Pub:nav" />
+    <div class="body">
+        <div class="box">
+            <div class="rowbox">
+                <div class="title">
+                    您目前所在的位置 > 评价管理 > 评价查询
+                </div>
+            </div>
+            <div class="rowbox">
+                <div class="col-xs-12" >
+                    <form action="" class="form-inline" method="post">
+                        <label for="name">买家昵称:</label>
+                        <input type="text" name="name" id="name" placeholder="请输入买家昵称" value="<#$info.name#>" class="form-control">
+                        <label for="content">评价内容:</label>
+                        <input type="text" name="content" id="content" placeholder="请输入评价内容" value="<#$info.content#>" class="form-control">
+                        <button type="submit" class="mybtn btn btn-primary">查&nbsp;&nbsp;询</button>
+                    </form>
+                </div>
+            </div>
+            <div class="rowbox" style="text-align:center">
+                <div class="tablebox">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>评价时间</th>
+                                <th>商品ID</th>
+                                <th>评价内容</th>
+                                <th>评价用户</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <if condition="empty($list) eq 1">
+                                <tr>
+                                    <td colspan="5">暂无查询信息</td>
+                                </tr>
+                            <else/>
+                                <volist name="list" id="vo">
+                                    <tr>
+                                        <td><#$vo.e_time#></td>
+                                        <td><#$vo.r_gid#></td>
+                                        <td><#$vo.e_info#></td>
+                                        <td><#$vo.u_nickname#></td>
+                                        <td>
+                                            <button class="btn btn-primary" onclick="edelete(<#$vo.id#>)">删除评价</button>
+                                        </td>
+                                    </tr>
+                                </volist>
+                            </if>
+                        </tbody>
+                    </table>
+                    <!-- <div class="page">
+                        <#$page#>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function edelete(eid){
+        $.ajax({
+            url: "<#:U('Evaluations/deleva')#>",
+            async: true,
+            type: 'POST',
+            data: {eid:eid},
+            dataType: 'json',
+            success: function (res) {
+                if (res.code == 100) {
+                    window.location.reload();
+                } else {
+                    layer.msg('操作已成功，请勿重复操作');
+                }
+                console.log(res)
+            }, error: function (res) {
+                console.log('cuowu');
+            }
+        })
+    }
+</script>
+</html>

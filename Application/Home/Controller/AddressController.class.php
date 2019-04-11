@@ -56,4 +56,14 @@ class AddressController extends Controller{
             $this->ajaxReturn(array('code'=>200));
         }
     }
+    // 购买界面的地址选择
+    public function choose(){
+        $uid = $_SESSION['uid'];
+        $gid = $_GET['gid'];
+        $address = M('address');
+        $res = $address->where('a_userid='.$uid)->select();
+        $this->assign('list',$res);
+        $this->assign('gid',$gid);
+        $this->display();
+    }
 }

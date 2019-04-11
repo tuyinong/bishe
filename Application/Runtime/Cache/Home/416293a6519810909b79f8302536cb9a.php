@@ -1,0 +1,263 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>聊天界面</title>
+    <!-- css样式 -->
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/goodslist.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/usergoodslist.css">
+<!-- js操作 -->
+<script src="/Application/Public/js/jquery.js"></script>
+<script src="/Application/Public/js/bootstrap.js"></script>
+<script src="/Application/Public/layer/layer.js"></script>
+<script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<!-- <script src="/Application/Public/js/jquery.mobile-1.4.5.js"></script> -->
+    <style>
+		/**重置标签默认样式*/
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: '微软雅黑'
+        }
+        #container {
+            width: 450px;
+            height: 780px;
+            background: #eee;
+            margin: 80px auto 0;
+            position: relative;
+            box-shadow: 20px 20px 55px #777;
+        }
+        .header {
+            background: #000;
+            height: 60px;
+            width: 100%;
+            color: #fff;
+            line-height: 60px;
+            font-size: 20px;
+            padding: 0 10px;
+        }
+        .footer {
+            width: 100%;
+            height: 60px;
+            background: #666;
+            position: absolute;
+            bottom: -9px;
+            padding: 10px;
+        }
+        .footer input {
+            width: 90%;
+            height: 40px;
+            outline: none;
+            font-size: 20px;
+            text-indent: 10px;
+            position: absolute;
+            border-radius: 3px;
+            /* right: 20px; */
+        }
+        .footer span {
+            display: inline-block;
+            width: 100%;
+            height: 40px;
+            background: #ccc;
+            font-weight: 900;
+            line-height: 40px;
+            cursor: pointer;
+            text-align: center;
+            position: absolute;
+            right: 10px;
+            border-radius: 3px;
+            font-size: 20px;
+        }
+        .footer span:hover {
+            color: #fff;
+            background: #999;
+        }
+        #user_face_icon {
+            display: inline-block;
+            background: red;
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            position: absolute;
+            bottom: 6px;
+            left: 14px;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        img {
+            width: 60px;
+            height: 60px;
+        }
+        ::-webkit-scrollbar {display:none}
+        .content {
+            font-size: 20px;
+            width: 100%;
+            height: 510px;
+            overflow: auto;
+            padding: 5px;
+        }
+        .content li {
+            margin-top: 10px;
+            padding-left: 10px;
+            width: 98%;
+            display: block;
+            clear: both;
+            overflow: hidden;
+        }
+        .content li img {
+            float: left;
+        }
+        .content li span{
+            background: #7cfc00;
+            padding: 10px;
+            border-radius: 10px;
+            float: left;
+            margin: 6px 10px 0 10px;
+            max-width: 80%;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 3px #ccc;
+            font-size: 20px;
+        }
+        .content li img.imgleft { 
+            float: left; 
+        }
+        .content li img.imgright { 
+            float: right; 
+        }
+        .content li span.spanleft { 
+            float: left;
+            background: #fff;
+        }
+        .content li span.spanright { 
+            float: right;
+            background: #7cfc00;
+        }
+    </style>
+    <script>
+        
+        window.onload = function(){
+
+            // var arrIcon = ['http://www.xttblog.com/icons/favicon.ico','http://www.xttblog.com/wp-content/uploads/2016/03/123.png'];
+            var iNow = -1;    //用来累加改变左右浮动
+            var content = document.getElementsByTagName('ul')[0];
+            var img = content.getElementsByTagName('img');
+            var span = content.getElementsByTagName('span');
+            var btn = document.getElementById('btn');
+            var text = document.getElementById('text');
+
+            var list = <?php echo json_encode($list);?>;
+            console.log(list[0])
+            var uid = <?php echo (session('uid')); ?>;
+            console.log(uid)
+            
+            for(var i=0;i<list.length;i++){
+                content.innerHTML += '<li><span>'+list[i].content+'</span></li>';
+                iNow++;
+                console.log(list[i].userid==uid)
+                if(list[i].userid==uid){
+                    // img[iNow].className += 'imgright';
+                    span[iNow].className += 'spanright';
+                }else {
+                    // img[iNow].className += 'imgleft';
+                    span[iNow].className += 'spanleft';
+                }
+                text.value = '';
+                // 内容过多时,将滚动条放置到最底端
+                content.scrollTop=content.scrollHeight;  
+            }
+            btn.onclick = function(){
+                if(text.value ==''){
+                    alert('不能发送空消息');
+                }else {
+                    var name = '<?php echo ($_GET['mm778899']); ?>';
+                    $.ajax({
+                        url:"<?php echo U('Index/messageadd');?>",
+                        async:true,
+                        type:'post',
+                        data:{val:text.value,name:name},
+                        dataType:'json',
+                        success:function(res){
+                            if(res.code==100){
+                                // document.location.href="/index.php/Home/Goods/details?gid="+res.gid;
+                                document.location.reload();
+                            }
+                        },error:function(res){
+                            console.log(res)
+                        }
+                    })
+                }
+            }
+        }
+        setInterval(function(){
+            $.ajax({
+                url:"<?php echo U('Index/messageinfo');?>?mm778899=<?php echo ($_GET['mm778899']); ?>",
+                async:true,
+                type:'post',
+                data:{},
+                dataType:'json',
+                success:function(res){
+                    if(res.code==100){
+                        // console.log(res)
+                        // document.location.href="/index.php/Home/Goods/details?gid="+res.gid;
+                        // document.location.reload();
+
+                        // var iNow = -1;    //用来累加改变左右浮动
+                        var content = document.getElementsByTagName('ul')[0];
+
+                        // var list = <?php echo json_encode($list);?>;
+                        // console.log(list[0])
+                        var uid = <?php echo (session('uid')); ?>;
+                        // console.log(uid)
+
+                        while(content.hasChildNodes()){
+                            content.removeChild(content.firstChild);
+                        }
+                        
+                        for(var i=0;i<res.list.length;i++){
+                            var li = $("<li></li>");
+                            var span = $("<span></span>");
+                            span.html(res.list[i].content);                         
+                            // console.log(res.list[i].userid==uid)
+                            if(res.list[i].userid==uid){
+                                span.addClass("spanright");
+                            }else {
+                                span.addClass('spanleft');
+                            }
+                            li.append(span);
+                            $("#content").append(li);
+                            text.value = '';
+                            content.scrollTop=content.scrollHeight;  
+                        }
+                        // $("#content").listview("refresh");
+                    }
+                },error:function(res){
+                    console.log(res)
+                }
+            })
+            },2000);
+    </script>
+</head>
+<body>
+    <div class="header">
+        <span style="float: left;"><?php echo ($name); ?></span>
+        <span style="float: right;"><?php echo ($time); ?></span>
+    </div>
+    <ul class="content" id="content"></ul>
+    <div class="footer">
+        <div class="row">
+            <div class="col-xs-10">
+                <input id="text" type="text" placeholder="说点什么吧...">
+            </div>
+            <div class="col-xs-2">
+                <span id="btn">发送</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

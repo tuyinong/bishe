@@ -1,0 +1,113 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .header {
+            background: #000;
+            height: 60px;
+            width: 100%;
+            color: #fff;
+            line-height: 60px;
+            font-size: 20px;
+            padding: 0 10px;
+        }
+        img {
+            width: 60px;
+            height: 60px;
+        }
+        .content {
+            font-size: 20px;
+            width: 100%;
+            height: 510px;
+            overflow: auto;
+            padding: 5px;
+        }
+        .content li {
+            margin-top: 10px;
+            padding-left: 10px;
+            width: 98%;
+            display: block;
+            clear: both;
+            overflow: hidden;
+        }
+        .content li img {
+            float: left;
+        }
+        .content li span{
+            background: #7cfc00;
+            padding: 10px;
+            border-radius: 10px;
+            float: left;
+            margin: 6px 10px 0 10px;
+            max-width: 80%;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 3px #ccc;
+            font-size: 20px;
+        }
+        .content li img.imgleft { 
+            float: left; 
+        }
+        .content li img.imgright { 
+            float: right; 
+        }
+        .content li span.spanleft { 
+            float: left;
+            background: #fff;
+        }
+        .content li span.spanright { 
+            float: right;
+            background: #7cfc00;
+        }
+    </style>
+</head>
+<script>
+    
+    window.onload = function(){
+
+        // var arrIcon = ['http://www.xttblog.com/icons/favicon.ico','http://www.xttblog.com/wp-content/uploads/2016/03/123.png'];
+        var iNow = -1;    //用来累加改变左右浮动
+        var content = document.getElementsByTagName('ul')[0];
+        var img = content.getElementsByTagName('img');
+        var span = content.getElementsByTagName('span');
+        var btn = document.getElementById('btn');
+        var text = document.getElementById('text');
+
+        var list = <?php echo json_encode($list);?>;
+        console.log(list[0])
+        var uid = <?php echo (session('uid')); ?>;
+        console.log(uid)
+        
+        for(var i=0;i<list.length;i++){
+            content.innerHTML += '<li><span>'+list[i].content+'</span></li>';
+            iNow++;
+            console.log(list[i].userid==uid)
+            if(list[i].userid==uid){
+                // img[iNow].className += 'imgright';
+                span[iNow].className += 'spanright';
+            }else {
+                // img[iNow].className += 'imgleft';
+                span[iNow].className += 'spanleft';
+            }
+            text.value = '';
+            // 内容过多时,将滚动条放置到最底端
+            content.scrollTop=content.scrollHeight;  
+        }
+
+        setInterval(function(){
+            // $(".content").load(location.href+" .content");
+            document.location.reload();
+        },3000);
+    }
+</script>
+<body>
+    <div class="header">
+        <span style="float: left;"><?php echo ($name); ?></span>
+        <span style="float: right;"><?php echo ($time); ?></span>
+    </div>
+    <ul class="content"></ul>
+</body>
+</html>

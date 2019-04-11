@@ -16,6 +16,7 @@
 <script src="/Application/Public/layer/layer.js"></script>
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<!-- <script src="/Application/Public/js/jquery.mobile-1.4.5.js"></script> -->
 </head>
 <body>
     <!DOCTYPE html>
@@ -36,6 +37,7 @@
 <script src="/Application/Public/layer/layer.js"></script>
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<!-- <script src="/Application/Public/js/jquery.mobile-1.4.5.js"></script> -->
 </head>
 <body>
     <?php session_start(); ?>
@@ -60,6 +62,15 @@
     }
 </script>
 </html>
+    
+
+    <?php if($_GET['family']== 58): ?><div class="container">
+            <div style="border: 1px solid #cccccc;margin: 0 10px;padding: 5px;">
+                <span style="padding-right: 5px;border-right: 1px solid #cccccc;">当前定位城市</span>
+                <span id="addr"><?php echo (session('province')); ?>&nbsp;&nbsp;&nbsp;<?php echo (session('city')); ?></span>
+            </div>
+        </div><?php endif; ?>
+
     <div class="container" style="margin-bottom:75px;">
         <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-xs-6">
                 <div class="goodslist" onclick="todetails(<?php echo ($vo["id"]); ?>)">
@@ -75,7 +86,7 @@
                             <?php echo ($vo["g_price"]); ?>
                         </div>
                         <div class="info_bottom">
-                            <img src="/Application/Public/img/zuoye1.png" alt=""> <?php echo ($vo["u_nickname"]); ?>
+                            <img src="/Application/Public/img/toxiang.png" alt=""> <?php echo ($vo["u_nickname"]); ?>
                         </div>
                     </div>
                 </div>
@@ -85,7 +96,11 @@
         </div>
     </div>
 </body>
+
 <script>
+    // setInterval(function(){
+    //     document.location.reload();
+    // },2000);
     // 点击商品跳转到详情页
     function todetails(gid){
         // console.log(gid);

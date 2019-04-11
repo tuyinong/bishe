@@ -9,6 +9,17 @@
 </head>
 <body>
     <include file="Pub:search"/>
+    
+
+    <if condition="$Think.get.family eq 58">
+        <div class="container">
+            <div style="border: 1px solid #cccccc;margin: 0 10px;padding: 5px;">
+                <span style="padding-right: 5px;border-right: 1px solid #cccccc;">当前定位城市</span>
+                <span id="addr"><#$Think.session.province#>&nbsp;&nbsp;&nbsp;<#$Think.session.city#></span>
+            </div>
+        </div>
+    </if>
+
     <div class="container" style="margin-bottom:75px;">
         <volist name="list" id="vo">
             <div class="col-xs-6">
@@ -25,7 +36,7 @@
                             <#$vo.g_price#>
                         </div>
                         <div class="info_bottom">
-                            <img src="__PUBLIC__/img/zuoye1.png" alt=""> <#$vo.u_nickname#>
+                            <img src="__PUBLIC__/img/toxiang.png" alt=""> <#$vo.u_nickname#>
                         </div>
                     </div>
                 </div>
@@ -36,7 +47,11 @@
         </div>
     </div>
 </body>
+
 <script>
+    // setInterval(function(){
+    //     document.location.reload();
+    // },2000);
     // 点击商品跳转到详情页
     function todetails(gid){
         // console.log(gid);

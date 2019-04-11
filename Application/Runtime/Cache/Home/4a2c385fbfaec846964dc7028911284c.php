@@ -16,6 +16,7 @@
 <script src="/Application/Public/layer/layer.js"></script>
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<!-- <script src="/Application/Public/js/jquery.mobile-1.4.5.js"></script> -->
     <style>
         body{
             width: 100%;
@@ -106,10 +107,13 @@
     </div>
     <a href="<?php echo U('Login/register');?>">
         <div class="other">
-            ———————注册新用户———————
+            ——————注册新用户——————
         </div>
     </a>
+    <div id="allmap"></div>
 </body>
+<!-- 获取当前地理位置 -->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=KLfQyVLqNaKwuyw69FMTQdIG9gRsaLsc"></script>
 <script>
     // 用户名验证先不做
     // 用户登录ajax提交
@@ -129,8 +133,55 @@
                     console.log(res)
                     if (res == 1) {
                         console.log('登录成功');
-                        location.href="/index.php/Home/User/index";
-                        // history.go(-1);
+                        // location.href="/index.php/Home/User/index";
+                        // history.go(-1);location.reload();
+                        // 获取当前地理位置
+                        var map = new BMap.Map("allmap");
+                        var point = new BMap.Point(116.331398,39.897445);
+                        map.centerAndZoom(point,12);
+
+                        var geolocation = new BMap.Geolocation();
+                        geolocation.getCurrentPosition(function(r){
+                            if(this.getStatus() == BMAP_STATUS_SUCCESS){
+                                // var mk = new BMap.Marker(r.point);
+                                // map.addOverlay(mk);
+                                // map.panTo(r.point);
+                                // alert('您的位置：'+r.point.lng+','+r.point.lat);
+                                // var gc = new BMap.Geocoder();
+                                
+                                // var map = new BMap.Map("allmap");
+                                // var point = new BMap.Point(r.point.lng,r.point.lat);
+                                // map.centerAndZoom(point,12);
+                                var geoc = new BMap.Geocoder();    
+
+                                geoc.getLocation(r.point, function(rs){
+                                    var addComp = rs.addressComponents;
+                                    // alert(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);
+                                    // $("#addr").html(addComp.province+" "+addComp.city);
+                                    $.ajax({
+                                        url:"<?php echo U('User/address');?>",
+                                        async:true,
+                                        type:'post',
+                                        data:{province:addComp.province,city:addComp.city},
+                                        dataType:'json',
+                                        success:function(res){
+                                            if(res.code==100){
+                                                // document.location.reload()
+                                                // history.go(-1);
+                                            }
+                                            console.log(res)
+                                        },error:function(res){
+                                            console.log(res)
+                                        }
+                                    })
+                                });
+                            }
+                            else {
+                                alert('failed'+this.getStatus());
+                            }        
+                        });
+                        // 结束获取当前地理位置
+                        setTimeout('self.location=document.referrer;',500)// 返回上一页并刷新上一页
                     }
                     if (res == 2) {
                         console.log('登录失败');
@@ -153,4 +204,53 @@
         }
     })
 </script>
+<!-- 获取当前地理位置 -->
+<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=KLfQyVLqNaKwuyw69FMTQdIG9gRsaLsc"></script>
+<script>
+    var map = new BMap.Map("allmap");
+    var point = new BMap.Point(116.331398,39.897445);
+    map.centerAndZoom(point,12);
+
+    var geolocation = new BMap.Geolocation();
+    geolocation.getCurrentPosition(function(r){
+        if(this.getStatus() == BMAP_STATUS_SUCCESS){
+            // var mk = new BMap.Marker(r.point);
+            // map.addOverlay(mk);
+            // map.panTo(r.point);
+            // alert('您的位置：'+r.point.lng+','+r.point.lat);
+            // var gc = new BMap.Geocoder();
+             
+            // var map = new BMap.Map("allmap");
+            // var point = new BMap.Point(r.point.lng,r.point.lat);
+            // map.centerAndZoom(point,12);
+            var geoc = new BMap.Geocoder();    
+
+            geoc.getLocation(r.point, function(rs){
+                var addComp = rs.addressComponents;
+                // alert(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);
+                // $("#addr").html(addComp.province+" "+addComp.city);
+                $.ajax({
+                    url:"<?php echo U('User/address');?>",
+                    async:true,
+                    type:'post',
+                    data:{province:addComp.province,city:addComp.city},
+                    dataType:'json',
+                    success:function(res){
+                        // if(res.code==100){
+                        //     // document.location.reload()
+                        //     // history.go(-1);
+                        // }
+                        console.log(res)
+                    },error:function(res){
+                        console.log(res)
+                    }
+                })
+            });
+        }
+        else {
+            alert('failed'+this.getStatus());
+        }        
+    }); 
+</script> -->
+<!-- 结束获取当前地理位置 -->
 </html>

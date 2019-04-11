@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>系统消息</title>
+    <include file="Pub:style" />
+    <script>
+        
+        window.onload = function(){
+
+            var list = <#:json_encode($list)#>;
+            console.log(list[0])
+            var uid = <#$Think.session.uid#>;
+            console.log(uid)
+
+            // var arrIcon = ['http://www.xttblog.com/icons/favicon.ico','http://www.xttblog.com/wp-content/uploads/2016/03/123.png'];
+            var iNow = -1;    //用来累加改变左右浮动
+            var content = document.getElementsByTagName('ul')[0];
+            var img = content.getElementsByTagName('img');
+            var span = content.getElementsByTagName('span');
+            var btn = document.getElementById('btn');
+            var text = document.getElementById('text');
+
+            for(var i=0;i<list.length;i++){
+                content.innerHTML += '<li><span>'+list[i].content+'</span></li>';
+                iNow++;
+                console.log(list[i].userid==uid)
+                if(list[i].userid==uid){
+                    // img[iNow].className += 'imgright';
+                    span[iNow].className += 'spanright';
+                }else {
+                    // img[iNow].className += 'imgleft';
+                    span[iNow].className += 'spanleft';
+                }
+                text.value = '';
+                // 内容过多时,将滚动条放置到最底端
+                content.scrollTop=content.scrollHeight;  
+            }
+
+            // setInterval(function(){
+            //     document.location.reload();
+            // },2000)
+            btn.onclick = function(){
+                if(text.value ==''){
+                    alert('不能发送空消息');
+                }else {
+                    var name = '<#$Think.get.mm778899#>';
+                    $.ajax({
+                        url:"<#:U('Index/messageadd')#>",
+                        async:true,
+                        type:'post',
+                        data:{val:text.value,name:name},
+                        dataType:'json',
+                        success:function(res){
+                            if(res.code==100){
+                                // document.location.href="__MODULE__/Goods/details?gid="+res.gid;
+                                document.location.reload();
+                            }
+                        },error:function(res){
+                            console.log(res)
+                        }
+                    })
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div style="height:10px;width:100%;"></div>
+    <volist name="list" id="vo">
+        <div class="container">
+            <div class="panel" style="border: 1px solid #dddddd;">
+                <div class="panel-heading" style="font-weight:700">
+                    <#$vo.n_title#>
+                </div>
+                <div class="panel-body">
+                    <p><#$vo.n_content#></p>
+                </div>
+                <div class="panel-footer">
+                    <#$vo.n_sendtime#>
+                </div>
+            </div>
+        </div>
+    </volist>
+</body>
+</html>

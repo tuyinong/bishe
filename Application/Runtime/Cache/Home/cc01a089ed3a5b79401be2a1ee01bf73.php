@@ -7,6 +7,7 @@
     <title>评价详情</title>
     <!-- css样式 -->
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/goodslist.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/usergoodslist.css">
 <!-- js操作 -->
@@ -15,6 +16,7 @@
 <script src="/Application/Public/layer/layer.js"></script>
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<!-- <script src="/Application/Public/js/jquery.mobile-1.4.5.js"></script> -->
     <style>
         .zhui{
             padding: 5px;
@@ -27,7 +29,7 @@
     <?php if(($flag) == "1"): ?><div class="jumbotron" style="margin-bottom:0">
             <div class="media">
                 <div class="media-left">
-                    <img src="/Application/Public/img/zuoye1.png" class="media-object" style="width:60px">
+                    <img src="/Application/Public/img/toxiang.png" class="media-object" style="width:60px">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading"><?php echo ($info["u_nickname"]); ?></h4>
@@ -39,7 +41,7 @@
         <div class="zhui">追评</div>
         <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="media">
                 <div class="media-left">
-                    <img src="/Application/Public/img/zuoye1.png" class="media-object" style="width:60px">
+                    <img src="/Application/Public/img/toxiang.png" class="media-object" style="width:60px">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading"><?php echo ($vo["u_nickname"]); ?></h4>

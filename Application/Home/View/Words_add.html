@@ -36,8 +36,11 @@
             dataType:'json',
             success:function(res){
                 if(res.code==100){
-                    document.location.href='__MODULE__/Words/index?gid='+res.gid;
+                    // document.location.href='__MODULE__/Words/index?gid='+res.gid;
                     // history.go(-1);
+                    self.location=document.referrer;
+                }else if(res.code==200){
+                    layer.msg('操作失败，判断用户是否登录');
                 }
             },error:function(res){
                 console.log(res)

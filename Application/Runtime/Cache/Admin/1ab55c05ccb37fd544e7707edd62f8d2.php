@@ -258,6 +258,11 @@
             margin-top: -12px;
             width: 25px;
         }
+        .top span{
+            line-height: 50px;
+            padding: 10px;
+            font-weight: 700;
+        }
         .left{
             position: fixed;
             top: 0;
@@ -348,6 +353,7 @@
 <body>
     <?php session_start(); ?>
     <div class="top">
+        <span>二爪二手商品交易平台管理员系统</span>
         <a href="<?php echo U('Login/logout');?>"><img id="logout" src="/Application/Public/img/logout.png" alt="" data-toggle="tooltip" title="退出"></a>
     </div>
     <div class="left">
@@ -390,15 +396,15 @@
                     <a>评价管理</a>
                     <ul>
                         <li><a href="<?php echo U('Evaluations/index');?>">新评价信息</a></li>
-                        <li><a href="">查询评价信息</a></li>
+                        <li><a href="<?php echo U('Evaluations/queryeva');?>">查询评价信息</a></li>
                     </ul>
                 </li>
                 <li>
                     <a>管理员信息</a>
                     <ul>
-                        <li><a href="<?php echo U('Admins/index');?>" style="padding:0;">管理员列表</a></li>
-                        <li><a href="<?php echo U('Admins/add');?>" style="padding:0;">添加管理员</a></li>
-                        <li><a href="<?php echo U('Admins/info');?>" style="padding:0;">管理员信息</a></li>
+                        <?php if($_SESSION['ainfo']['a_level']== 1): ?><li><a href="<?php echo U('Admins/index');?>" style="padding:0;">管理员列表</a></li>
+                            <li><a href="<?php echo U('Admins/add');?>" style="padding:0;">添加管理员</a></li><?php endif; ?>
+                        <li><a href="<?php echo U('Admins/info');?>" style="padding:0;">个人信息</a></li>
                         <!-- <li><a href="">管理员信息</a></li> -->
                     </ul>
                 </li>
@@ -435,7 +441,7 @@
             </div>
             <div class="rowbox">
                 <div class="fbox">
-                    <form action="" class="form">
+                    <form class="form" id="noticeform">
                         <!-- 通知的主题 -->
                         <div class="form-group row">
                             <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="title">通知主题:</label>
@@ -448,10 +454,15 @@
                             <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="object">通知的对象:</label>
                             <div class="col-xs-8 col-sm-6">
                                 <div style="padding:6px 10px">
-                                    <input type="radio" name="object" id="object1" value="0" checked>&nbsp;&nbsp;全体用户&nbsp;&nbsp;&nbsp;
-                                    <input type="radio" name="object" id="object2" value="1">&nbsp;&nbsp;个人&nbsp;&nbsp;&nbsp;
+                                    <?php if($_GET['uid']){?>
+                                        <input type="radio" name="object" id="object1" value="0" >&nbsp;&nbsp;全体用户&nbsp;&nbsp;&nbsp;
+                                        <input type="radio" name="object" id="object2" value="1" checked>&nbsp;&nbsp;个人&nbsp;&nbsp;&nbsp;
+                                    <?php }else{ ?>
+                                        <input type="radio" name="object" id="object1" value="0" checked>&nbsp;&nbsp;全体用户&nbsp;&nbsp;&nbsp;
+                                        <input type="radio" name="object" id="object2" value="1" >&nbsp;&nbsp;个人&nbsp;&nbsp;&nbsp;
+                                    <?php } ?>
                                 </div>
-                                <input type="text" name="userid" id="userid" value="" class="form-control" placeholder="通知单个用户id" disabled>
+                                <input type="text" name="userid" id="userid" value="<?php echo ($_GET['uid']); ?>" class="form-control" placeholder="通知单个用户id" disabled>
                             </div>
                         </div>
                         <!-- 通知的内容 -->
@@ -475,14 +486,14 @@
                                         <span class="glyphicon glyphicon-th"></span>
                                     </span>
                                 </div>
-                                <input type="hidden" id="sendtime" value="" />
+                                <input type="hidden" id="sendtime" name="sendtime" value="" />
                                 <br/>
                             </div>
                         </div>
                         <!-- 按钮 -->
                         <div class="form-group col-xs-offset-4 col-xs-4">
-                            <button class="btn btn-primary">确认保存</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <button class="btn btn-info">返&nbsp;&nbsp;&nbsp;回</button>
+                            <button type="button" class="btn btn-primary" onclick="add()">确认保存</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="reset" class="btn btn-info">取&nbsp;&nbsp;&nbsp;消</button>
                         </div>  
                     </form>
                 </div>
@@ -496,7 +507,9 @@
     $('input[type=radio][name=object]').change(function(){
         if(this.value =='1'){
             $("#userid").removeAttr('disabled');
+            $("#userid").val(<?php echo ($_GET['uid']); ?>);
         }else{
+            $("#userid").val("");
             $("#userid").attr('disabled','');
         }
     })
@@ -511,6 +524,27 @@
         forceParse: 0,
         showMeridian: 1
     });
-
+    // 发送信息
+    function add(){
+        var form_data = $("#noticeform").serializeArray();
+        console.log(form_data)
+        $.ajax({
+            url:"<?php echo U('Notices/add');?>",
+            async:true,
+            type:'post',
+            data:{data:JSON.stringify(form_data)},
+            dataType:'json',
+            success:function(res){
+                console.log(res.code)
+                if(res.code==100){
+                    document.location.reload();
+                }else if(res.code==200){
+                    layer.msg('失败');
+                }
+            },error:function(res){
+                console.log(res)
+            }
+        })
+    }
 </script>
 </html>

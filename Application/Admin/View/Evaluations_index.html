@@ -23,7 +23,6 @@
                             <tr>
                                 <th>评价时间</th>
                                 <th>商品ID</th>
-                                <th>评价等级</th>
                                 <th>评价内容</th>
                                 <th>评价用户</th>
                                 <th>操作</th>
@@ -34,11 +33,10 @@
                                 <tr>
                                     <td><#$vo.e_time#></td>
                                     <td><#$vo.r_gid#></td>
-                                    <td><#$vo.e_level#></td>
                                     <td><#$vo.e_info#></td>
                                     <td><#$vo.u_nickname#></td>
                                     <td>
-                                        <button class="btn btn-primary" id="">查看交易详情</button>
+                                        <button class="btn btn-primary" onclick="edelete(<#$vo.id#>)">删除评价</button>
                                     </td>
                                 </tr>
                             </volist>
@@ -49,4 +47,25 @@
         </div>
     </div>
 </body>
+<script>
+    function edelete(eid){
+        $.ajax({
+            url: "<#:U('Evaluations/deleva')#>",
+            async: true,
+            type: 'POST',
+            data: {eid:eid},
+            dataType: 'json',
+            success: function (res) {
+                if (res.code == 100) {
+                    window.location.reload();
+                } else {
+                    layer.msg('操作已成功，请勿重复操作');
+                }
+                console.log(res)
+            }, error: function (res) {
+                console.log('cuowu');
+            }
+        })
+    }
+</script>
 </html>

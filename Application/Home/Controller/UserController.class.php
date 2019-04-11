@@ -41,7 +41,7 @@
             }elseif($type==3){  //修改昵称
                 $info['u_nickname'] = $data = $_POST['name'];
                 $res = $user->where('id = '.$uid)->save($info);
-                if(res){
+                if($res){
                     $this->ajaxReturn(array('code'=>100));
                 }else{
                     $this->ajaxReturn(array('code'=>200));
@@ -58,5 +58,34 @@
             session_unset();
             $this->ajaxReturn(array('code'=>100));
         }
+    }
+    // 地址信息
+    public function address(){
+        $info['u_provice'] = $province = $_POST['province'];
+        $info['u_city'] = $city = $_POST['city'];
+        $uid = $_SESSION['uid'];
+        $u = M('users');
+        // var_dump($info);
+        // echo $uid;
+        $res = $u->where("id = $uid")->save($info);
+        // var_dump($res);
+        if($res){
+            $_SESSION['province'] = $province;
+            $_SESSION['city'] = $city;
+            $this->ajaxReturn(array('code'=>100));
+        }else{
+            $res = $u->where("id = $uid")->find();
+            $_SESSION['province'] = $res['u_provice'];
+            $_SESSION['city'] = $res['u_city'];
+            $this->ajaxReturn(array('code'=>100));
+        }
+    }
+    // 积分
+    public function score(){
+        $s = M('score');
+        $uid = $_SESSION['uid'];
+        $all = $s->where('s_userid')->SUM('s_num');
+        $this->assign('all',$all);
+        $this->display();
     }
  } 

@@ -252,6 +252,11 @@
             margin-top: -12px;
             width: 25px;
         }
+        .top span{
+            line-height: 50px;
+            padding: 10px;
+            font-weight: 700;
+        }
         .left{
             position: fixed;
             top: 0;
@@ -342,6 +347,7 @@
 <body>
     <?php session_start(); ?>
     <div class="top">
+        <span>二爪二手商品交易平台管理员系统</span>
         <a href="<?php echo U('Login/logout');?>"><img id="logout" src="/Application/Public/img/logout.png" alt="" data-toggle="tooltip" title="退出"></a>
     </div>
     <div class="left">
@@ -384,15 +390,15 @@
                     <a>评价管理</a>
                     <ul>
                         <li><a href="<?php echo U('Evaluations/index');?>">新评价信息</a></li>
-                        <li><a href="">查询评价信息</a></li>
+                        <li><a href="<?php echo U('Evaluations/queryeva');?>">查询评价信息</a></li>
                     </ul>
                 </li>
                 <li>
                     <a>管理员信息</a>
                     <ul>
-                        <li><a href="<?php echo U('Admins/index');?>" style="padding:0;">管理员列表</a></li>
-                        <li><a href="<?php echo U('Admins/add');?>" style="padding:0;">添加管理员</a></li>
-                        <li><a href="<?php echo U('Admins/info');?>" style="padding:0;">管理员信息</a></li>
+                        <?php if($_SESSION['ainfo']['a_level']== 1): ?><li><a href="<?php echo U('Admins/index');?>" style="padding:0;">管理员列表</a></li>
+                            <li><a href="<?php echo U('Admins/add');?>" style="padding:0;">添加管理员</a></li><?php endif; ?>
+                        <li><a href="<?php echo U('Admins/info');?>" style="padding:0;">个人信息</a></li>
                         <!-- <li><a href="">管理员信息</a></li> -->
                     </ul>
                 </li>

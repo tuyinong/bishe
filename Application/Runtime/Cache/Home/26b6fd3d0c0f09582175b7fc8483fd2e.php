@@ -7,6 +7,7 @@
     <title>收货地址</title>
     <!-- css样式 -->
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/goodslist.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/usergoodslist.css">
 <!-- js操作 -->
@@ -15,6 +16,7 @@
 <script src="/Application/Public/layer/layer.js"></script>
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<!-- <script src="/Application/Public/js/jquery.mobile-1.4.5.js"></script> -->
 </head>
 <body>
     <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="row" style="margin:5px;" onclick="javascript:document.location.href='/index.php/Home/Address/update?aid=<?php echo ($vo["id"]); ?>'">

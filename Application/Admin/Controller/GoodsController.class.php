@@ -115,4 +115,17 @@ class GoodsController extends Controller{
         $this->assign('list',array_merge($res1,$res2));
         $this->display();
     }
+    // 重新审核商品
+    public function stateto(){
+        $gid = $_POST['gid'];
+        $goods = M('goods');
+        $info['g_state'] = 0;
+        $info['g_time'] = $time = date('Y-m-d H:i:s',time());
+        $res = $goods->where("id=$gid")->save($info);
+        if(res){
+            $this->ajaxReturn(array('code'=>100));
+        }else{
+            $this->ajaxReturn(array('code'=>200));
+        }
+    }
 }

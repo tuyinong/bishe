@@ -7,6 +7,7 @@
     <title>我卖出的商品</title>
     <!-- css样式 -->
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/goodslist.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
 <link rel="stylesheet" type="text/css" href="/Application/Public/css/usergoodslist.css">
 <!-- js操作 -->
@@ -15,6 +16,7 @@
 <script src="/Application/Public/layer/layer.js"></script>
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<!-- <script src="/Application/Public/js/jquery.mobile-1.4.5.js"></script> -->
 </head>
 <body>
     <?php if(empty($list) == 1): ?><div style="text-align:center;margin-top:20px">您还没有买到商品！</div>
@@ -31,7 +33,7 @@
                             </div>
                         </div>
                         <div class="usergoodsbox-footer">
-                            <button>...</button>
+                            <!-- <button>...</button> -->
                             <button onclick="lookeva('<?php echo ($vo["id"]); ?>')">查看评价</button>
                         </div>
                     </div>

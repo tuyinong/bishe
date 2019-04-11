@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <div id="allmap"></div>
+</body>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=KLfQyVLqNaKwuyw69FMTQdIG9gRsaLsc"></script>
+<script>
+    var map = new BMap.Map("allmap");
+    var point = new BMap.Point(116.331398,39.897445);
+    map.centerAndZoom(point,12);
+
+    var geolocation = new BMap.Geolocation();
+    geolocation.getCurrentPosition(function(r){
+        if(this.getStatus() == BMAP_STATUS_SUCCESS){
+            // var mk = new BMap.Marker(r.point);
+            // map.addOverlay(mk);
+            // map.panTo(r.point);
+            // alert('您的位置：'+r.point.lng+','+r.point.lat);
+            // var gc = new BMap.Geocoder();
+             
+            // var map = new BMap.Map("allmap");
+            // var point = new BMap.Point(r.point.lng,r.point.lat);
+            // map.centerAndZoom(point,12);
+            var geoc = new BMap.Geocoder();    
+
+            geoc.getLocation(r.point, function(rs){
+                var addComp = rs.addressComponents;
+                // alert(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);
+                $.ajax({
+                    url:"<#:U('Record/take')#>",
+                    async:true,
+                    type:'post',
+                    data:{rid:rid},
+                    dataType:'json',
+                    success:function(res){
+                        if(res.code==100){
+                            document.location.reload()
+                            // history.go(-1);
+                        }else if(res.code==200){
+                            layer.msg('操作失败，判断用户是否登录');
+                        }
+                    },error:function(res){
+                        console.log(res)
+                    }
+                })
+            });
+        }
+        else {
+            alert('failed'+this.getStatus());
+        }        
+    });
+</script>
+</html>

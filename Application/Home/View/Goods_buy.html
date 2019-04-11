@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>交易支付</title>
+    <include file="Pub:style" />
+    <style>
+        .zhui{
+            padding: 5px;
+            border-bottom: 1px solid #d0d0d0;
+            font-weight: 700;
+        }
+        .ss{
+            width: 100%;
+            height: 38px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron" style="margin-bottom:0;padding-top: 10px;padding-bottom: 10px;">
+        <div class="media" style="background-color: white;">
+            <div class="media-left">
+                <img id="gimg" src="__PUBLIC__/img/toxiang.png" class="media-object" style="width:60px">
+                <script>
+                    var imgstr = <#:json_encode($info['g_img'])#>;
+                    var imgarr = imgstr.split(" ");
+                    var img = $("#gimg");
+                    img.attr('src',imgarr[1]);
+                </script>
+            </div>
+            <div class="media-body">
+                <div class="ss">
+                    <h4 class="media-heading"><#$info.g_name#></h4>
+                </div>
+                <p style="font-size:13px"><#$info.g_time#></p>
+            </div>
+        </div>
+    </div>
+    <form action="" id="buyform">
+        <input type="hidden" name="gid" id="gid" value="<#$info.id#>">
+        <div class="list" style="height: 80px;" onclick="buyaddr()">
+            <span class="span1" style="line-height: 80px;">收货地址</span>
+            <span class="span2" style="margin-top: 10px;line-height: 20px;"><#$address.a_name#><#$address.a_phone#></span>
+            <span class="span2" style="line-height: 20px;"><#$address.a_province#><#$address.a_city#><#$address.a_area#><#$address.a_street#></span>
+            <span class="span2" style="line-height: 20px;"><#$address.a_addr#></span>
+            <!-- <span class="span2">&gt;</span> -->
+        </div>
+        <div class="list">
+            <span class="span1">需付款</span>
+            <span class="span2"><#$info.g_price#></span>
+        </div>
+        <input type="hidden" name="price" id="price" value="<#$info.g_price#>">
+        <div class="list">
+            <span class="span1">创建时间</span>
+            <span class="span2"><#$time#></span>
+        </div>
+        <div class="addrfooter" id="buybtn">付款</div>
+    </form>
+</body>
+<script>
+    // 地址
+    function buyaddr(){
+        document.location.href="__MODULE__/Address/choose?gid="+<#$Think.get.gid#>;
+    }
+    // 购买
+    $("#buybtn").click(function(){
+        var form_data = $("#buyform").serializeArray();
+        $.ajax({
+            url:"<#:U('Record/add')#>",
+            async:true,
+            type:'post',
+            data:{data:form_data},
+            dataType:'json',
+            success:function(res){
+                if(res.code==100){
+                    document.location.href="__MODULE__/Record/buy";
+                }
+            },error:function(res){
+                console.log(res)
+            }
+        })
+    })
+</script>
+</html>

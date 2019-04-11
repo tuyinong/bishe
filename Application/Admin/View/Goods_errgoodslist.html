@@ -48,7 +48,8 @@
                                     <td><#$vo.g_price#></td>
                                     <td><#$vo.g_time#></td>
                                     <td>
-                                        <button class="btn btn-primary">联系卖家</button>
+                                        <button class="btn btn-primary" onclick="changestate(<#$vo.id#>)">重新审核</button>
+                                        <button class="btn btn-primary" onclick="send('<#$vo.from_id#>')">联系卖家</button>
                                     </td>
                                 </tr>
                             </volist>
@@ -63,6 +64,30 @@
     </div>
 </body>
 <script>
+    //发送通知
+    function send(uid){
+        location.href = "__MODULE__/Notices/sendnotice?uid="+uid;
+    }
+    // 重新审核
+    function changestate(gid){
+        $.ajax({
+            url: "<#:U('Goods/stateto')#>",
+            async: true,
+            type: 'POST',
+            data: {gid:gid},
+            dataType: 'json',
+            success: function (res) {
+                if (res.code == 100) {
+                    window.location.reload();
+                } else {
+                    layer.msg('操作已成功，请勿重复操作');
+                }
+                console.log(res)
+            }, error: function (res) {
+                console.log('cuowu');
+            }
+        })
+    }
     // 搜索信息
     $("#searchbtn").click(function () {
         var name = $("#name").val();

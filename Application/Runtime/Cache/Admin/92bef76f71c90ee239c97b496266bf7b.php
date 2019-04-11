@@ -396,9 +396,9 @@
                 <li>
                     <a>管理员信息</a>
                     <ul>
-                        <li><a href="<?php echo U('Admins/index');?>" style="padding:0;">管理员列表</a></li>
-                        <li><a href="<?php echo U('Admins/add');?>" style="padding:0;">添加管理员</a></li>
-                        <li><a href="<?php echo U('Admins/info');?>" style="padding:0;">管理员信息</a></li>
+                        <?php if($_SESSION['ainfo']['a_level']== 1): ?><li><a href="<?php echo U('Admins/index');?>" style="padding:0;">管理员列表</a></li>
+                            <li><a href="<?php echo U('Admins/add');?>" style="padding:0;">添加管理员</a></li><?php endif; ?>
+                        <li><a href="<?php echo U('Admins/info');?>" style="padding:0;">个人信息</a></li>
                         <!-- <li><a href="">管理员信息</a></li> -->
                     </ul>
                 </li>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>消息列表</title>
+    <include file="Pub:style" />
+    <style>
+        .messagelistbox{
+            margin: 5px;
+            padding: 5px;
+            box-shadow: darkgrey 1px 2px 5px 0px;
+        }
+        .quan{
+            width: 26px;
+            height: 26px;
+            position: absolute;
+            background-color: red;
+            color: white;
+            right: 0;
+            border-radius: 50%;
+            top: 0px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="shuaxinid">
+        <div class="messagelistbox" onclick="tonotice()">
+            <div class="media">
+                <div class="media-left">
+                    <img src="__PUBLIC__/img/shezhi.jpg" class="media-object" style="width:60px">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading" style="margin-top: 20px;">系统消息</h4>
+                </div>
+            </div>
+        </div>
+        <volist name="list" id="vo">
+            <div class="messagelistbox" onclick="toinfo('<#$vo.tablename#>')" style="position: relative">
+                <if condition="$vo.type eq 0">
+                    <div class="quan"></div>
+                </if>
+                
+                <div class="media">
+                    <div class="media-left">
+                        <img src="__PUBLIC__/img/toxiang.png" class="media-object" style="width:60px">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><#$vo.othernn#></h4>
+                        <p><#$vo.info#></p>
+                        <p style="font-size:13px"><#$vo.sendtime#></p>
+                    </div>
+                </div>
+            </div>
+        </volist>
+    </div>
+    <div style="width:100%;height:70px;"></div>
+    <include file="Pub:footer" />
+</body>
+<script>
+    setInterval(function(){
+        $("#shuaxinid").load(location.href+" #shuaxinid");
+    },3000);
+    // 查看系统记录
+    function tonotice(){
+        window.location.href="__MODULE__/Notices/show";
+    }
+    // 查看聊天记录
+    function toinfo(name){
+        window.location.href="__MODULE__/Index/messageinfo?mm778899="+name;
+    }
+</script>
+</html>

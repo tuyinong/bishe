@@ -24,7 +24,7 @@
             </div>
             <div class="rowbox">
                 <div class="fbox">
-                    <form action="" class="form">
+                    <form class="form" id="noticeform">
                         <!-- 通知的主题 -->
                         <div class="form-group row">
                             <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="title">通知主题:</label>
@@ -37,10 +37,15 @@
                             <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="object">通知的对象:</label>
                             <div class="col-xs-8 col-sm-6">
                                 <div style="padding:6px 10px">
-                                    <input type="radio" name="object" id="object1" value="0" checked>&nbsp;&nbsp;全体用户&nbsp;&nbsp;&nbsp;
-                                    <input type="radio" name="object" id="object2" value="1">&nbsp;&nbsp;个人&nbsp;&nbsp;&nbsp;
+                                    <?php if($_GET['uid']){?>
+                                        <input type="radio" name="object" id="object1" value="0" >&nbsp;&nbsp;全体用户&nbsp;&nbsp;&nbsp;
+                                        <input type="radio" name="object" id="object2" value="1" checked>&nbsp;&nbsp;个人&nbsp;&nbsp;&nbsp;
+                                    <?php }else{ ?>
+                                        <input type="radio" name="object" id="object1" value="0" checked>&nbsp;&nbsp;全体用户&nbsp;&nbsp;&nbsp;
+                                        <input type="radio" name="object" id="object2" value="1" >&nbsp;&nbsp;个人&nbsp;&nbsp;&nbsp;
+                                    <?php } ?>
                                 </div>
-                                <input type="text" name="userid" id="userid" value="" class="form-control" placeholder="通知单个用户id" disabled>
+                                <input type="text" name="userid" id="userid" value="<#$Think.get.uid#>" class="form-control" placeholder="通知单个用户id" disabled>
                             </div>
                         </div>
                         <!-- 通知的内容 -->
@@ -64,14 +69,14 @@
                                         <span class="glyphicon glyphicon-th"></span>
                                     </span>
                                 </div>
-                                <input type="hidden" id="sendtime" value="" />
+                                <input type="hidden" id="sendtime" name="sendtime" value="" />
                                 <br/>
                             </div>
                         </div>
                         <!-- 按钮 -->
                         <div class="form-group col-xs-offset-4 col-xs-4">
-                            <button class="btn btn-primary">确认保存</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <button class="btn btn-info">返&nbsp;&nbsp;&nbsp;回</button>
+                            <button type="button" class="btn btn-primary" onclick="add()">确认保存</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="reset" class="btn btn-info">取&nbsp;&nbsp;&nbsp;消</button>
                         </div>  
                     </form>
                 </div>
@@ -85,7 +90,9 @@
     $('input[type=radio][name=object]').change(function(){
         if(this.value =='1'){
             $("#userid").removeAttr('disabled');
+            $("#userid").val(<#$Think.get.uid#>);
         }else{
+            $("#userid").val("");
             $("#userid").attr('disabled','');
         }
     })
@@ -100,6 +107,27 @@
         forceParse: 0,
         showMeridian: 1
     });
-
+    // 发送信息
+    function add(){
+        var form_data = $("#noticeform").serializeArray();
+        console.log(form_data)
+        $.ajax({
+            url:"<#:U('Notices/add')#>",
+            async:true,
+            type:'post',
+            data:{data:JSON.stringify(form_data)},
+            dataType:'json',
+            success:function(res){
+                console.log(res.code)
+                if(res.code==100){
+                    document.location.reload();
+                }else if(res.code==200){
+                    layer.msg('失败');
+                }
+            },error:function(res){
+                console.log(res)
+            }
+        })
+    }
 </script>
 </html>

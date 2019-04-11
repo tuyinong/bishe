@@ -1,0 +1,2310 @@
+[ 2019-04-11T00:00:00+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912000 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0640s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0580s ]
+
+[ 2019-04-11T00:00:03+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912003 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0600s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0910s ]
+
+[ 2019-04-11T00:00:06+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912006 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1270s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:00:09+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912009 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1090s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0580s ]
+
+[ 2019-04-11T00:00:12+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912012 )  [ RunTime:0.0030s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0550s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0590s ]
+
+[ 2019-04-11T00:00:15+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912015 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0950s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0750s ]
+
+[ 2019-04-11T00:00:18+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912018 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0680s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:00:21+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912021 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0780s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0580s ]
+
+[ 2019-04-11T00:00:24+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912024 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0530s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:00:28+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912027 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1050s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.2840s ]
+
+[ 2019-04-11T00:00:31+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912030 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.4030s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0570s ]
+
+[ 2019-04-11T00:00:34+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912033 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1200s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.2770s ]
+
+[ 2019-04-11T00:00:36+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912036 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0980s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:00:39+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912039 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1120s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:00:42+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912042 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0630s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:00:45+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912045 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0620s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:00:48+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912048 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.2230s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.1080s ]
+
+[ 2019-04-11T00:00:51+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912051 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0670s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:00:54+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912054 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1130s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:00:57+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912057 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0650s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:01:00+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912060 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.2440s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0630s ]
+
+[ 2019-04-11T00:01:03+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912063 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0660s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:01:06+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912066 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0760s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:01:09+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912069 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0800s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0490s ]
+
+[ 2019-04-11T00:01:12+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912072 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0580s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:01:15+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912075 )  [ RunTime:0.0020s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0620s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:01:18+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912078 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0950s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:01:21+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912081 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1150s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0580s ]
+
+[ 2019-04-11T00:01:24+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912084 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0690s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0590s ]
+
+[ 2019-04-11T00:01:27+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912087 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0760s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0660s ]
+
+[ 2019-04-11T00:01:30+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912090 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0730s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:01:33+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912093 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0660s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:01:36+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912096 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0670s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0650s ]
+
+[ 2019-04-11T00:01:39+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912099 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0760s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:01:42+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912102 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0760s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0480s ]
+
+[ 2019-04-11T00:01:45+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912105 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0850s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0570s ]
+
+[ 2019-04-11T00:01:48+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912108 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0840s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:01:52+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912111 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.3230s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.4490s ]
+
+[ 2019-04-11T00:01:54+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912114 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0770s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0670s ]
+
+[ 2019-04-11T00:01:57+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912117 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1260s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0490s ]
+
+[ 2019-04-11T00:02:00+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912120 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0590s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:02:03+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912123 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1110s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:02:06+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912126 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0900s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0490s ]
+
+[ 2019-04-11T00:02:09+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912129 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0580s ]
+
+[ 2019-04-11T00:02:12+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912132 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0780s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:02:15+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912135 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1050s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0580s ]
+
+[ 2019-04-11T00:02:18+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912138 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0690s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0660s ]
+
+[ 2019-04-11T00:02:21+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912141 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1040s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:02:24+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912144 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1280s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:02:27+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912147 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0880s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:02:30+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912150 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0770s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0660s ]
+
+[ 2019-04-11T00:02:33+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912153 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1170s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:02:36+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912156 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0750s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0580s ]
+
+[ 2019-04-11T00:02:39+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912159 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0890s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:02:42+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912162 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0960s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0660s ]
+
+[ 2019-04-11T00:02:45+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912165 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0740s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:02:48+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912168 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.2310s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:02:51+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912171 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0720s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:02:55+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912174 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.2710s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.1220s ]
+
+[ 2019-04-11T00:02:57+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912177 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0760s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0580s ]
+
+[ 2019-04-11T00:03:00+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912180 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0570s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0580s ]
+
+[ 2019-04-11T00:03:03+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912183 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0780s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:03:06+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912186 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1310s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:03:09+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912189 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0650s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:03:12+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912192 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1180s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0660s ]
+
+[ 2019-04-11T00:03:15+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912195 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0750s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0630s ]
+
+[ 2019-04-11T00:03:18+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912198 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1260s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:03:21+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912201 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0620s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:03:24+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912204 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0580s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:03:27+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912207 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0760s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0490s ]
+
+[ 2019-04-11T00:03:30+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912210 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0700s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:03:33+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912213 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0770s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:03:36+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912216 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1180s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0670s ]
+
+[ 2019-04-11T00:03:39+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912219 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0660s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0660s ]
+
+[ 2019-04-11T00:03:42+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912222 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0680s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:03:45+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912225 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1330s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:03:48+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912228 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0830s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0490s ]
+
+[ 2019-04-11T00:03:51+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912231 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0690s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:03:54+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912234 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1970s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.1040s ]
+
+[ 2019-04-11T00:03:57+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912237 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0610s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:04:00+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912240 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0540s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:04:03+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912243 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0790s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:04:06+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912246 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0740s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0490s ]
+
+[ 2019-04-11T00:04:09+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912249 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1190s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:04:12+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912252 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0710s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:04:15+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912255 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1740s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.1550s ]
+
+[ 2019-04-11T00:04:18+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912258 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0610s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0660s ]
+
+[ 2019-04-11T00:04:21+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912261 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0460s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0510s ]
+
+[ 2019-04-11T00:04:24+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912264 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0590s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:04:27+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912267 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0670s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:04:30+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912270 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0570s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:04:33+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912273 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1120s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0490s ]
+
+[ 2019-04-11T00:04:36+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912276 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1160s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0490s ]
+
+[ 2019-04-11T00:04:39+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912279 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0540s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:04:42+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912282 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0650s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:04:45+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912285 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1060s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0580s ]
+
+[ 2019-04-11T00:04:48+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912288 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0680s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:04:51+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912291 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1560s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0920s ]
+
+[ 2019-04-11T00:04:54+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912294 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1830s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.1060s ]
+
+[ 2019-04-11T00:04:57+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912297 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0650s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:05:00+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912300 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0900s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0590s ]
+
+[ 2019-04-11T00:05:04+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912303 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1460s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.2360s ]
+
+[ 2019-04-11T00:05:06+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912306 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0830s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:05:09+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912309 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0840s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0660s ]
+
+[ 2019-04-11T00:05:12+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912312 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:05:15+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912315 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0990s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0660s ]
+
+[ 2019-04-11T00:05:18+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912318 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0770s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0670s ]
+
+[ 2019-04-11T00:05:21+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912321 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0960s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0670s ]
+
+[ 2019-04-11T00:05:24+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912324 )  [ RunTime:0.0030s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.2910s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0520s ]
+
+[ 2019-04-11T00:05:27+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912327 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0510s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0750s ]
+
+[ 2019-04-11T00:05:30+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912330 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0770s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0740s ]
+
+[ 2019-04-11T00:05:33+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912333 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1180s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0750s ]
+
+[ 2019-04-11T00:05:36+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912336 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0910s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0320s ]
+
+[ 2019-04-11T00:05:39+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912339 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1120s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0410s ]
+
+[ 2019-04-11T00:05:42+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912342 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1080s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0840s ]
+
+[ 2019-04-11T00:05:45+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912345 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1090s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:05:48+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912348 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0920s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0750s ]
+
+[ 2019-04-11T00:05:51+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912351 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1200s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0490s ]
+
+[ 2019-04-11T00:05:54+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912354 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1580s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0740s ]
+
+[ 2019-04-11T00:05:58+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912357 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.6030s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.1260s ]
+
+[ 2019-04-11T00:06:00+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912360 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1270s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:06:03+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912363 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0660s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:06:06+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912366 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1190s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0670s ]
+
+[ 2019-04-11T00:06:09+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912369 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0690s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0750s ]
+
+[ 2019-04-11T00:06:12+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912372 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0680s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:06:15+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912375 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1050s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:06:18+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912378 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0470s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0320s ]
+
+[ 2019-04-11T00:06:21+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912381 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0890s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:06:24+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912384 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0940s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0490s ]
+
+[ 2019-04-11T00:06:27+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912387 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0850s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0840s ]
+
+[ 2019-04-11T00:06:30+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912390 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0520s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0490s ]
+
+[ 2019-04-11T00:06:33+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912393 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.2240s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0330s ]
+
+[ 2019-04-11T00:06:36+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912396 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0940s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0750s ]
+
+[ 2019-04-11T00:06:39+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912399 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1410s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.1060s ]
+
+[ 2019-04-11T00:06:42+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912402 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0940s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0490s ]
+
+[ 2019-04-11T00:06:45+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912405 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0880s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0670s ]
+
+[ 2019-04-11T00:06:48+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912408 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1120s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0490s ]
+
+[ 2019-04-11T00:06:51+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912411 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1210s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:06:55+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912414 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.2880s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0960s ]
+
+[ 2019-04-11T00:06:58+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912417 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.2170s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.3440s ]
+
+[ 2019-04-11T00:07:00+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912420 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0570s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0740s ]
+
+[ 2019-04-11T00:07:03+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912423 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0560s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:07:06+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912426 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0670s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0580s ]
+
+[ 2019-04-11T00:07:09+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912429 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0690s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0580s ]
+
+[ 2019-04-11T00:07:12+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912432 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0830s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:07:15+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912435 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0850s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0750s ]
+
+[ 2019-04-11T00:07:18+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912438 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0570s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0490s ]
+
+[ 2019-04-11T00:07:21+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912441 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0610s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0490s ]
+
+[ 2019-04-11T00:07:24+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912444 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0580s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:07:27+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912447 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0760s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0490s ]
+
+[ 2019-04-11T00:07:30+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912450 )  [ RunTime:0.0170s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0550s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:07:33+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912453 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0750s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0570s ]
+
+[ 2019-04-11T00:07:36+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912456 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0620s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0320s ]
+
+[ 2019-04-11T00:07:39+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912459 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0600s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0320s ]
+
+[ 2019-04-11T00:07:42+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912462 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0600s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0330s ]
+
+[ 2019-04-11T00:07:45+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912465 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0940s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0330s ]
+
+[ 2019-04-11T00:07:48+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912468 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0620s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:07:51+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912471 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1090s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0670s ]
+
+[ 2019-04-11T00:07:54+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912474 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:07:58+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912477 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1510s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.4370s ]
+
+[ 2019-04-11T00:08:00+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912480 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0610s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:08:03+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912483 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0540s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0580s ]
+
+[ 2019-04-11T00:08:06+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912486 )  [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1100s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0490s ]
+
+[ 2019-04-11T00:08:09+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912489 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.1020s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0500s ]
+
+[ 2019-04-11T00:08:12+08:00 ] 127.0.0.1 /index.php/Admin/Notices/sendjs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_notices` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tyn_notices` WHERE ( UNIX_TIMESTAMP(n_sendtime)<1554912492 )  [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=1 ) [ RunTime:0.0640s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\xampp\xampp\htdocs\tyn\bishe\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `tyn_notices` SET `n_state`=n_state+1 WHERE ( id=6 ) [ RunTime:0.0490s ]
+

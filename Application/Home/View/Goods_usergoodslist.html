@@ -21,7 +21,7 @@
                         </div>
                     </div>
                     <div class="usergoodsbox-footer">
-                        <button>...</button>
+                        <button onclick="cancelfabu('<#$vo.id#>')">取消发布</button>
                         <button onclick="lookwords('<#$vo.id#>')">查看留言</button>
                     </div>
                 </div>
@@ -30,7 +30,27 @@
     </volist>
 </body>
 <script>
-    // 查看评价
+    // 取消发布
+    function cancelfabu(gid){
+        $.ajax({
+            url:"<#:U('Goods/cancelfabu')#>",
+            async:true,
+            type:'post',
+            data:{gid:gid},
+            dataType:'json',
+            success:function(res){
+                if(res.code==100){
+                    document.location.reload();
+                    layer.msg("取消成功");
+                }else{
+                    layer.msg("操作失败，请再次尝试");
+                }
+            },error:function(res){
+                console.log(res)
+            }
+        })
+    }
+    // 查看留言
     function lookwords(gid){
         document.location.href="__MODULE__/Words/index?gid="+gid;
     }

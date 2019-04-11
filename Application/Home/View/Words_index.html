@@ -12,6 +12,11 @@
             border-bottom: 1px solid #d0d0d0;
             font-weight: 700;
         }
+        .ss{
+            width: 100%;
+            height: 38px;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
@@ -19,12 +24,19 @@
         <div class="jumbotron" style="margin-bottom:0">
             <div class="media">
                 <div class="media-left">
-                    <img src="__PUBLIC__/img/zuoye1.png" class="media-object" style="width:60px">
+                    <img id="gimg" src="__PUBLIC__/img/toxiang.png" class="media-object" style="width:60px">
+                    <script>
+                        var imgstr = <#:json_encode($info['g_img'])#>;
+                        var imgarr = imgstr.split(" ");
+                        var img = $("#gimg");
+                        img.attr('src',imgarr[1]);
+                    </script>
                 </div>
                 <div class="media-body">
-                    <h4 class="media-heading"><#$info.u_nickname#></h4>
-                    <p><#$info.e_info#></p>
-                    <p style="font-size:13px"><#$info.e_time#></p>
+                    <div class="ss">
+                        <h4 class="media-heading"><#$info.g_name#></h4>
+                    </div>
+                    <p style="font-size:13px"><#$info.g_time#></p>
                 </div>
             </div>
         </div>
@@ -32,7 +44,7 @@
         <volist name="list" id="vo">
             <div class="media">
                 <div class="media-left">
-                    <img src="__PUBLIC__/img/zuoye1.png" class="media-object" style="width:60px">
+                    <img src="__PUBLIC__/img/toxiang.png" class="media-object" style="width:60px">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading"><#$vo.u_nickname#></h4>

@@ -1,0 +1,123 @@
+[ 2019-03-27T14:26:46+08:00 ] 127.0.0.1 /index.php/Admin/Goods/querygoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: name E:\xampp\xampp\htdocs\tyn\bishe\Application\Admin\Controller\GoodsController.class.php 第 94 行.
+NOTIC: [8] Undefined index: user E:\xampp\xampp\htdocs\tyn\bishe\Application\Admin\Controller\GoodsController.class.php 第 96 行.
+NOTIC: [8] Undefined index: state E:\xampp\xampp\htdocs\tyn\bishe\Application\Admin\Controller\GoodsController.class.php 第 98 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\xampp\htdocs\tyn\bishe\Application\Runtime\Cache\Admin\7bc100acd67a9b2fe4ad93d587b0d3e1.php 第 232 行.
+NOTIC: [8] Undefined index: ainfo E:\xampp\xampp\htdocs\tyn\bishe\Application\Runtime\Cache\Admin\7bc100acd67a9b2fe4ad93d587b0d3e1.php 第 242 行.
+NOTIC: [8] Undefined variable: page E:\xampp\xampp\htdocs\tyn\bishe\Application\Runtime\Cache\Admin\7bc100acd67a9b2fe4ad93d587b0d3e1.php 第 366 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-27T16:50:41+08:00 ] 127.0.0.1 /index.php/Admin/admins/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: ainfo E:\xampp\xampp\htdocs\tyn\bishe\Application\Admin\Controller\AdminsController.class.php 第 8 行.
+
+[ 2019-03-27T16:50:45+08:00 ] 127.0.0.1 /index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tyn_admins` [ RunTime:0.2270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-27T16:50:48+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-27T16:51:03+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_admins` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tyn_admins` WHERE `a_account` = 'xiaokeai' AND `a_pwd` = '123456' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-03-27T16:51:03+08:00 ] 127.0.0.1 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tyn_admins` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `tyn_users` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_users` WHERE ( UNIX_TIMESTAMP(u_time)>=UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 6 DAY)) and UNIX_TIMESTAMP(u_time)<UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 5 DAY)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_users` WHERE ( UNIX_TIMESTAMP(u_time)>=UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 5 DAY)) and UNIX_TIMESTAMP(u_time)<UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 4 DAY)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_users` WHERE ( UNIX_TIMESTAMP(u_time)>=UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 4 DAY)) and UNIX_TIMESTAMP(u_time)<UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 3 DAY)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_users` WHERE ( UNIX_TIMESTAMP(u_time)>=UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 3 DAY)) and UNIX_TIMESTAMP(u_time)<UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 2 DAY)) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_users` WHERE ( UNIX_TIMESTAMP(u_time)>=UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 2 DAY)) and UNIX_TIMESTAMP(u_time)<UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 1 DAY)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_users` WHERE ( UNIX_TIMESTAMP(u_time)>=UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 1 DAY)) and UNIX_TIMESTAMP(u_time)<UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 0 DAY)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_users` WHERE ( UNIX_TIMESTAMP(u_time)>=UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 0 DAY)) and UNIX_TIMESTAMP(u_time)<UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL -1 DAY)) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tyn_goods` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_goods` WHERE ( UNIX_TIMESTAMP(g_time)>=UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 6 DAY)) and UNIX_TIMESTAMP(g_time)<UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 5 DAY)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_goods` WHERE ( UNIX_TIMESTAMP(g_time)>=UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 5 DAY)) and UNIX_TIMESTAMP(g_time)<UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 4 DAY)) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_goods` WHERE ( UNIX_TIMESTAMP(g_time)>=UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 4 DAY)) and UNIX_TIMESTAMP(g_time)<UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 3 DAY)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_goods` WHERE ( UNIX_TIMESTAMP(g_time)>=UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 3 DAY)) and UNIX_TIMESTAMP(g_time)<UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 2 DAY)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_goods` WHERE ( UNIX_TIMESTAMP(g_time)>=UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 2 DAY)) and UNIX_TIMESTAMP(g_time)<UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 1 DAY)) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_goods` WHERE ( UNIX_TIMESTAMP(g_time)>=UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 1 DAY)) and UNIX_TIMESTAMP(g_time)<UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 0 DAY)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_goods` WHERE ( UNIX_TIMESTAMP(g_time)>=UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL 0 DAY)) and UNIX_TIMESTAMP(g_time)<UNIX_TIMESTAMP(DATE_SUB(CURDATE(),INTERVAL -1 DAY)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(g_num) AS tp_sum FROM `tyn_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tyn_records` [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_records` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_users` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tyn_users` WHERE ( UNIX_TIMESTAMP(u_uptime)>1551084663 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\xampp\htdocs\tyn\bishe\Application\Runtime\Cache\Admin\6fedbbe541e195344bf1450076482852.php 第 368 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

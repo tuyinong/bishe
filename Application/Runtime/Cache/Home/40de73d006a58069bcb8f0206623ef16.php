@@ -6,13 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>注册页</title>
     <!-- css样式 -->
-<link rel="stylesheet" type="text/css" href="http://127.0.0.1/TYN/tyn/Application/Public/css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="/TYN/tyn/Application/Public/css/infolist.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/goodslist.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/infolist.css">
+<link rel="stylesheet" type="text/css" href="/Application/Public/css/usergoodslist.css">
 <!-- js操作 -->
-<script src="http://127.0.0.1/TYN/tyn/Application/Public/js/jquery.js"></script>
-<script src="http://127.0.0.1/TYN/tyn/Application/Public/js/bootstrap.js"></script>
-<script src="/TYN/tyn/Application/Public/layer/layer.js"></script>
-
+<script src="/Application/Public/js/jquery.js"></script>
+<script src="/Application/Public/js/bootstrap.js"></script>
+<script src="/Application/Public/layer/layer.js"></script>
+<script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<!-- <script src="/Application/Public/js/jquery.mobile-1.4.5.js"></script> -->
     <style>
         body{
                 width: 100%;
@@ -78,7 +82,8 @@
 </head>
 <body>
     <div id="logo" class="logo">
-        logo
+        <img src="/Application/Public/img/logo2.png" alt="logo" style="height:145%;">
+        <!-- logo -->
     </div>
 </body>
 </html>
@@ -107,7 +112,7 @@
     </div>
     <a href="<?php echo U('Login/index');?>">
         <div class="other">
-            ———————立即登录———————
+            ——————立即登录——————
         </div>
     </a>
 </body>
@@ -144,7 +149,7 @@
                                         shade: 0.01
                                     });
                                     setTimeout(function () {
-                                        location.href = "/TYN/tyn/index.php/Home/Index/index";
+                                        location.href = "/index.php/Home/Index/index";
                                     }, 1500);
                                 }
                                 if(res.regflag==2){

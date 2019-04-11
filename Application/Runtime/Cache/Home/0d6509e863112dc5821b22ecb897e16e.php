@@ -17,6 +17,7 @@
 <script src="/Application/Public/layer/layer.js"></script>
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<!-- <script src="/Application/Public/js/jquery.mobile-1.4.5.js"></script> -->
     <style>
         .changelist {
             height: 75px;
@@ -68,6 +69,7 @@
 <script src="/Application/Public/layer/layer.js"></script>
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<!-- <script src="/Application/Public/js/jquery.mobile-1.4.5.js"></script> -->
 </head>
 <body>
     <?php session_start(); ?>
@@ -153,7 +155,14 @@
                 <div class="goodslist" onclick="todetails(<?php echo ($vo["id"]); ?>)">
                     <!-- <input type="hidden" name="gid" value="<?php echo ($vo["id"]); ?>" id="gid"> -->
                     <div class="goodsimg">
-                        <img src="/Application/Public/img/shili1.jpg" style="width:100%">
+                        <img id="gimg" src="/Application/Public/img/shili1.jpg" style="width:100%">
+                        <input type="hidden" id="gg" value="<?php echo ($vo["g_img"]); ?>">
+                        <script>
+                            var imgstr = $("#gg").val();
+                            var imgarr = imgstr.split(" ");
+                            var img = $("#gimg");
+                            img.attr('src',imgarr[1]);
+                        </script>
                     </div>
                     <div class="info">
                         <div class="info_top">
@@ -163,7 +172,7 @@
                             <?php echo ($vo["g_price"]); ?>
                         </div>
                         <div class="info_bottom">
-                            <img src="/Application/Public/img/zuoye1.png" alt=""> <?php echo ($vo["u_nickname"]); ?>
+                            <img src="/Application/Public/img/toxiang.png" alt=""> <?php echo ($vo["u_nickname"]); ?>
                         </div>
                     </div>
                 </div>
@@ -190,6 +199,7 @@
 <script src="/Application/Public/layer/layer.js"></script>
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<!-- <script src="/Application/Public/js/jquery.mobile-1.4.5.js"></script> -->
     <style>
         .footer{
             position: fixed;
@@ -253,9 +263,9 @@
                 <img src="/Application/Public/img/tubiao2.png" alt="">
                 <li>发布</li>
             </a>
-            <a href="">
+            <a href="<?php echo U('Index/messagelist');?>">
                 <img src="/Application/Public/img/tubiao3.png" alt="">
-                <li>消息</li>
+                <li id="xiaoxiid">消息</li>
             </a>
             <a href="<?php echo U('User/index');?>">
                 <img src="/Application/Public/img/tubiao4.png" alt="">
@@ -264,6 +274,17 @@
         </ul>
     </div>
 </body>
+<script>
+    var flag = <?php echo (session('newmess')); ?>;
+    // console.log(<?php echo (session('newmess')); ?>)
+    if(flag==1){
+        $("#xiaoxiid").css('color','red');
+        $("#xiaoxiid").html("有新消息");
+    }
+    setInterval(function(){
+        $("#xiaoxiid").load(location.href+" #xiaoxiid");
+    },3000);
+</script>
 <script>
     //返回顶部按钮
     $(function () {

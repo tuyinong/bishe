@@ -15,9 +15,9 @@ class RecordController extends Controller{
                     ->select();
         foreach($res as $key=>$val){
             if($val['r_state']==1){
-                $res[$key]['r_state']="交易成功";
+                $res[$key]['r_state']="确认收货";
             }elseif($val['r_state']==0){
-                $res[$key]['r_state']="正在交易";
+                $res[$key]['r_state']="未收货";
             }
         }
         $this->assign('list',$res);
@@ -29,18 +29,55 @@ class RecordController extends Controller{
         $uid = $_SESSION['uid'];
         $r = M('records');
         $res = $r->alias('r')
+                ->field('r.*,g.g_name')
                 ->join('tyn_goods g on g.id=r.r_gid')
                 ->join('tyn_users u on g.from_id=u.id')
                 ->where('r_userid='.$uid)
                 ->select();
         foreach($res as $key=>$val){
             if($val['r_state']==1){
-                $res[$key]['r_state']="交易成功";
+                $res[$key]['r_state']="确认收货";
             }elseif($val['r_state']==0){
-                $res[$key]['r_state']="正在交易";
+                $res[$key]['r_state']="未收货";
             }
         }
         $this->assign('list',$res);
         $this->display();
+    }
+    // 购买商品
+    public function add(){
+        $info['r_userid'] = $uid = $_SESSION['uid'];
+        $data = $_POST['data'];
+        $r = M('records');
+        $info['r_gid'] = $gid = intval($data[0]['value']);
+        $info['r_price'] = $price = doubleval($data[1]['value']);
+        $info['r_time'] = $time = date('Y-m-d H:i:s',time());
+        $res = $r->add($info);
+        if($res){
+            $goods = M('goods');
+            $goods->where('id='.$gid)->setDec('g_num');
+            $fidres = $goods->where('id='.$gid)->find();
+            $snfo2['s_userid'] = $fidres['from_id'];
+            $snfo1['s_time'] = $snfo1['s_time'] = $time;
+            $snfo1['s_userid'] = $_SESSION['uid'];
+            $snfo1['s_num'] = $snfo1['s_num'] = $price;
+            $snfo1['s_reason'] = 2;
+            $snfo2['s_reason'] = 3;
+            $s = M('score');
+            $s->add($snfo1);
+            $s->add($snfo2);
+            $this->ajaxReturn(array('code'=>100));
+        }
+    }
+    // 确认收货
+    public function take(){
+        $rid = $_POST['rid'];
+        $r = M('records');
+        $res = $r->where('id='.$rid)->setInc('r_state');
+        if(res){
+            $this->ajaxReturn(array('code'=>100));
+        }else{
+            $this->ajaxReturn(array('code'=>200));
+        }
     }
 }

@@ -81,7 +81,14 @@
                 <div class="goodslist" onclick="todetails(<#$vo.id#>)">
                     <!-- <input type="hidden" name="gid" value="<#$vo.id#>" id="gid"> -->
                     <div class="goodsimg">
-                        <img src="__PUBLIC__/img/shili1.jpg" style="width:100%">
+                        <img id="gimg" src="__PUBLIC__/img/shili1.jpg" style="width:100%">
+                        <input type="hidden" id="gg" value="<#$vo.g_img#>">
+                        <script>
+                            var imgstr = $("#gg").val();
+                            var imgarr = imgstr.split(" ");
+                            var img = $("#gimg");
+                            img.attr('src',imgarr[1]);
+                        </script>
                     </div>
                     <div class="info">
                         <div class="info_top">
@@ -91,7 +98,7 @@
                             <#$vo.g_price#>
                         </div>
                         <div class="info_bottom">
-                            <img src="__PUBLIC__/img/zuoye1.png" alt=""> <#$vo.u_nickname#>
+                            <img src="__PUBLIC__/img/toxiang.png" alt=""> <#$vo.u_nickname#>
                         </div>
                     </div>
                 </div>
