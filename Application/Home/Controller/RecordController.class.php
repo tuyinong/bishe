@@ -58,9 +58,9 @@ class RecordController extends Controller{
             $goods->where('id='.$gid)->setDec('g_num');
             $fidres = $goods->where('id='.$gid)->find();
             $snfo2['s_userid'] = $fidres['from_id'];
-            $snfo1['s_time'] = $snfo1['s_time'] = $time;
+            $snfo1['s_time'] = $snfo2['s_time'] = $time;
             $snfo1['s_userid'] = $_SESSION['uid'];
-            $snfo1['s_num'] = $snfo1['s_num'] = $price;
+            $snfo1['s_num'] = $snfo2['s_num'] = $price;
             $snfo1['s_reason'] = 2;
             $snfo2['s_reason'] = 3;
             $s = M('score');

@@ -183,7 +183,7 @@
                 }
             }
         }
-        setInterval(function(){
+        var shuaxin = setInterval(function(){
             $.ajax({
                 url:"<#:U('Index/messageinfo')#>?mm778899=<#$Think.get.mm778899#>",
                 async:true,
@@ -220,7 +220,7 @@
                             }
                             li.append(span);
                             $("#content").append(li);
-                            text.value = '';
+                            // text.value = '';
                             content.scrollTop=content.scrollHeight;  
                         }
                         // $("#content").listview("refresh");

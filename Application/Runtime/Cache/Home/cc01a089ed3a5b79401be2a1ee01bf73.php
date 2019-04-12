@@ -53,7 +53,7 @@
         <div style="text-align:center;margin-top:20px">
             暂无评价
         </div><?php endif; ?>
-    
+    <div style="width:100%;height:70px;"></div>
     <div class="addrfooter" style="background-color:#ff9900;color:black" onclick="javascript:document.location.href='/index.php/Home/Evaluation/add?rid=<?php echo ($_GET['rid']); ?>'">
         追加评价
     </div>

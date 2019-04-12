@@ -36,27 +36,31 @@
 </body>
 <script>
     $("#wordsdiv").click(function(){
-        var info = $("#info").val();
-        var gid = <?php echo ($_GET['gid']); ?>;
-        console.log(info)
-        $.ajax({
-            url:"<?php echo U('Words/add');?>",
-            async:true,
-            type:'post',
-            data:{info:info,gid:gid},
-            dataType:'json',
-            success:function(res){
-                if(res.code==100){
-                    // document.location.href='/index.php/Home/Words/index?gid='+res.gid;
-                    // history.go(-1);
-                    self.location=document.referrer;
-                }else if(res.code==200){
-                    layer.msg('操作失败，判断用户是否登录');
+        if($("#info").val()=="" ||$("#info").val()==" "){
+            layer.msg("留言内容不能为空");
+        }else{
+            var info = $("#info").val();
+            var gid = <?php echo ($_GET['gid']); ?>;
+            console.log(info)
+            $.ajax({
+                url:"<?php echo U('Words/add');?>",
+                async:true,
+                type:'post',
+                data:{info:info,gid:gid},
+                dataType:'json',
+                success:function(res){
+                    if(res.code==100){
+                        // document.location.href='/index.php/Home/Words/index?gid='+res.gid;
+                        // history.go(-1);
+                        self.location=document.referrer;
+                    }else if(res.code==200){
+                        layer.msg('操作失败，判断用户是否登录');
+                    }
+                },error:function(res){
+                    console.log(res)
                 }
-            },error:function(res){
-                console.log(res)
-            }
-        })
+            })
+        }
     })
 </script>
 </html>

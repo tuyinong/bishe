@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>奖品列表</title>
+    <include file="Pub:style"/>
+    <style>
+        .add img{
+            width: 50px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <include file="Pub:nav"/>
+    <div class="body">
+        <div class="box">
+            <div class="rowbox">
+                <div class="title">
+                    您目前所在的位置 > 商品管理 > 奖品列表
+                </div>
+            </div>
+            <div class="rowbox">
+                <div class="add" onclick="javascript:document.location.href='__URL__/addaward'">
+                    <img src="__PUBLIC__/img/addimg.jpg" alt="">
+                </div>
+            </div>
+            <div class="rowbox">
+                <div class="tablebox">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>奖品名称</th>
+                                <th>奖品介绍</th>
+                                <th>奖品价格</th>
+                                <th>奖品图片</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <volist name="list" id="vo">
+                                <tr>
+                                    <td><#$vo.award_name#></td>
+                                    <td><#$vo.info#></td>
+                                    <td><#$vo.price#></td>
+                                    <td><img style="width:50px;" src="<#$vo.img#>" alt=""></td>
+                                    <td>
+                                        <!-- <button class="btn btn-primary">查看信息</button> -->
+                                        <button class="btn btn-danger" onclick="awarddel('<#$vo.id#>')">删除</button>
+                                    </td>
+                                </tr>
+                            </volist>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>>
+<script>
+    // 审核不通过
+    function awarddel(aid) {
+        // data = { "gid": gid, "type": 2 };
+        // console.log(JSON.stringify(data));
+        $.ajax({
+            url: "<#:U('Award/awarddel')#>",
+            async: true,
+            type: 'POST',
+            data: {aid:aid},
+            dataType: 'json',
+            success: function (res) {
+                if (res.code==100) {
+                    window.location.reload();
+                } else {
+                    layer.msg('操作已成功，请勿重复操作');
+                }
+                console.log(res.code)
+            }, error: function (res) {
+                console.log('cuowu');
+            }
+        })
+    }
+</script>
+</html>

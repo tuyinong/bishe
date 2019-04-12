@@ -14,7 +14,12 @@
                 <#$vo.s_reason#>
             </span>
             <span style="font-size:13px"><#$vo.s_time#></span>
-            <span class="span2" style="color:red">+<#$vo.s_num#></span>
+            <span class="span2" style="color:red">
+                <gt name="vo.s_num" value="0">
+                    +
+                </gt>
+                <#$vo.s_num#>
+            </span>
         </div>
     </volist>
 </body>

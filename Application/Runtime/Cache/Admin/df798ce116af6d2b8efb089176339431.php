@@ -377,6 +377,7 @@
                         <li><a href="<?php echo U('Goods/goodslist');?>">上架商品</a></li>
                         <li><a href="<?php echo U('Goods/querygoods');?>">查询商品</a></li>
                         <li><a href="<?php echo U('Goods/errgoodslist');?>">异常商品</a></li>
+                        <li><a href="<?php echo U('Award/awardlist');?>">奖品列表</a></li>
                     </ul>
                 </li>
                 <li>
@@ -425,6 +426,39 @@
         }         
     }
 </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    setInterval(function(){
+        $.ajax({
+            url: "<?php echo U('Notices/sendjs');?>",
+            async: true,
+            type: 'POST',
+            data: {},
+            dataType: 'json',
+            success: function (res) {
+                // if (res.code == 100) {
+                //     window.location.reload();
+                // } else {
+                //     layer.msg('操作已成功，请勿重复操作');
+                // }
+                // console.log(res)
+            }, error: function (res) {
+                console.log('cuowu');
+            }
+        })
+    },3000)
+</script>
+</html>
 </html>
     <div class="body">
         <div class="box">

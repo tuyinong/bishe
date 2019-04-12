@@ -402,6 +402,7 @@
                         <li><a href="<?php echo U('Goods/goodslist');?>">上架商品</a></li>
                         <li><a href="<?php echo U('Goods/querygoods');?>">查询商品</a></li>
                         <li><a href="<?php echo U('Goods/errgoodslist');?>">异常商品</a></li>
+                        <li><a href="<?php echo U('Award/awardlist');?>">奖品列表</a></li>
                     </ul>
                 </li>
                 <li>
@@ -475,7 +476,7 @@
                 // } else {
                 //     layer.msg('操作已成功，请勿重复操作');
                 // }
-                console.log(res)
+                // console.log(res)
             }, error: function (res) {
                 console.log('cuowu');
             }

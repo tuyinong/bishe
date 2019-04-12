@@ -25,24 +25,28 @@
 </body>
 <script>
     $("#evadiv").click(function(){
-        var info = $("#info").val();
-        var rid = <#$Think.get.rid#>;
-        console.log(rid)
-        $.ajax({
-            url:"<#:U('Evaluation/add')#>",
-            async:true,
-            type:'post',
-            data:{info:info,rid:rid},
-            dataType:'json',
-            success:function(res){
-                if(res.code==100){
-                    document.location.href='__MODULE__/Evaluation/index?rid='+res.rid;
-                    // history.go(-1);
+        if($("#info").val()=="" ||$("#info").val()==" "){
+            layer.msg("留言内容不能为空");
+        }else{
+            var info = $("#info").val();
+            var rid = <#$Think.get.rid#>;
+            console.log(rid)
+            $.ajax({
+                url:"<#:U('Evaluation/add')#>",
+                async:true,
+                type:'post',
+                data:{info:info,rid:rid},
+                dataType:'json',
+                success:function(res){
+                    if(res.code==100){
+                        document.location.href='__MODULE__/Evaluation/index?rid='+res.rid;
+                        // history.go(-1);
+                    }
+                },error:function(res){
+                    console.log(res)
                 }
-            },error:function(res){
-                console.log(res)
-            }
-        })
+            })
+        }
     })
 </script>
 </html>

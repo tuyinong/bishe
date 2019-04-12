@@ -17,8 +17,23 @@
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
 <!-- <script src="/Application/Public/js/jquery.mobile-1.4.5.js"></script> -->
+
+<style>
+    /* 页面标题显示 */
+    .pagetitle{
+        text-align: center;
+        line-height: 50px;
+        /* background-color: #ffec13; */
+        position: fixed;
+        width: 100%;
+        top: 0;
+        /* box-shadow: darkgrey 0px 2px 10px 0px; */
+    }
+</style>
 </head>
 <body>
+    <div class="pagetitle">我的积分</div>
+    <div style="height:60;"></div>
     <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="row" style="margin:5px;">
             <div class="col-xs-12" style="box-shadow: darkgrey 1px 2px 5px 0px;">
                 <div>

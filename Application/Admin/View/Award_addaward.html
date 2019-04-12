@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>奖品列表</title>
+    <include file="Pub:style"/>
+    <style>
+        .add{
+            width: 50px;
+            float: right;
+        }
+        .file_upload{
+            position: absolute;
+            width: 23%;
+            margin-left: 2px;
+            opacity: 0;
+            z-index: 20;
+        }
+        .addpic{
+            width: 23%;
+            margin-left: 2px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <include file="Pub:nav"/>
+    <div class="body">
+        <div class="box">
+            <div class="rowbox">
+                <div class="title">
+                    您目前所在的位置 > 商品管理 > 添加奖品
+                </div>
+            </div>
+            <div class="rowbox">
+                <div class="fbox">
+                    <form class="form" id="awardform">
+                        <!-- awardname -->
+                        <div class="form-group row">
+                            <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="name">奖品名称:</label>
+                            <div class="col-xs-8 col-sm-6">
+                                <input class="form-control" type="text" name="name" id="name" placeholder="请输入奖品名称" value="">
+                            </div>
+                        </div>
+                        <!-- awardprice -->
+                        <div class="form-group row">
+                            <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="price">奖品价格:</label>
+                            <div class="col-xs-8 col-sm-6">
+                                <input class="form-control" type="text" name="price" id="price" placeholder="请输入奖品价格" value="">
+                            </div>
+                        </div>
+                        <!-- awardinfo -->
+                        <div class="form-group row">
+                            <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="info">奖品介绍:</label>
+                            <div class="col-xs-8 col-sm-6">
+                                <!-- <input class="form-control" type="text" name="content" id="content" placeholder="请输入通知的内容" value=""> -->
+                                <textarea class="form-control" name="info" id="info" cols="30" rows="10" placeholder="请输入奖品介绍"></textarea>
+                            </div>
+                        </div>
+                        <!-- awardimg -->
+                        <div class="form-group row">
+                            <label class="col-xs-3 col-md-2 col-sm-offset-2 text-right" for="img">奖品图片:</label>
+                            <div class="col-xs-8 col-sm-6 addimg">
+                                <input type="file" accept="images/*" capture="camera" class="file_upload" multiple="multiple" name="img[]"/>
+                                <input type="hidden" id="photo" name="photo" value="">
+                                <img style="width: 50px" src="__PUBLIC__/img/addimg.jpg" class="addpic" alt="">
+                                <!-- <input class="form-control" type="text" name="img" id="img" placeholder="请输入奖品图片" value=""> -->
+                            </div>
+                        </div>
+                        <!-- 按钮 -->
+                        <div class="form-group col-xs-offset-4 col-xs-4">
+                            <button type="button" class="btn btn-primary" onclick="add()">确认保存</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="btn btn-info" onclick="javascript:document.location.href='__URL__/awardlist'">取&nbsp;&nbsp;&nbsp;消</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>>
+<script>
+    $(".file_upload").change(function () {    
+        var formData=new FormData();     
+        var length =  $(".file_upload")[0].files['length'];
+        console.log(length);
+        for(var i=0;i<length;i++){
+            formData.append('img'+i, $(".file_upload")[0].files[i]);  /*获取上传的图片对象*/ 
+        }
+        console.log(formData.getAll('img')) 
+        $.ajax({      
+            url: "<#:U('award/addimg')#>",          
+            type: 'POST',          
+            data: formData,          
+            contentType: false,          
+            processData: false,          
+            success: function (res) { 
+                var imgname = "";       
+                console.log(res.data[0]);  /*服务器端的图片地址*/   
+                for(var i=0;i<res.data.length;i++){
+                    console.log(res.data[i])
+                    var img = $("<img>");
+                    img.attr('width', '23%');
+                    img.css('height',$("#img"+(i+1)).css('width'));
+                    console.log(img)
+                    img.attr('src',res.data[i]);
+                    $(".addimg").append(img);
+                    imgname=imgname.concat(" "+res.data[i]);
+                }
+                $("#photo").val(imgname);
+                console.log($("#photo").val())
+            }      
+        }) 
+    })
+    // 审核不通过
+    function awarddel(aid) {
+        // data = { "gid": gid, "type": 2 };
+        // console.log(JSON.stringify(data));
+        $.ajax({
+            url: "<#:U('Award/awarddel')#>",
+            async: true,
+            type: 'POST',
+            data: {aid:aid},
+            dataType: 'text',
+            success: function (res) {
+                if (res.code==100) {
+                    window.location.reload();
+                } else {
+                    layer.msg('操作已成功，请勿重复操作');
+                }
+                console.log(res)
+            }, error: function (res) {
+                console.log('cuowu');
+            }
+        })
+    }
+    function add(){
+        if($("#name").val()==""){
+            layer.msg("奖品名称还没填写");
+        }else{
+            if($("#price").val()==""){
+                layer.msg("价格为设置");
+            }else{
+                if($("info").val()==""){
+                    layer.msg("奖品介绍还未填写");
+                }else{
+                    var form_data = $("#awardform").serializeArray();
+                    $.ajax({
+                        url:"<#:U('award/add')#>",
+                        async:true,
+                        type:'post',
+                        data:{data:form_data},
+                        dataType:'json',
+                        success:function(res){
+                            if(res.code==100){
+                                document.location.href="__MODULE__/Award/awardlist";
+                            }
+                        },error:function(res){
+                            console.log(res)
+                        }
+                    })
+                }
+            }
+        }
+    }
+</script>
+</html>

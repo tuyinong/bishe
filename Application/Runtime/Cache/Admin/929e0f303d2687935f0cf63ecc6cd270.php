@@ -121,11 +121,18 @@
             padding: 0;
             margin: 0;
         }
+        body{
+            background-image: url(/Application/Public/img/houback.png);
+            background-size: 100%;
+        }
         .head{
             width: 100%;
             height: 50px;
             background-color: black;
             min-width: 1000px;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
         }
         .base{
             width: 1000px;
@@ -163,7 +170,7 @@
     </style>
 </head>
 <body>
-    <div id="head" class="head"></div>
+    <div id="head" class="head">二爪二手商品交易平台管理员系统</div>
     <div class="base">
         <div class="base-box">
             <h3>

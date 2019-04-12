@@ -17,6 +17,19 @@
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
 <!-- <script src="/Application/Public/js/jquery.mobile-1.4.5.js"></script> -->
+
+<style>
+    /* 页面标题显示 */
+    .pagetitle{
+        text-align: center;
+        line-height: 50px;
+        /* background-color: #ffec13; */
+        position: fixed;
+        width: 100%;
+        top: 0;
+        /* box-shadow: darkgrey 0px 2px 10px 0px; */
+    }
+</style>
     <style>
         body{
             width: 100%;

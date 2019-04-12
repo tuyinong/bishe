@@ -17,6 +17,19 @@
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
 <!-- <script src="/Application/Public/js/jquery.mobile-1.4.5.js"></script> -->
+
+<style>
+    /* 页面标题显示 */
+    .pagetitle{
+        text-align: center;
+        line-height: 50px;
+        /* background-color: #ffec13; */
+        position: fixed;
+        width: 100%;
+        top: 0;
+        /* box-shadow: darkgrey 0px 2px 10px 0px; */
+    }
+</style>
     <style>
         .zhui{
             padding: 5px;
@@ -65,7 +78,7 @@
         <div style="text-align:center;margin-top:20px">
             暂无留言
         </div><?php endif; ?>
-    
+    <div style="width:100%;height:70px;"></div>
     <div class="addrfooter" style="background-color:#ff9900;color:black" onclick="javascript:document.location.href='/index.php/Home/Words/add?gid=<?php echo ($_GET['gid']); ?>'">
         追加留言
     </div>

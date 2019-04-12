@@ -17,6 +17,19 @@
 <script src="/Application/Public/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Application/Public/js/locales/bootstrap-datetimepicker.fr.js"></script>
 <!-- <script src="/Application/Public/js/jquery.mobile-1.4.5.js"></script> -->
+
+<style>
+    /* 页面标题显示 */
+    .pagetitle{
+        text-align: center;
+        line-height: 50px;
+        /* background-color: #ffec13; */
+        position: fixed;
+        width: 100%;
+        top: 0;
+        /* box-shadow: darkgrey 0px 2px 10px 0px; */
+    }
+</style>
     <style>
         textarea{
             width: 100%;
@@ -66,7 +79,7 @@
         <div class="list" style="margin-top: 30px;">
             <span class="span1">价格</span>
             <span>
-                <input type="text" name="price" placeholder="" value="">
+                <input id="price" type="text" name="price" placeholder="" value="">
             </span>
             <span class="span2">&gt;</span>
         </div>
@@ -153,21 +166,35 @@
         }
     })
     $("#fabudiv").click(function(){
-        var form_data = $("#fabuform").serializeArray();
-        $.ajax({
-            url:"<?php echo U('Goods/fabu');?>",
-            async:true,
-            type:'post',
-            data:{data:form_data},
-            dataType:'json',
-            success:function(res){
-                if(res.code==100){
-                    document.location.href="/index.php/Home/Goods/details?gid="+res.gid;
+        if($("#info").val()==""){
+            layer.msg("宝贝描述信息不够完善");
+        }else{
+            if($("#price").val()==""){
+                layer.msg("价格未设置");
+            }else{
+                var pzz=/^[0-9]+(.[0-9]{1,2})?$/;
+                if (pzz.test($("#price").val())) {
+                    var form_data = $("#fabuform").serializeArray();
+                    $.ajax({
+                        url:"<?php echo U('Goods/fabu');?>",
+                        async:true,
+                        type:'post',
+                        data:{data:form_data},
+                        dataType:'json',
+                        success:function(res){
+                            if(res.code==100){
+                                document.location.href="/index.php/Home/Goods/details?gid="+res.gid;
+                            }
+                        },error:function(res){
+                            console.log(res)
+                        }
+                    })
+                } else {
+                    layer.msg("价格格式不正确");
                 }
-            },error:function(res){
-                console.log(res)
+                
             }
-        })
+        }
     })
 </script>
 </html>
